@@ -1,0 +1,233 @@
+.menuTop{
+    display: flex;
+    background: rgb(33,142,255);
+    background: linear-gradient(90deg, rgba(33,142,255,1) 0%, rgba(10,14,124,1) 51%, rgba(0,3,31,1) 100%);
+  }
+  .containerEsquerda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .containerDireita{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .imgTopMenu{
+    border-radius: 100%;
+    box-shadow: 0 0 1em aliceblue;
+  }
+  h1{
+    display: inline;
+    color: #FFFFFF;
+    width: 500px;
+  
+    font-family: 'Silkscreen', cursive;
+    font-weight: bold;
+    
+  }
+  
+  #maquinaEscrever::after{
+  content: '|';
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+  
+  .links{
+    border-style: solid;
+    border-width: 2.5px;
+    border-radius: 15px;
+    width: 32%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+  }
+  
+  .git{
+    color: hsl(213, 13%, 16%);
+  }
+  
+  .linkedin{
+    color: #2167C2;
+  }
+  
+  .workana{
+    color: #052D72;
+  }
+  @media screen and (max-width: 399px) {
+    .menuTop{
+      height: 10vw;
+    }
+  
+    .containerEsquerda{
+      width: 60%;
+    }
+  
+    .imgTopMenu{
+      width: 25px;
+      height: 25px;
+      margin: 3px;
+    }
+  
+    h1{
+      font-size: .75rem;
+    }
+  
+    .containerDireita{
+      width: 40%;
+    }
+  
+    .links{
+      border: none;
+      background: none;
+      color: transparent;
+      font-size: .60rem;
+    }
+  }
+  
+  @media screen and (min-width: 400px) {
+    .menuTop{
+      height: 10vw;
+    }
+  
+    .containerEsquerda{
+      width: 57%;
+    }
+  
+    .imgTopMenu{
+      width: 40px;
+      height: 40px;
+      margin: 3px;
+    }
+  
+    h1{
+      font-size: 1rem;
+    }
+  
+  .containerDireita{
+    width: 40%;
+  }
+  
+  .links{
+    height: 20px;
+    font-size: .60rem;
+  }
+  
+  .imgIcon{
+    width: 12px;
+    margin: 1.5PX;
+  }
+  }
+  
+  
+  @media screen and (min-width: 600px) {
+    .menuTop{
+      height: 7.5vw;
+    }
+  
+    .imgTopMenu{
+      width: 45px;
+      height: 45px;
+      margin: 5px;
+    }
+  
+    h1{
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .menuTop{
+      height: 8vw;
+    }
+  
+    .containerEsquerda{
+      width: 70%;
+    }
+  
+    .imgTopMenu{
+      width: 55px;
+      height: 55px;
+    }
+  
+    h1{
+      font-size: 2rem;
+    }
+    .containerDireita{
+      width: 30%;
+    }
+  
+    .links{
+      height: 30px;
+      font-size: 1rem;
+    }
+  
+    .imgIcon{
+      width: 20px;
+      margin-right: 8PX;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .menuTop{
+      height: 5vw;
+    }
+  }
+  
+  .conteudo{
+    height: 50vw;
+  }
+  
+  
+  
+  
+  .circulos{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: underline;
+    animation-duration: 3s;
+    animation-name: pisca;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+  }
+  
+  
+  @keyframes pisca{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.7;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  
+  
+  canvas {
+    display: block;
+  }
+  
+  button {
+  position: absolute;
+    top: 10vw;
+    left: 5px;
+  }
