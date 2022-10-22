@@ -1,3 +1,4 @@
+/* ESTILO DO MENU TOP*/
 .menuTop{
     display: flex;
     background: rgb(33,142,255);
@@ -63,6 +64,57 @@
   .workana{
     color: #052D72;
   }
+
+  
+  
+  /* ESTILO CONTEUDO */
+  
+
+  .conteudo{
+    height: 50vw;
+    display: flex;
+  }
+
+
+.projetos{
+  font-size: 2rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+justify-items: center;}
+
+
+
+
+
+  .cbntAperteme{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: underline;
+    animation-duration: 3s;
+    animation-name: pisca;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+  }
+
+ 
+  
+canvas {
+  display: block;
+}
+
+button {
+position: absolute;
+  top: 10vw;
+  left: 5px;
+}
+
+
   @media screen and (max-width: 399px) {
     .menuTop{
       height: 10vw;
@@ -183,27 +235,7 @@
     }
   }
   
-  .conteudo{
-    height: 50vw;
-  }
-  
-  
-  
-  
-  .circulos{
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-    width: 100px;
-    height: 25px;
-    font-weight: bold;
-    font-size: 1rem;
-    text-decoration: underline;
-    animation-duration: 3s;
-    animation-name: pisca;
-    animation-iteration-count: infinite;
-    cursor: pointer;
-  }
+ 
   
   
   @keyframes pisca{
@@ -220,14 +252,4 @@
   
   
   
-  
-  
-  canvas {
-    display: block;
-  }
-  
-  button {
-  position: absolute;
-    top: 10vw;
-    left: 5px;
-  }
+ 
