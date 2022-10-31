@@ -84,13 +84,19 @@
   color: black;
   font-family: 'Roboto', sans-serif;
   display: flex;
-justify-items: center;}
+  flex-direction: row;}
+
+.cards{
+
+}
 
 
 
 
 
-  .cbntAperteme{
+/*CANVAS*/
+
+  .bntAperteme{
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
