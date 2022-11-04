@@ -46,6 +46,7 @@ width: 100vw;
   }
   
   .links{
+    margin: 5px;
     border-style: solid;
     border-width: 2.5px;
     border-radius: 15px;
@@ -220,6 +221,7 @@ button {
       background: none;
       color: transparent;
       font-size: .60rem;
+      margin: 5px;
     }
   }
   
@@ -249,6 +251,7 @@ button {
   .links{
     height: 20px;
     font-size: .60rem;
+    margin: 5px;
   }
   
   .imgIcon{
@@ -298,6 +301,7 @@ button {
     .links{
       height: 30px;
       font-size: 1rem;
+      margin: 5px;
     }
   
     .imgIcon{
