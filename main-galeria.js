@@ -25,7 +25,7 @@ var textoImg = ['Zom olho adulto','Nuvens', 'Flores','Heróglifos egípcios','Bo
 /* Looping through images */
 for (i=0;i<imagens.length;i++){
     const newImage = document.createElement('img');
-    newImage.setAttribute('src','images/'+imagens[i]);
+    newImage.setAttribute('src','imagens/'+imagens[i]);
     newImage.setAttribute('alt', textoImg[i]);
     newImage.setAttribute('class', [i]);
     thumbBar.appendChild(newImage);
