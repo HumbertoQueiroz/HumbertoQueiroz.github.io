@@ -104,6 +104,7 @@ width: 100vw;
   }
 .cards{
 padding: 2vw;
+width: 500px;
 
 -webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
         animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
