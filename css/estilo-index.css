@@ -108,13 +108,20 @@ width: 100vw;
     font-size: 1.75rem;font-weight: bold;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    
+  }
 
+  p{
+    padding-top: 8px;
   }
 .cards{
 padding: 2vw;
 margin: 2vw;
 width: 400px;
 height: 150px;
+display: flex;
+flex-direction: column;
+
 
 
 -webkit-animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
