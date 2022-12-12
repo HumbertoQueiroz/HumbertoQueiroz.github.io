@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Random color example — event handler property</title>
+    <title>Gerador randomico de background</title>
     <style>
       button {
         margin: 10px;
@@ -11,14 +11,26 @@
     </style>
   </head>
   <body>
-    <button>Change color</button>
+    <button>Mude a cor!</button>
     <script>
     var btn = document.querySelector('button');
-console.log('criou a variável btn');
+    console.log('criou a variável btn');
+
+    function num (){
+      var min = Math.ceil(1);
+      var max = Math.floor(255);
+      console.log('gerou numero');
+
+      var nu = Math.floor(Math.random() * (max - min + 1)) + min;
+      console.log(nu);
+      return nu;
+      }
+      
     function bgChange() {
-        var rndCol = 'rgb( ' + random(255) + ', ' + random(255) + ', ' + random(255) + ')';
+        var rndCol = 'rgb( ' + num() + ', ' + num() + ', ' + num() + ')';
         document.body.style.backgroundColor = rndCol;
-        }
+        console.log(rndCol);
+      }
 
     btn.addEventListener('click', bgChange);
     </script>
