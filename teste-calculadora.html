@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Base</title>
+
+
+
+        <!--Essa Keywords são as palavras que corespondem as buscam no google, que eu quero corresponder-->
+        <meta name="Keywords" content="Substitua">
+        <!--Essa descrição abaixo é a que aparece no google-->
+        <meta name="description" content="Substitua">
+        <!--Aqui diz se quero aparecer no google ou não ("index, follow"=sim e subpáginas - "noindex, follow"=não - "index, nofollow" =só esta página)-->
+        <meta name="robots" content="index, follow">
+        <!--Aqui serve para indicar a url canonica quando eu tenho mais de um domínio-->
+        <link rel="canonica!" href="subistituir por url">
+        <meta name="author" content="Dev Humberto Queiroz">
+
+        <meta name="Viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="imagens/LoboFavicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="teste.css">
+    </head>
+    <body>
+
+        
+       <main>
+     <button type='number' id="teste1" name="botao1" value="1">Valor1</button>
+     <button type='number' id="teste2" name="botao2" value="2">Valor2</button>
+     <p class="resultado" style="color: red; font-size: 2em; border: solid 10px #8a8484be; text-align: center;"></p>
+         
+       </main>
+
+    </body>
+    <footer>
+        <address> Voce pode entrar em contato com o autor desta página através do e-mail: <a href="mailto:devhumbertoqueiroz@gmail.com">devhumbertoqueiroz@gmail.com</a>.<br>
+            Se encontrar qualquer bug, por favor <a href="mailto:devhumbertoqueiroz@gmail.com">contate o administrador do site</a>.<br>
+        </address>
+    </footer>
+    <script>
+      var var1 = document.querySelector('#teste1');
+      var var11 = parseInt(var1.value);
+      console.log(var1.value);
+      console.log(var11);
+
+      var var2 = document.querySelector('#teste2');
+      var var22 = parseInt(var2.value);
+      console.log(var1.value);
+      console.log(var22);
+      
+      var resultado = document.querySelector('.resultado');
+      
+       var conta = var11+var22;
+
+       resultado.textContent=conta;
+ 
+     
+     
+      console.log(conta);
+    </script>
+
+</html>
