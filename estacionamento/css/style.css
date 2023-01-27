@@ -1,5 +1,199 @@
-header {
-background-color: #79bd9a;
-width: 100%;
+body{
+    font-family: Helvetica, Arial;
 }
 
+header {
+    float: left;
+    background-color: #79bd9a;
+    width: 100%;
+   
+}
+
+head p {
+    float: right;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #0b486b;
+    padding: 20px 5px;
+}
+
+#logo{
+    float: left;
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin: 5px;
+}
+
+nav{
+    float: right;
+    padding: 20px;
+}
+
+#menu-icon {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: #ffffff00 url(../imagens/menu.png) center;
+    float: right;
+    margin-top: 0px;
+}
+
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+
+footer{
+    background-color: #3b8686;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+
+@media only screen and (max-width : 480px){
+    #menu-icon{
+        display: inline-block;
+
+    }
+
+    nav ul{
+
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        padding: 20px;
+        background: #fff;
+        width: 20%;
+    }
+
+    nav li{
+        text-align: left;
+        width: 90%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    nav:hover ul{
+        display: block;
+    }
+
+    nav li a {
+        color: #3b8686
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+    p{
+        text-align: justify;
+    }
+
+    .depoimentos{
+        box-shadow: 10px 10px 5px #888888;
+        border-radius: 5px;
+        width: 95%;
+        padding-right: 10px;
+    }
+
+    nav#nav-footer{
+      display: none;
+    }
+
+    #copyright p{
+        text-align: center;
+    }
+    #image{
+        margin-left: 35%;
+    }
+
+    #slogan{
+        margin-right: 10px;
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
+}
+
+@media only screen and (min-width: 481px){
+    #menu-icon{
+        display: none;
+    }
+
+    body{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header{
+        height: 200px;
+    }
+
+    section{
+        height: 250px;
+        clear: both;
+    }
+
+    #prom1, #prom2{
+        width: 48%;
+        float: left;
+        margin-left: 10px;
+    }
+
+    .container-gerais{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .gerais{
+        width: auto;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .depoimentos{
+        box-shadow: 10px 10px 5px #888888;
+        border-radius: 5px;
+        width: 47%;
+        float: left;
+        margin: 0 0 15px 15px;
+    }
+
+    footer{
+        height: 200px;
+        clear: both;
+    }
+
+    #copyright{
+        height: 100px;
+    }
+
+    p #slogan{
+        margin-left: 30px;
+        font-weight: bold;
+        letter-spacing: 7px;
+    }
+
+    #logo{
+        width: 30%;
+        height: 80%; 
+    }
+
+}
