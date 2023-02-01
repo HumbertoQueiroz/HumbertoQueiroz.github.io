@@ -64,6 +64,9 @@ footer{
     padding: 5px;
 }
 
+h2{
+    text-align: center;
+}
 
 @media only screen and (max-width : 480px){
     #menu-icon{
@@ -153,6 +156,7 @@ footer{
         width: 48%;
         float: left;
         margin-left: 10px;
+        border: 1px solid #ccc;
     }
 
     .container-gerais{
@@ -160,18 +164,21 @@ footer{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+   
     }
 
     .gerais{
         width: auto;
         align-items: center;
-        margin: 15px;
+        border: 1px solid #ccc;
+        margin: 5px;
+        padding: 10px;
     }
 
     .depoimentos{
-        box-shadow: 10px 10px 5px #888888;
+        box-shadow: 3px 3px 3px #888888;
         border-radius: 5px;
-        width: 47%;
+        width: 48%;
         float: left;
         margin: 0 0 15px 15px;
     }
@@ -196,4 +203,28 @@ footer{
         height: 80%; 
     }
 
+}
+
+@media only screen and (min-width: 960px) {
+    body{
+        width: 960px;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+}
+
+
+/* Página Contato */
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
