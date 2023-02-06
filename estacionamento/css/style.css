@@ -4,9 +4,13 @@ body{
 
 header {
     float: left;
-    background-color: #79bd9a;
+    background-color: #591902;
     width: 100%;
    
+}
+
+main{
+    color: #591902;
 }
 
 head p {
@@ -29,7 +33,7 @@ a:hover {
     width: 40%;
     height: 40%;
     display: block;
-    margin: 5px;
+    margin: 15px;
 }
 
 nav{
@@ -41,7 +45,7 @@ nav{
     display: none;
     width: 40px;
     height: 40px;
-    background: #ffffff00 url(../imagens/menu.png) center;
+    background: #edc76600 url(../imagens/menu.png) center;
     float: right;
     margin-top: 0px;
 }
@@ -65,7 +69,16 @@ footer{
 }
 
 h2{
+   padding-top: 15px;
     text-align: center;
+}
+
+#slogan{
+    color: #F2CA52;
+}
+
+p{
+    margin: 3px 0px;
 }
 
 @media only screen and (max-width : 480px){
@@ -123,7 +136,7 @@ h2{
         text-align: center;
     }
     #image{
-        margin-left: 35%;
+        margin: 0px 25px;
     }
 
     #slogan{
@@ -148,15 +161,26 @@ h2{
     }
 
     section{
-        height: 250px;
+        height: auto;
         clear: both;
     }
 
     #prom1, #prom2{
-        width: 48%;
+        width: 45%;
         float: left;
         margin-left: 10px;
-        border: 1px solid #ccc;
+        border: 2px solid #edc7669c;
+        padding: 5px;
+    }
+
+    #prom1 a, #prom2 a {
+        color: #591902;
+    }
+
+    #prom1 a:hover, #prom2 a:hover {
+        background-color: #edc7669c;
+        margin: 0px;
+        padding: 0px;
     }
 
     .container-gerais{
@@ -168,7 +192,8 @@ h2{
     }
 
     .gerais{
-        width: auto;
+        width: 250px;
+        height: 200px;
         align-items: center;
         border: 1px solid #ccc;
         margin: 5px;
