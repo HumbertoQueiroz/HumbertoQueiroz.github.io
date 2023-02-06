@@ -218,6 +218,10 @@ h2{
 
 
 /* Página Contato */
+#informacoes{
+    clear: both;
+    width: 100%;
+}
 
 input[type=text], textarea {
     width: 100%;
@@ -227,4 +231,28 @@ input[type=text], textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.button {
+    background-color: #79bd9a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.detalhes, .map{
+    width: 49.4%;
+    float: left;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.map{
+    margin-left: 5px;
 }
