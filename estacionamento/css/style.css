@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-    background-color: #0b486b;
+    background-color: #F2CA52;
     padding: 20px 5px;
 }
 
@@ -69,7 +69,7 @@ footer{
 }
 
 h2{
-   padding-top: 15px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -81,7 +81,18 @@ p{
     margin: 3px 0px;
 }
 
+.image{
+    margin: 0px 25px;
+}
+
+strong{
+    font-size: 1.3rem;
+}
 @media only screen and (max-width : 480px){
+    #logo{
+        margin-left: 30%;
+    }
+
     #menu-icon{
         display: inline-block;
 
@@ -110,19 +121,29 @@ p{
     }
 
     nav li a {
-        color: #3b8686
+        color: #F2CA52
     }
 
     nav:hover ul {
         display: block;
     }
 
+    #slogan{
+        margin: 15px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        text-align: center;
+
+    }
+
+
+
     p{
         text-align: justify;
     }
 
     .depoimentos{
-        box-shadow: 10px 10px 5px #888888;
+        box-shadow: 10px 10px 5px #edc7669c;
         border-radius: 5px;
         width: 95%;
         padding-right: 10px;
@@ -135,15 +156,9 @@ p{
     #copyright p{
         text-align: center;
     }
-    #image{
-        margin: 0px 25px;
-    }
 
-    #slogan{
-        margin-right: 10px;
-        font-weight: bold;
-        letter-spacing: 4px;
-    }
+
+
 }
 
 @media only screen and (min-width: 481px){
@@ -195,13 +210,13 @@ p{
         width: 250px;
         height: 200px;
         align-items: center;
-        border: 1px solid #ccc;
+        border: 2px solid #edc7669c;
         margin: 5px;
         padding: 10px;
     }
 
     .depoimentos{
-        box-shadow: 3px 3px 3px #888888;
+        box-shadow: 3px 3px 3px #edc7669c;
         border-radius: 5px;
         width: 48%;
         float: left;
