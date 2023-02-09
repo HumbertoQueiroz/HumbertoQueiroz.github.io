@@ -19,7 +19,7 @@ head p {
 }
 
 a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -75,15 +75,19 @@ strong{
 h2{
    padding: 15px;
    background-color: #F2CA52;
-   
+   text-align: center;
 }
 
 #prom2{
     margin-bottom: 15px;
 }
 
+#prom1 a, #prom2 a{
+    color: red;
+}
+
 p{
-    margin: 3px 0px;
+    margin: 15px 0px;
 }
 
 .image{
@@ -101,7 +105,7 @@ footer{
     padding: 0;
 }
 
-footer .p {
+footer h2 {
     background-color: #591902;
 }
 
@@ -151,10 +155,9 @@ footer .p {
         font-weight: bold;
         letter-spacing: 4px;
         text-align: center;
+        padding: 0;
 
     }
-
-
 
     p{
         text-align: justify;
@@ -165,6 +168,14 @@ footer .p {
         border-radius: 5px;
         width: 95%;
         padding-right: 10px;
+    }
+
+    .gerais{
+        margin: 20px 0;
+    }
+
+    .image{
+        margin-left: 25%;
     }
 
     nav#nav-footer{
@@ -199,15 +210,11 @@ footer .p {
     }
 
     #prom1, #prom2{
-        width: 45%;
+        width: 33%;
         float: left;
         margin-left: 25px;
         border: 2px solid #edc7669c;
         padding: 5px;
-    }
-
-    #prom1 a, #prom2 a {
-        color: #591902;
     }
 
     #prom1 a:hover, #prom2 a:hover {
@@ -242,7 +249,7 @@ footer .p {
     }
 
     footer{
-        height: 200px;
+        height: 160px;
         clear: both;
     }
 
@@ -261,6 +268,12 @@ footer .p {
         height: 80%; 
     }
 
+}
+
+@media only screen and (min-width: 700px){
+    #prom1, #prom2{
+        width: 43%;
+    }
 }
 
 @media only screen and (min-width: 960px) {
