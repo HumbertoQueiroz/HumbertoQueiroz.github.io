@@ -6,6 +6,7 @@ header {
     float: left;
     background-color: #591902;
     width: 100%;
+    margin-bottom: 20px;
    
 }
 
@@ -38,7 +39,7 @@ a:hover {
 
 nav{
     float: right;
-    padding: 20px;
+    padding: 30px 10px;
 }
 
 #menu-icon {
@@ -61,20 +62,24 @@ li{
     padding: 10px;
 }
 
-footer{
-    background-color: #3b8686;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
+#slogan{
+    color: #F2CA52;
+    padding-left: 400px;
+}
+
+strong{
+    font-size: 1.3rem;
+    
 }
 
 h2{
-    padding-top: 30px;
-    text-align: center;
+   padding: 15px;
+   background-color: #F2CA52;
+   
 }
 
-#slogan{
-    color: #F2CA52;
+#prom2{
+    margin-bottom: 15px;
 }
 
 p{
@@ -85,9 +90,22 @@ p{
     margin: 0px 25px;
 }
 
-strong{
-    font-size: 1.3rem;
+footer{
+    background-color: #591902;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
+
+#nav-footer{
+    padding: 0;
+}
+
+footer .p {
+    background-color: #591902;
+}
+
+
 @media only screen and (max-width : 480px){
     #logo{
         margin-left: 30%;
@@ -183,7 +201,7 @@ strong{
     #prom1, #prom2{
         width: 45%;
         float: left;
-        margin-left: 10px;
+        margin-left: 25px;
         border: 2px solid #edc7669c;
         padding: 5px;
     }
