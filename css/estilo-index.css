@@ -77,7 +77,10 @@ width: 100vw;
   }
   
   /* ESTILO CONTEUDO */
-  
+  .imgProjetos{
+    width: 150px;
+    height: 150px;
+  }
 
   .conteudo{
     height: 92vw;
@@ -118,7 +121,7 @@ width: 100vw;
 padding: 2vw;
 margin: 2vw;
 width: 400px;
-height: 250px;
+height: 320px;
 display: flex;
 flex-direction: column;
 
