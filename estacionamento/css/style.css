@@ -65,11 +65,8 @@ li{
 #slogan{
     color: #F2CA52;
     padding-left: 400px;
-}
-
-strong{
     font-size: 1.3rem;
-    
+    font-weight: bold;
 }
 
 h2{
@@ -94,6 +91,10 @@ p{
     margin: 0px 25px;
 }
 
+#image-planos{
+    margin-left: 5%;
+}
+
 footer{
     background-color: #591902;
     color: white;
@@ -105,12 +106,50 @@ footer{
     padding: 0;
 }
 
-footer h2 {
+footer h2, address, #copyright{
     background-color: #591902;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.planos-texto{
+    width: 80%;
+    float: left;
+}
+
+button{
+    margin-left: 35%;
+    margin-top: 15px;
+    width: 200px;
+    height: 50px;
+    border: 01px;
+    border-radius: 15px;
+    background-color: #591902;
+    color: #F2CA52;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 
+
+
+
 @media only screen and (max-width : 480px){
+   
+    button{
+        margin-left: 23%;
+    }
+
+
     #logo{
         margin-left: 30%;
     }
@@ -170,12 +209,20 @@ footer h2 {
         padding-right: 10px;
     }
 
+    .planos-texto{
+        width: 100%;}
+
+    #image-planos{
+        margin-left: 35%;
+    }
+
     .gerais{
         margin: 20px 0;
     }
 
     .image{
         margin-left: 25%;
+        padding: 10px;
     }
 
     nav#nav-footer{
@@ -185,9 +232,6 @@ footer h2 {
     #copyright p{
         text-align: center;
     }
-
-
-
 }
 
 @media only screen and (min-width: 481px){
@@ -266,8 +310,7 @@ footer h2 {
     #logo{
         width: 30%;
         height: 80%; 
-    }
-
+    }    
 }
 
 @media only screen and (min-width: 700px){
@@ -287,6 +330,15 @@ footer h2 {
 
 }
 
+/* Página serviços*/
+
+.container-servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+}
+
 
 /* Página Contato */
 #informacoes{
@@ -304,26 +356,47 @@ input[type=text], textarea {
     box-sizing: border-box;
 }
 
-.button {
-    background-color: #79bd9a;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
 .detalhes, .map{
-    width: 49.4%;
-    float: left;
+    width: 48%;
     border: 1px solid #ccc;
     margin-top: 5px;
     margin-bottom: 5px;
 
 }
 
+.container-contato{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+.detalhes{
+    height: 250px;
+    padding: 55px 5px 0 5px;
+}
+
 .map{
     margin-left: 5px;
+}
+
+@media only screen and (max-width : 600px){
+    .container-contato{
+        flex-direction: column;
+    }
+
+   .map{
+        width: 90%;
+        padding: 0;
+    }
+
+    .detalhes{
+        width: 90%;
+        height: auto;
+        padding: 5PX;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    
 }
