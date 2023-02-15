@@ -80,11 +80,10 @@ width: 100vw;
   .imgProjetos{
     width: 150px;
     height: 150px;
+    border-radius: 10px;
   }
 
-  .conteudo{
-    height: 92vw;
-  }
+
 
 .galeria-projetos{
   height: 30vw;
@@ -93,12 +92,29 @@ width: 100vw;
   align-items: center;
 }
 .titulo-projetos{
-  font-size: 2.5rem;
   color: black;
-  font-family: 'Roboto', sans-serif;
-  padding: 5vw;
-  font-weight: bold;
+  font-family: Arial;
+  margin: 3vw;
+  padding: 20px;
+  font-weight: 900;
+  animation-name: Colorida;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background:linear-gradient(360deg, rgba(33,142,255,1) 0%, rgba(10,14,124,1) 51%, rgba(0, 3, 31, 0.781) 100%);
+  border-radius: 35px;
+  text-align: center;
 }
+
+@keyframes Colorida {
+  0% {color: white;
+  }     
+  40% {color: rgba(128, 124, 124, 0.959);
+  }
+   100% {color: white;
+  }     
+}
+
 
   .container-projetos{
     display: flex;
@@ -116,12 +132,14 @@ width: 100vw;
 
   p{
     padding-top: 8px;
+    text-align: justify;  
   }
+
 .cards{
 padding: 2vw;
 margin: 2vw;
 width: 400px;
-height: 320px;
+height: 350px;
 display: flex;
 flex-direction: column;
 
