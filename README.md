@@ -6,7 +6,7 @@ Projetos e conhecimentos aplicados:
     b. CSS desenvolvido com Mobile force, site responsivo para todos os tipos de aparelhos, smartphone, tablet e desktop através de @media query.<br>
 2.  Bateria Digital:<br>
     a. Projeto voltado a prática de manipulação com JavaScript, manipulação de HTML e seus atributos.<br>
-    b. Manupulação de mídia em browser como audios.<br>
+    b. Manupulação de mídia (audio) em browser.<br>
 3.  
 
 
