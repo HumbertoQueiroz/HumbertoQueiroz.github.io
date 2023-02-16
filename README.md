@@ -7,6 +7,7 @@ Projetos e conhecimentos aplicados:
 2.  Bateria Digital:<br>
     a. Projeto voltado a prática de manipulação com JavaScript, manipulação de HTML e seus atributos.<br>
     b. Manupulação de mídia (audio) em browser.<br>
-3.  
+3.  Barbearia:<br>
+    a. Desenvolvimento de um site de Barbearia completo, aplicando boas práticas no html e css, desenvolvido com responsividade e compatibilidade web e mobile.
 
 
