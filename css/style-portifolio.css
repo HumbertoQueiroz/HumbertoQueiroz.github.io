@@ -1,0 +1,125 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+/* ------ Estilo do cabeçalho/menu--------*/
+.container-geral{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-topo{
+    height: 23vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aliceblue;
+    margin-bottom: 15px;
+}
+
+#imagem-controle{
+    width: 15vh;
+    height: 15vh;
+}
+
+#titulo{
+    width: 120vh;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+span{
+    font-weight: bold;
+}
+
+.container-links{
+    width: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.links {
+    height:40px;
+    width:40px;
+    margin: 0 15px;
+}
+
+/* ------ Estilo do conteudo--------*/
+
+
+.conteudo{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.conhecimentos{
+    width: 25%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+h2{
+    font-weight: bolder;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+p{
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+
+.container-img-conhecimneto{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+/*---- Estilo projetos------*/
+
+.imgProjetos{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 50px 0;
+  }
+
+.galeria-projetos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  margin-top: 25px;
+}
+
+.container-projetos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+a{
+    font-size: 1.75rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.cards{
+    padding: 2%;
+    margin-bottom: 2%;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.cards p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: justify;
+
+}
