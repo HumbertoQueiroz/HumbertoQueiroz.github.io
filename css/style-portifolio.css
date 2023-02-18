@@ -4,7 +4,7 @@ html{
 }
 /* ------ Estilo do cabeçalho/menu--------*/
 .container-geral{ 
-    padding: 15px;
+    padding: 2%;
     display: flex;
     flex-direction: column;
 }
@@ -48,6 +48,19 @@ span{
     width:40px;
     margin: 0 15px;
 }
+
+#animacao{
+    animation-name: pisca;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pisca{
+    50% {
+        opacity: 0.01;
+    }
+}
+
 
 /* ------ Estilo do conteudo--------*/
 
@@ -147,4 +160,35 @@ a{
     padding-bottom: 0;
     text-align: justify;
 
+}
+
+/*---- Estilo rodape------*/
+
+footer{
+    background-color: white;
+    width: 90%;
+    border-radius: 15px;
+    margin: 2% 5%;
+    padding: 25px;
+}
+
+footer p{
+    padding: 0;
+}
+
+footer span{
+    color: rgba(169, 169, 169, 0.664);
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 100;
+}
+
+
+/*----- Versão para Mobile até 480px ----*/
+
+@media screen and (max-width: 481px) {
+    .container-topo{
+        flex-direction: column;
+    }
+    
 }
