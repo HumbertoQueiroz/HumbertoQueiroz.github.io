@@ -10,7 +10,6 @@ html{
 }
 
 .container-topo{
-    height: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,7 +24,7 @@ html{
 }
 
 #titulo{
-    width: 120vh;
+    width: 70%;
     font-size: 1.5rem;
     text-align: justify;
     background-color: white;
@@ -174,6 +173,7 @@ footer{
 
 footer p{
     padding: 0;
+    word-wrap: break-word;
 }
 
 footer span{
@@ -184,11 +184,74 @@ footer span{
 }
 
 
-/*----- Versão para Mobile até 480px ----*/
+/*----- Versão para Mobile menor que 900px ----*/
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 900px) {
     .container-topo{
         flex-direction: column;
+        height: auto;
     }
-    
+
+    #imagem-controle{
+        margin: 35px;
+
+    }
+
+    .container-img-conhecimneto{
+    flex-direction: column;
+    }
+
+    #titulo{
+        width: 90%;
+        
+    }
+
+    .container-links{
+        margin: 50px;
+        animation-name: pisca;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .background-conhecimentos p {
+        text-align: center;
+        padding: 0 25px;
+    }
+
+    .container-img-conhecimneto{
+        padding: 5%;
+    }
+
+    .conhecimentos{
+        border-radius: 20px;
+    }
+
+    .galeria-projetos{
+        margin-top: 0;
+    }
+
+    .img-background{
+        padding: 15px;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .container-projetos{
+        flex-direction: column;
+       
+    }
+
+    .cards{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .cards a{
+        margin-top: 15px;
+    }
 }
