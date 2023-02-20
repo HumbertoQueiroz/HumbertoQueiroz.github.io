@@ -38,7 +38,7 @@ html{
 span{
     font-weight: bold;
     animation-name: pisca;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
@@ -56,7 +56,7 @@ span{
 
 #animacao{
     animation-name: pisca;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
@@ -182,15 +182,10 @@ section .background-conhecimentos{
 .links-footer{
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 20px;
     animation-name: pisca;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-}
-.sublinha{
-    color: rgb(73, 151, 219);
-    animation: none;
-    font-weight: normal;
 }
 
 .links-azul{    
@@ -213,11 +208,12 @@ footer p{
     word-wrap: break-word;
 }
 
-footer span{
+#versao{
     color: rgba(169, 169, 169, 0.664);
     text-decoration: underline;
     font-style: italic;
     font-weight: 100;
+    animation: none;
 }
 
 
