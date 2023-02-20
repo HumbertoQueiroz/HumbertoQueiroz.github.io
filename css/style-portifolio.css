@@ -16,11 +16,14 @@ html{
     justify-content: space-around;
     background-color: aliceblue;
     margin-bottom: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #imagem-controle{
-    width: 15vh;
-    height: 15vh;
+    width: 25vh;
+    height: 25vh;
+    padding: 15px;
 }
 
 #titulo{
@@ -34,6 +37,9 @@ html{
 
 span{
     font-weight: bold;
+    animation-name: pisca;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 .container-links{
@@ -70,8 +76,8 @@ span{
 }
 
 .conhecimentos{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 5px;
 }
 
@@ -161,6 +167,31 @@ a{
 
 }
 
+section .background-conhecimentos{
+    padding: 15px;
+    text-align: justify;
+    line-height: 33px;
+}
+
+.links-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    animation-name: pisca;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.sublinha{
+    color: rgb(73, 151, 219);
+    animation: none;
+    font-weight: normal;
+}
+
+.links-azul{    
+    animation: none;
+    font-weight: normal;
+    color: rgb(73, 151, 219);
+}
 /*---- Estilo rodape------*/
 
 footer{
@@ -202,7 +233,7 @@ footer span{
     }
 
     #titulo{
-        width: 90%;
+        width: 100%;
         
     }
 
@@ -217,13 +248,14 @@ footer span{
         font-size: 2rem;
     }
 
+
     .background-conhecimentos p {
         text-align: center;
         padding: 0 25px;
     }
 
     .container-img-conhecimneto{
-        padding: 5%;
+        padding: 0;
     }
 
     .conhecimentos{
@@ -235,9 +267,9 @@ footer span{
     }
 
     .img-background{
-        padding: 15px;
-        margin-bottom: 25px;
-        width: 100%;
+        padding: 50px 5px;
+        margin: 5% 5% 0 5%;
+        width: 90%;
     }
 
     .container-projetos{
@@ -253,5 +285,39 @@ footer span{
 
     .cards a{
         margin-top: 15px;
+    }
+
+    .background-projetos{
+        margin-top: 5%;
+    }
+}
+
+
+
+/*----- Versão para Mobile menor que 1200px ----*/
+
+@media screen and (min-width: 901px) {
+    .img-background{
+        padding: 25px;
+        margin: 5px;
+    }
+
+    .container-img-conhecimneto{
+        margin: 5%;
+        padding: 0;
+        justify-content: space-between;
+
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .img-background{
+        padding: 35px;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .img-background{
+        padding: 60px;
     }
 }
