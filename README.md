@@ -1,5 +1,5 @@
 # HumbertoQueiroz.github.io
-oi! Sou Humberto Queiroz, Dev Front-End em formação, este site é meu portfólio, aqui estão os meus conhecimentos e projetos e serve como meu laboratório para exprementos, de uma olhada nas versões anteriores! <br>
+Oi! Sou Humberto Queiroz, Dev Front-End em formação, este site é meu portfólio, aqui estão os meus conhecimentos e projetos. Esta página também serve como meu laboratório para exprementos, de uma olhada nas versões anteriores! <br>
 
 Projetos e conhecimentos aplicados:
 
