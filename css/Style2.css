@@ -11,9 +11,9 @@ animation-name: pisca;
     }
 }
 
-.versao p {
+.versao {
 with: 150px;
 heigth: 50px;
-border: solid 2px black;
+border: 2px solid black;
 
 }
