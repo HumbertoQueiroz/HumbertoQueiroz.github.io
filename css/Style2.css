@@ -1,3 +1,12 @@
 #animacao{
 
+animation-name: pisca;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pisca{
+    50% {
+        opacity: 0.01;
+    }
 }
