@@ -10,3 +10,10 @@ animation-name: pisca;
         opacity: 0.01;
     }
 }
+
+.versao p {
+with: 150px;
+heigth: 50px;
+border: solid 2px black;
+
+}
