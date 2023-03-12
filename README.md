@@ -12,8 +12,8 @@ Projetos e conhecimentos aplicados:
 3.  Barbearia:<br>
     a. Desenvolvimento de um site de Barbearia completo, aplicando boas práticas no html e css, desenvolvido com responsividade e compatibilidade web e mobile.<br>
 4. Este portfólio!<br>
-    a. Versão 1.1 foi desenvolvida usando apenas html e css puro.
-    b. Versão 1.2 foi desenvolvida com HTML semântico, com metha tags como Keywords, description, robots e canonica! para um bom ranqueamento no SEO. CSS desenvolvido com Mobile force, site responsivo para todos os tipos de aparelhos, smartphone, tablet e desktop através de @media query.
-    c. Versão 1.3 foi desenvolvida com bootstraps 4.1v e mobile force.
+    a. Versão 1.1 foi desenvolvida usando apenas html e css puro.<br>
+    b. Versão 1.2 foi desenvolvida com HTML semântico, com metha tags como Keywords, description, robots e canonica! para um bom ranqueamento no SEO. CSS desenvolvido com Mobile force, site responsivo para todos os tipos de aparelhos, smartphone, tablet e desktop através de @media query.<br>
+    c. Versão 1.3 foi desenvolvida com bootstraps 4.1v e mobile force.<br>
 
 
