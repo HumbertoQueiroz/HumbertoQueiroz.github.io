@@ -27,7 +27,6 @@ function armazenaOperacao (e){
       operacao=e
 };
 
-console.log('display=',display);
 
 console.log('x1=',x1);
 console.log('y2=',y2);
