@@ -7,7 +7,7 @@ var y2;
 //Várialvel que vai armazenar a operação
 var operacao;
 
-var para = document.queryseletor('.display');
+var para = document.querySeletor('.display');
 
 function addNumeroDisplay(e){
       if(para=0){
