@@ -12,9 +12,12 @@ var para = document.querySelector('.display');
 function addNumeroDisplay(e){
       if(para=0){
             para=e;
+            document.getElementById("para").innerHTML = para;
             console.log('Para1=',para);
+            
       } else{
             para = para+e;
+            document.getElementById("para").innerHTML = para;
             console.log('Para1=',para);
       };
 };
