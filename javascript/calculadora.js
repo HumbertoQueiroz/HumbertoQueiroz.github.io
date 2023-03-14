@@ -7,18 +7,24 @@ var y2;
 //Várialvel que vai armazenar a operação
 var operacao;
 
-var para = document.querySelector('.display');
+var $wrapper = document.querySelector('.display');
 
 function addNumeroDisplay(e){
       if(para=0){
-            para=e;
-            document.getElementById("para").innerHTML = para;
-            console.log('Para1=',para);
+            HTMLTemporario = $wrapper.innerHTML;
+            HTMLNovo=e;
+            HTMLTemporario=HTMLNovo+HTMLTemporario;
+            $wrapper.innerHTML=HTMLTemporario
+            
+            console.log('Para1=',$wrapper);
             
       } else{
-            para = para+e;
-            document.getElementById("para").innerHTML = para;
-            console.log('Para1=',para);
+            HTMLTemporario = $wrapper.innerHTML;
+            HTMLNovo=e;
+            HTMLTemporario=HTMLNovo+HTMLTemporario;
+            $wrapper.innerHTML=HTMLTemporario
+            
+            console.log('Para1=',$wrapper);
       };
 };
 
