@@ -13,7 +13,7 @@ function addNumeroDisplay(e){
       if(para=0){
             HTMLTemporario = $wrapper.innerHTML;
             HTMLNovo=e;
-            HTMLTemporario=HTMLNovo+HTMLTemporario;
+            HTMLTemporario=HTMLNovo;
             $wrapper.innerHTML=HTMLTemporario
             
             console.log('Para1=',$wrapper);
@@ -21,7 +21,7 @@ function addNumeroDisplay(e){
       } else{
             HTMLTemporario = $wrapper.innerHTML;
             HTMLNovo=e;
-            HTMLTemporario=HTMLNovo+HTMLTemporario;
+            HTMLTemporario=HTMLTemporario+HTMLNovo;
             $wrapper.innerHTML=HTMLTemporario
             
             console.log('Para1=',$wrapper);
