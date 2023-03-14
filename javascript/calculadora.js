@@ -17,3 +17,6 @@ function addNumeroDisplay(e){
       };
 };
 
+function armazenaOperacao (e){
+      
+};
