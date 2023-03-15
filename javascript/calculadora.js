@@ -14,7 +14,7 @@ function addNumeroDisplay(e){
             paraTemporario =para.innerHTML;
             paraNovo=e;
             paraTemporario=paraNovo;
-            para.innerHTML=HTMLTemporario
+            para.innerHTML=paraTemporario;
             
             console.log('Para1=',para);
             
@@ -22,7 +22,7 @@ function addNumeroDisplay(e){
             paraTemporario = para.innerHTML;
             paraNovo=e;
             paraTemporario=paraTemporario+paraNovo;
-            para.innerHTML=paraTemporario
+            para.innerHTML=paraTemporario;
             
             console.log('Para1=',para);
       };
