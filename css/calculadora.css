@@ -16,8 +16,10 @@
     width: 70%;
     height: auto;
     background-color: rgb(255, 255, 255);
+    border: none;
     border-radius: 8px;
-    padding: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
     font-weight: bolder;
     font-size: large;
     text-align: end;
