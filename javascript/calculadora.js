@@ -37,4 +37,4 @@ function armazenaOperacao (e){
 console.log('x1=',x1);
 console.log('y2=',y2);
 console.log('operação=',operacao);
-console.log('Parágrafo final=',para);
+console.log('Parágrafo final=',$wrapper);
