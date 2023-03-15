@@ -21,8 +21,8 @@ function addNumeroDisplay(e){
       } else{
             HTMLTemporario = $wrapper.innerHTML;
             HTMLTNovo=e;
-            HTMLTTemporario=HTMLTTemporario+HTMLTNovo;
-            $wrapper.innerHTML=HTMLTTemporario;
+            HTMLTemporario=HTMLTemporario+HTMLTNovo;
+            $wrapper.innerHTML=HTMLTemporario;
             
             console.log('Para1=',$wrapper);
       };
