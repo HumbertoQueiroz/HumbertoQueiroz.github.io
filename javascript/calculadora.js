@@ -7,24 +7,24 @@ var y2;
 //Várialvel que vai armazenar a operação
 var operacao;
 
-var $wrapper = document.querySelector('.display');
+var para = document.querySelector('.display');
 
 function addNumeroDisplay(e){
       if(para=0){
-            HTMLTemporario = $wrapper.innerHTML;
-            HTMLNovo=e;
-            HTMLTemporario=HTMLNovo;
-            $wrapper.innerHTML=HTMLTemporario
+            paraTemporario =para.innerHTML;
+            paraNovo=e;
+            paraTemporario=paraNovo;
+            para.innerHTML=HTMLTemporario
             
-            console.log('Para1=',$wrapper);
+            console.log('Para1=',para);
             
       } else{
-            HTMLTemporario = $wrapper.innerHTML;
-            HTMLNovo=e;
-            HTMLTemporario=HTMLTemporario+HTMLNovo;
-            $wrapper.innerHTML=HTMLTemporario
+            paraTemporario = para.innerHTML;
+            paraNovo=e;
+            paraTemporario=paraTemporario+paraNovo;
+            para.innerHTML=paraemporario
             
-            console.log('Para1=',$wrapper);
+            console.log('Para1=',para);
       };
 };
 
