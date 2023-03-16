@@ -23,7 +23,17 @@
     font-weight: bolder;
     font-size: large;
     text-align: end;
+    display: inline;
    
+}
+
+#display2{
+    display: none;
+}
+
+
+#display3{
+    display: none;
 }
 
 .botoes{

@@ -32,9 +32,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/suporte/Documents/GitHub/HumbertoQueiroz.github.io"
+    "last_opened_file_path": "C:/Users/suporte/Documents/GitHub/HumbertoQueiroz.github.io/projetos-python"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\suporte\Documents\GitHub\HumbertoQueiroz.github.io\projetos-python" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="helloword" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="HumbertoQueiroz.github.io" />
