@@ -3,7 +3,7 @@
     justify-content: center;
 }
 .container {
-    margin: 2rem;
+    margin-top: 2rem;
     padding: 1rem;
     width: 35%;
     background-color: rgba(169, 169, 169, 0.308);
@@ -11,6 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-width: 350px;
 }
 .display{
     width: 70%;
