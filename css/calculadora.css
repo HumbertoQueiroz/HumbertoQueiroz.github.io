@@ -37,6 +37,10 @@
  
 }
 
+#display0{
+ display: none;  
+}
+
 .botoes{
     display: flex;
     flex-wrap: wrap;
