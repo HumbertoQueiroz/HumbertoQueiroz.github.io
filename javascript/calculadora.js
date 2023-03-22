@@ -25,6 +25,10 @@ var para3 = parseInt(display3.value);
 console.log('para3 puxado do display3', para3);
 controle3 = false;
 
+var display0 = document.getElementById('display0');
+var para0 = parseInt(display0.value);
+
+
 function alteraDisplay() {
       display1.style.display = 'flow';
       display2.style.display = 'none';
@@ -76,43 +80,77 @@ function addNumeroDisplay(e) {
 };
 
 function armazenaOperacao(e) {
-  
-      // Operação if 01
-      if (controle1) {
-                  console.log('entrou adiciona operação if 01');
+       // Operação if con valor anterior
+      if (controle3) {
+            console.log('entrou - operação com resultado anterior - controle3=true');
 
-                  display1.style.display = 'none';
-                  display2.style.display = 'inline'
-                  console.log("exibiu display2")
 
-                  x1 = display1;
-                  console.log("adicionou o valor de", x1, ' do display1 ao x1')
+                  HTMLTemporario = display0.innerHTML;
+                  HTMLTNovo = 0;
+                  HTMLTemporario = HTMLTNovo;
+                  display2.innerHTML = HTMLTemporario;
+                  para2 = display2.innerHTML
+
+            display1.style.display = 'none';
+            display2.style.display = 'inline'; 
+            display3.style.display = 'none';
+            console.log("exibiu display2")       
+
+            x1 = display3;
+            console.log('armazenou o resultado no x1 = ', x1)
+
+            operacao = e;
+            console.log("adicionou o valor de", e, ' a operação')
+            
+            controle1 = false;
+            controle2 = true;
+            controle3 = false;
+            console.log('Alterou as variáveis de controle para');
+      
+            console.log('controle1', controle1);
+            console.log('controle2', controle2);
+            console.log('controle3', controle3);
+
+
+
+      } else {
+            // Operação if 01
+            if (controle1) {
+                        console.log('entrou adiciona operação if 01');
+
+                        display1.style.display = 'none';
+                        display2.style.display = 'inline'
+                        console.log("exibiu display2")
+
+                        x1 = display1;
+                        console.log("adicionou o valor de", x1, ' do display1 ao x1')
+                        
+                        operacao = e;
+                        console.log("adicionou o valor de", e, ' a operação')
+
+
+                        controle1 = false;
+                        controle2 = true;
+                        console.log('Alterou as variáveis de controle para');
                   
-                  operacao = e;
-                  console.log("adicionou o valor de", e, ' a operação')
+                        console.log('controle1', controle1);
+                        console.log('controle2', controle2);
+                        console.log('controle3', controle3);
+                  }
+            else {
+                        console.log('entrou adiciona operação if 02');
 
-
-                  controle1 = false;
-                  controle2 = true;
-                  console.log('Alterou as variáveis de controle para');
-                 
-                  console.log('controle1', controle1);
-                  console.log('controle2', controle2);
-                  console.log('controle3', controle3);
-            }
-      else {
-                  console.log('entrou adiciona operação if 02');
-
-                  display1.style.display = 'none';
-                  display2.style.display = 'none'
-                  display2.style.display = 'inline'
-                  y1 = display2;
-                  operacao = e;
-                  controle1 = false;
-                  controle2 = false;   
-                  console.log(x1,operacao,y1)
-                  console.log("exibiu display3");
-            }
+                        display1.style.display = 'none';
+                        display2.style.display = 'none'
+                        display2.style.display = 'inline'
+                        y1 = display2;
+                        operacao = e;
+                        controle1 = false;
+                        controle2 = false;   
+                        console.log(x1,operacao,y1)
+                        console.log("exibiu display3");
+                  }
+      }
       }
 
 
@@ -130,6 +168,9 @@ function calcula() {
       var intNovoValory = parseInt(novoValory);
       console.log(intNovoValory);
 
+      controle1 = false;
+      controle2 = false;   
+      controle3 = true;   
 
       switch (operacao) {
             case '+':
