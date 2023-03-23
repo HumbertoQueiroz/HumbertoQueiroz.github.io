@@ -11,26 +11,23 @@ var operacao;
 
 
 var display1 = document.getElementById('display1');
-var para1 = parseInt(display1.value);
-console.log('para1 puxado do displa1', para1);
-controle1 = true;
+var num1 = Number(display1.value);
+
 
 var display2 = document.getElementById('display2');
-var para2 = parseInt(display2.value);
-console.log('para2 puxado do display2', para2);
-controle2 = false;
+var num2 = Number(display2.value);
+
 
 var display3 = document.getElementById('display3');
-var para3 = parseInt(display3.value);
-console.log('para3 puxado do display3', para3);
-controle3 = false;
+var num3 = Number(display3.value);
 
 var display0 = document.getElementById('display0');
-var para0 = parseInt(display0.value);
+var num0 = parseInt(display0.value);
 
+var controle4 = true;
 
 function alteraDisplay() {
-      display1.style.display = 'flow';
+      display1.style.display = 'inline';
       display2.style.display = 'none';
       display3.style.display = 'none';
 }
@@ -38,58 +35,77 @@ function alteraDisplay() {
 alteraDisplay();
 
 function addNumeroDisplay(e) {
-   
-      if (controle1) {
-            console.log('adiciona numero entrou if 01');
-            if (para1 == 0) {
-                  HTMLTemporario = display1.innerHTML;
+
+   //If para alterar primeiro valor
+
+      if ( display1.style.display == 'inline') {
+            console.log('\n\n\nIf para alterar primeiro valor');
+            if (num1 == 0) {
+       
                   HTMLTNovo = e;
                   HTMLTemporario = HTMLTNovo;
                   display1.innerHTML = HTMLTemporario;
-                  para1 = display1.innerHTML
-                  console.log('para1.1 quando tem zero=', display1);      
+                  num1 = display1.innerHTML
+                  console.log('If valor anterior do num1 zero, novo =',display1.textContent);      
             } else {
-                  HTMLTemporario = display1.innerHTML;
+                 
                   HTMLTNovo = e;
                   HTMLTemporario = HTMLTemporario + HTMLTNovo;
                   display1.innerHTML = HTMLTemporario;
-                  console.log('para1.2 quando tem numero=', display1);
+                  console.log('If para valor anterior do num1 diferente de 0, novo valor = ', display1.textContent);
             };
       }
-      if (controle2) {
-              console.log('entrou 2', controle2);
-             if (para2 == 0) {
-                  HTMLTemporario = display2.innerHTML;
+      else if(display2.style.display == 'inline') {
+
+            //If para alterar segundo valor
+
+              console.log('\n\n\n If para alterar segundo valor');
+             if (Number(display2.textContent) == 0) {
+                
                   HTMLTNovo = e;
                   HTMLTemporario = HTMLTNovo;
                   display2.innerHTML = HTMLTemporario;
-                  para2 = display2.innerHTML
-                  console.log('para2.1 quando tem zero=', display2);
+                  num2 = display2.innerHTML
+                  console.log('num2.1 quando tem zero=', display2);
       
             } else {
-                  HTMLTemporario = display2.innerHTML;
+                
                   HTMLTNovo = e;
                   HTMLTemporario = HTMLTemporario + HTMLTNovo;
                   display2.innerHTML = HTMLTemporario;
-                  console.log('para2.2 quando tem numero=', display2);
+                  console.log('num2.2 quando tem numero=', display2);
             };
       }
 
-      console.log(operacao);
+     
 
 };
 
 function armazenaOperacao(e) {
-       // Operação if con valor anterior
-      if (controle3) {
-            console.log('entrou - operação com resultado anterior - controle3=true');
+       
+      //If operação continua
+
+      if (!num1==0 && !num2==0 && Number(display3.textContent)==0){
+            console.log('\n\n\nIf operação continua');
+            controle4=false;
+            calcula();
+            controle4=true;
 
 
-                  HTMLTemporario = display0.innerHTML;
-                  HTMLTNovo = 0;
-                  HTMLTemporario = HTMLTNovo;
-                  display2.innerHTML = HTMLTemporario;
-                  para2 = display2.innerHTML
+
+      }
+
+      //If Operação com valor anterior para num1
+
+      else if (display3.style.display == 'inline') {
+            console.log('\n\n\n If Operação com valor anterior para num1');
+
+
+                  
+            HTMLTNovo = 0;
+            HTMLTemporario = HTMLTNovo;
+            display2.innerHTML = HTMLTemporario;
+            num2 = display2.innerHTML
 
             display1.style.display = 'none';
             display2.style.display = 'inline'; 
@@ -102,74 +118,61 @@ function armazenaOperacao(e) {
             operacao = e;
             console.log("adicionou o valor de", e, ' a operação')
             
-            controle1 = false;
+            
             controle2 = true;
-            controle3 = false;
             console.log('Alterou as variáveis de controle para');
       
-            console.log('controle1', controle1);
-            console.log('controle2', controle2);
-            console.log('controle3', controle3);
 
+      } 
+      
+        // If Operação Inicial
 
+      else if (display1.style.display == 'inline') {
 
-      } else {
-            // Operação if 01
-            if (controle1) {
-                        console.log('entrou adiciona operação if 01');
+            console.log('\n\n\n If Operação Inicial');
 
-                        display1.style.display = 'none';
-                        display2.style.display = 'inline'
-                        console.log("exibiu display2")
+            display1.style.display = 'none';
+            display2.style.display = 'inline';
+            console.log("exibiu display2")
 
-                        x1 = display1;
-                        console.log("adicionou o valor de", x1, ' do display1 ao x1')
-                        
-                        operacao = e;
-                        console.log("adicionou o valor de", e, ' a operação')
+            x1 = display1;
+            console.log("adicionou o valor de", x1, ' do display1 ao x1')
+            
+            operacao = e;
+            console.log("adicionou o valor de", e, ' a operação')
+      
+      }
+      else {
+            console.log('entrou adiciona operação if 02');
 
-
-                        controle1 = false;
-                        controle2 = true;
-                        console.log('Alterou as variáveis de controle para');
+            display1.style.display = 'none';
+            display2.style.display = 'none'
+            display2.style.display = 'inline'
+            y1 = display2;
+            operacao = e;
+            
                   
-                        console.log('controle1', controle1);
-                        console.log('controle2', controle2);
-                        console.log('controle3', controle3);
-                  }
-            else {
-                        console.log('entrou adiciona operação if 02');
-
-                        display1.style.display = 'none';
-                        display2.style.display = 'none'
-                        display2.style.display = 'inline'
-                        y1 = display2;
-                        operacao = e;
-                        controle1 = false;
-                        controle2 = false;   
-                        console.log(x1,operacao,y1)
-                        console.log("exibiu display3");
-                  }
+            console.log(x1,operacao,y1)
+            console.log("exibiu display3");
       }
-      }
+}
+      
 
 
 
 function calcula() { 
-      console.log('xxx',x1);
       var valorX = x1;
       var novoValorX = valorX.textContent;
       var intNovoValorX = parseInt(novoValorX);
-      console.log(intNovoValorX);
+      console.log('valor x1',intNovoValorX);
 
 
       var valory = display2;
       var novoValory = valory.textContent;
       var intNovoValory = parseInt(novoValory);
-      console.log(intNovoValory);
 
-      controle1 = false;
-      controle2 = false;   
+      
+         
       controle3 = true;   
 
       switch (operacao) {
@@ -188,13 +191,24 @@ function calcula() {
             default:
       console.log('Operador inválido');
       }
-      
-      console.log(resultado);
-      display1.style.display = 'none';
-      display2.style.display = 'none'; 
-      display3.style.display = 'inline'; 
-      
-      display3.innerHTML = resultado;      
+
+      if(controle4)
+      {
+            console.log('\n\n\n\Operação normal',resultado);
+            display1.style.display = 'none';
+            display2.style.display = 'none'; 
+            display3.style.display = 'inline'; 
+            
+            display3.innerHTML = resultado;      
+      } else{
+            console.log('\n\n\n\Operação continua dentro do calcula',resultado);            
+            display1.style.display = 'none';
+            display2.style.display = 'inline'; 
+            display3.style.display = 'none'; 
+            
+            display1.innerHTML = resultado;
+            display2.innerHTML = 0;      
+      }
 }
 
 function limpa() {
@@ -205,9 +219,8 @@ function limpa() {
       display2.innerHTML = 0;
       display3.innerHTML = 0;
       controle1 = true;
-      controle2 = false;
-      controle3 = false;
-      para1 = 0;
-      para2 = 0;
+      
+      num1 = 0;
+      num2 = 0;
       operacao = ""
 }
