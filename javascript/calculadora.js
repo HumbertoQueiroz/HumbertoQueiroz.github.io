@@ -163,13 +163,13 @@ function armazenaOperacao(e) {
 function calcula() { 
       var valorX = x1;
       var novoValorX = valorX.textContent;
-      var intNovoValorX = parseInt(novoValorX);
+      var intNovoValorX = Number(novoValorX);
       console.log('valor x1',intNovoValorX);
 
 
       var valory = display2;
       var novoValory = valory.textContent;
-      var intNovoValory = parseInt(novoValory);
+      var intNovoValory = Number(novoValory);
 
       
          
