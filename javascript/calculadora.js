@@ -199,15 +199,26 @@ function calcula() {
             display2.style.display = 'none'; 
             display3.style.display = 'inline'; 
             
-            display3.innerHTML = resultado;      
+            if (Number.isInteger(resultado)) {
+                  display3.innerHTML = resultado;
+            }
+            else {
+                  display3.innerHTML = resultado.toFixed(5);
+            }
       } else{
             console.log('\n\n\n\Operação continua dentro do calcula',resultado);            
             display1.style.display = 'none';
             display2.style.display = 'inline'; 
             display3.style.display = 'none'; 
             
-            display1.innerHTML = resultado;
-            display2.innerHTML = 0;      
+            if (Number.isInteger(resultado)) {
+                  display1.innerHTML = resultado;
+                  display2.innerHTML = 0;
+            }
+            else {
+                  display1.innerHTML = resultado.toFixed(5);
+                  display2.innerHTML = 0;
+            }
       }
 }
 

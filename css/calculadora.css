@@ -6,7 +6,7 @@
     margin-top: 2rem;
     padding: 1rem;
     width: 25%;
-    background-color: rgba(169, 169, 169, 0.308);
+    background-color: rgb(24, 23, 23);
     border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
@@ -14,15 +14,16 @@
     min-width: 350px;
 }
 .display{
-    width: 70%;
-    height: auto;
-    background-color: rgb(255, 255, 255);
+    width: 75%;
+    height: 80px;
+    background-color: rgb(80, 77, 77);
+    color: white;
     border: none;
-    border-radius: 8px;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    border-radius: 15px;
+    margin: 1rem;
+    padding: 1rem;
     font-weight: bolder;
-    font-size: large;
+    font-size: 2.5rem;
     text-align: end;   
 }
 
@@ -51,12 +52,15 @@
 }
 
 .numero, .operacao{
-    width: 23%;
-    height: 40px;
-    margin: 5px;
-    font-size: medium;
+    width: 55px;
+    height: 55px;
+    margin: 8px;
+    font-size: 1.5rem;
     border: solid 1px black;
-    border-radius: 3px;
+    border-radius: 40px;
+    background-color: rgb(223, 219, 219);
+    
+
 }
 
 .numero:hover, .operacao:hover{
@@ -64,13 +68,14 @@ cursor: pointer;
 }
 
 .reset{
-    background-color: rgba(220, 20, 60, 0.705);
     color: white;
     border-radius: 3px;
+    border-radius: 50px;
+    
 }
 
 .operacao{
-    background-color: rgba(50, 87, 155, 0.5);
+    background-color: rgba(221, 156, 15, 0.966);
     color: white;
 }
 
@@ -79,6 +84,7 @@ address{
 }
 
 .igual{
-    background-color: rgba(255, 166, 0, 0.61);
+    background-color: rgb(221, 156, 15);
     font-weight: bold;
+    width: 100%;
 }
