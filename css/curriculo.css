@@ -1,0 +1,31 @@
+.background{
+    background-color: #040404;
+    color: #FFFFFF;
+}
+
+.circulos{
+    position: absolute;
+    left: -150px;
+    top: 150px;
+
+}
+
+.background__img{
+    background-image: url("https://humbertoqueiroz.github.io/imagens/neo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo1{
+    margin-top: 280px;
+}
+.titulo{
+    font-size: 3.5rem;
+}
+
+.nome{
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+}
+

@@ -88,3 +88,18 @@ address{
     font-weight: bold;
     width: 55%;
 }
+
+.home{
+    color: black;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 15px;
+}
+
+.link__home{
+    color: black;
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
