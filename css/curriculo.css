@@ -13,8 +13,14 @@
 .circulo2{
     position: absolute;
     left: -25%;
-    top: 75%;
+    top: 85%;
 
+}
+
+.circulos3{
+    position: absolute;
+    top: 320%;
+    left: -15%;
 }
 
 .background__img{
@@ -44,6 +50,7 @@
 
 .circulos2{
     position: absolute;
-    top: 160%;
+    top: 210%;
     left: 58%;
 }
+
