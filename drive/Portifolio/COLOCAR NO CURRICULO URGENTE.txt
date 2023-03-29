@@ -1,0 +1,3 @@
+COLOCAR NO CURRICULO: APRENDO SOBRE A METODOLOGIA ATOMIC DESIGN, que fala que tem que separar o css em arquivos menores para facilitar a manutenção do código.
+Padrão CAMAL CASE (escritaAssimParaVisualizar).
+Diferença entre Jpeg, Gif, Png, video e Svg.

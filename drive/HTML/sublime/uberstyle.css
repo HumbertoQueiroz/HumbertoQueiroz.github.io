@@ -1,0 +1,41 @@
+header{
+	background: #FFFFFF;
+	padding: 20px 0;
+}
+
+
+.caixa{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+h1 {
+	border-right: #CCCCCC;
+}
+
+
+h2 {
+	position: absolute;
+	top: 50px;
+	width: 100px;
+	display: inline;
+	font-size: 50px;
+	font-weight: bold;
+	margin: 0 0 0 500px;
+}
+
+main {
+	background: #000000;
+	color: #FFFFFF;
+	font-size:  25px;
+	text-align: center;
+	padding: 15px 200px;	
+}
+
+#missao{
+	font-weight: bold; 
+	font-size: 35px;
+	padding-bottom: 15px;
+}
+

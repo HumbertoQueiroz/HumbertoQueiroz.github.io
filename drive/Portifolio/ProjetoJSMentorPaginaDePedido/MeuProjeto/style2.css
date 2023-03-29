@@ -1,0 +1,108 @@
+.cor-de-fundo{
+    background: url("file:///C:/Users/Crysla%20Nolasco/OneDrive/%C3%81rea%20de%20Trabalho/Portifolio/ProjetoJSMentorPaginaDePedido/order-summary-component-main/images/pattern-background-desktop.svg") no-repeat;
+    background-color: hsl(225, 100%, 94%);;
+    padding: 2rem 1rem 2rem 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.caixa-do-painel{
+    background: #ffffff ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 1rem ;
+    width: 45%;
+    transform: translate(+50%);
+
+
+   
+    
+}
+
+.painel-logo{
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    padding-bottom: 1rem;
+}
+
+.painel-titulo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem .5rem;
+    color:  hsl(225, 8%, 20%);
+    text-align: center;
+}
+
+.painel-texto{
+    font-size: 1.25rem;
+    text-align: center;
+    color:  hsl(224, 23%, 55%);
+    padding: .5rem;
+    line-height: normal;
+   
+}
+
+.painel-do-valor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin: .5rem;
+    padding: .5rem;
+    background: hsl(225, 100%, 98%);
+    border-radius: 25px;
+    width: 80%;
+}
+
+.texto-mudar-de-plano, .caixa-valor-do-plano, .icone-musica{
+    
+    text-align: center;
+    margin:.4rem;
+    
+}
+
+.texto-valor-do-plano{
+    font-weight: bold;
+    margin: .2rem;
+    color:  hsl(225, 8%, 20%);
+    font-size: 1rem;
+    
+}
+
+.valor-do-plano{
+    color:  hsl(224, 23%, 55%);
+    
+}
+
+.texto-mudar-de-plano{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+.botao-pagamento{
+    border-radius: 15px;
+    color: hsl(225, 100%, 98%);
+    background: hsl(245, 75%, 52%);
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+    margin: .5rem;
+    font-weight: bold;
+    box-shadow: 0rem 1rem 3px black;
+}
+
+.botao-cancelar{
+    border-radius: 15px;
+    color: hsl(224, 23%, 55%);
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+    margin: .5rem;
+    font-weight: bold;
+   
+}
+

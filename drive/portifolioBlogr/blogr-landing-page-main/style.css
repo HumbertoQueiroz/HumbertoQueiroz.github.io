@@ -1,0 +1,50 @@
+.cabecario{
+	background:  url(file:///C:/Users/CAIO/Desktop/portifolioBlogr/blogr-landing-page-main/images/bg-pattern-intro.svg) top -1500px center ;
+	background-repeat: no-repeat;
+	background-color: hsl(356, 100%, 66%);
+	height: 400px;
+}
+
+}
+h1{
+	color: orange;
+}
+
+
+.menuSuspensoProdutos{
+	position: relative;
+    display: inline-block;
+}
+.subMenu{
+	display: none;
+    background-color: skyblue;
+    min-width: 200px;
+
+}
+
+.menuSuspensoProdutos:hover .subMenu{
+	display: block;
+}
+
+.botaoMenuBranco {
+	background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+
+}
+
+.botaoMenuBranco:hover{
+	background-color: blue;
+}
+
+
+.subMenu a {
+	color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+

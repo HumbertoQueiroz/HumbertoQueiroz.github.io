@@ -1,0 +1,28 @@
+header{
+	background: #fdf9f6;
+}
+.caixa{
+	position: relative;
+	width: 940px;
+	height: 240px;
+	margin: 0 auto;
+}
+.titulo{
+	font-size: 3em;
+	font-weight: bold;
+	display: inline-block;
+	color: #3928be;
+	width: 40%;
+	vertical-align: top;
+	text-align: center;
+	margin: 25px 0;
+	background: #3928be;
+	
+}
+
+.imagem-titulo{
+	display: inline-block;
+	height: auto; 
+    width: auto;  
+    max-height: 240px;;
+}

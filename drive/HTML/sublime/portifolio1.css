@@ -1,0 +1,72 @@
+.img{
+	width: 100%;
+	height: 350px;
+	vertical-align: middle;
+}
+
+.programador{
+	background: #FFFFFF;
+	font-size: 2em;		
+	color: #000000;
+	text-align: center;
+	padding: 50px 10px 50px 10px;
+	font-weight: bold;	
+}
+
+.programador:hover{
+	font-size: 2.2em;
+}
+
+.espaco-especialidades{
+	height: 250px;
+}
+.img-especialidades{
+	float: left;
+	width: 35%;
+	height: 240px;
+	margin-right: 2em;
+}
+.img-especialidades:hover{
+	width: 38%;
+	height: 250px;
+}
+
+.especialidades{
+	font-size: 2em;		
+	color: #000000; 
+	padding: 2em;
+}
+
+.img-acessibilidade{
+	width: 100px;
+	height:150px; 
+	float: right;
+	border-style: solid;
+	border-radius: 20px;
+	border-color: white;
+	border-width: 5px;
+	margin-right: 15px;
+}
+
+.ux{
+	background: #000000;
+	font-size: 2em;		
+	color: #FFFFFF;
+	padding: 10px;
+	height: 150px;
+}
+
+.ux:hover{
+	font-size: 2.2em;	
+}
+.text-ux{
+	padding: 40px 20px 0;
+}
+
+.contato{
+	background: #FFFFFF;
+	font-size: 2em;		
+	color: #000000;
+	padding: 10px;
+	height: 150px;
+}

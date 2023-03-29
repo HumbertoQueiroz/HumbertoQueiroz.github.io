@@ -1,0 +1,43 @@
+TIPOS PRIMITIVOS
+
+int (números inteiros 0,1,2,3,... -1,-2,-3...)
+float (números flutuantes ou reais 4.5, 0.076, 0.5615415, 7.0, -12.31151....)
+bool (True (verdadeira) ou False (falso))
+str (palavras, letras etc, 'caio', '7.5')
+como saber qual tipo um dado é? (digite: print(type(...))
+
+OPERAÇÕES ARITIMETICAS
+
++ Adição
+- Subtração
+* Multiplicação
+/ Divisão
+** ou "pow" Potencia (ex.:  5 elevado a 2 = 25, ecreve: "5**2=25")
+// Divisão inteirra (ignora numeros depois da virgula, tipo seria 5/2=2.5, mas sai assim ex 5/2 = 2)
+%  Resto da Divisão (usa só o número que resta na divisão ex 5/2 = 1)
+Raíz quadrada (escreve um numero e potencializa ele a meio, ex: 81**(1/2)=9.0)
+Raíz cubica ((escreve um numero e potencializa ele a um terço, ex: 127**(1/3)=5.0265...)
+
+
+ORDEM DE PRECEDÊNCIA
+
+1 ()
+2 **
+3 *, /, //, %
+4 +, -
+
+
+"PRINT"
+
+\n para quebrar a escrita para a proxima linha no resultado
+end='' para conequitar dois print em uma só linha no resultado
+
+
+COMO LIMITAR AS CASA DECIMAIS DEPOS DO PONTO
+
+Digite: :.2f
+
+COMO CRIAR UMA LISTA
+
+[]
+

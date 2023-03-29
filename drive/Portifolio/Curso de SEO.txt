@@ -1,0 +1,5 @@
+Quantidades de pesquisas feitas no google no dia (https://www.internetlivestats.com/google-search-statistics/)
+Fatores de rankeamento do google (https://backlinko.com/google-ranking-factors)
+
+Google Search Insight (ferramenta para obter mais palavras chaves)(é no proprio google, quando digita uma palavra aparece outras de sugestão(MUITO ÚTIL e simples))
+Google trends (para comparar as palavras chave e ver qual é a mais buscada) (https://trends.google.com.br/trends/)
