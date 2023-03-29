@@ -1,0 +1,57 @@
+.background{
+    background-color: #040404;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.circulos{
+    position: absolute;
+    left: -200px;
+    top: 110px;
+}
+
+.circulo2{
+    position: absolute;
+    left: 20%;
+    top: 75%;
+
+}
+
+.circulos3{
+    position: absolute;
+    top: 320%;
+    left: -180px;
+}
+
+.background__img{
+    background-image: url("https://humbertoqueiroz.github.io/imagens/HumbertoQueirozPetroBranco.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.titulo1{
+    margin-top: 265px;
+}
+.titulo{
+    font-size: 3rem;
+}
+
+.nome{
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    text-underline-offset: 0.5rem;
+}
+
+.linha{
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+}
+
+.circulos2{
+    position: absolute;
+    top: 180%;
+    right: -10%;
+}
+
