@@ -6,13 +6,13 @@
 
 .circulos{
     position: absolute;
-    left: -150px;
+    left: -200px;
     top: 110px;
 }
 
 .circulo2{
     position: absolute;
-    left: -25%;
+    left: 20%;
     top: 75%;
 
 }
@@ -20,7 +20,7 @@
 .circulos3{
     position: absolute;
     top: 320%;
-    left: -15%;
+    left: -180px;
 }
 
 .background__img{
@@ -28,6 +28,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 500px;
 }
 
 .titulo1{
@@ -50,7 +51,7 @@
 
 .circulos2{
     position: absolute;
-    top: 210%;
-    left: 58%;
+    top: 180%;
+    right: -10%;
 }
 
