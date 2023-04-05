@@ -1,0 +1,27 @@
+
+.container__botao, .container__para{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.container__para{
+    font-size: 2rem;
+}
+
+button{
+    margin-top: 250px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+button:hover{
+    font-size: 1.7rem;
+    padding: 12px;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+}
