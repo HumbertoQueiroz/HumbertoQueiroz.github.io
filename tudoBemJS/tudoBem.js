@@ -12,7 +12,6 @@ function alerta() {
            para.innerHTML = novoTexto;
      
     }
-    console.log(tudoBem);
     
 }
 
