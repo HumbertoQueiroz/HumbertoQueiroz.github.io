@@ -7,7 +7,7 @@ function alerta() {
     if (tudoBem) {
         var novoTexto = 'Que bom '+nome+', espero que seu dia continue bem!<br><br> =D';
         para.innerHTML = novoTexto;
-    } if else {
+    } else if (tudoBem==false){
            var novoTexto = 'Que pena '+nome+', espero que seu dia melhore! <br><br> ;-;';
            para.innerHTML = novoTexto;
      }
