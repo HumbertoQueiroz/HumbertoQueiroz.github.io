@@ -5,7 +5,7 @@ function alerta() {
     alert('Olá! Sou o  desenvolvedor Humberto Queiroz. Que bom ver você aqui!');
     nome = prompt('Qual o seu nome?');
     var tudoBem = confirm("Tudo bem com você?");
-    if (nome=='null') {
+    if (nome==null) {
         var novoTexto = 'Que pena que você não quer se identificar, espero que na próxima você sinta-se mais avontade para dizer seu nome. <br><br> U+1F600';
            para.innerHTML = novoTexto; 
         }
