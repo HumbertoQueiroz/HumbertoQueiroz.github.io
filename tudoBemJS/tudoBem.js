@@ -9,6 +9,7 @@ function alerta() {
     if (nome==null) {
         var novoTexto = 'Que pena que você não quer se identificar, espero que na próxima você sinta-se mais avontade para dizer seu nome. <br><br>-_-';
            para.innerHTML = novoTexto; 
+           para2.innerHTML='';
         }
     else {
             if(tudoBem) {
@@ -19,6 +20,7 @@ function alerta() {
             } else {
                    var novoTexto = 'Que pena '+nome+', espero que seu dia melhore! <br><br> ;-;';
                    para.innerHTML = novoTexto;
+                   para2.innerHTML='';
      }
     }
 }
