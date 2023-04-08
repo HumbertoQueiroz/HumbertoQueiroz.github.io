@@ -1,13 +1,26 @@
 
-.container__botao, .container__para{
-    width: 100%;
+.container__botao{
+    width: 90%;
     display: flex;
     justify-content: center;
     padding: 3rem;
 }
 
-.container__para{
+.container__para, .container__para2{
     font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.p1{
+    width: 60%;
+}
+.p2{
+    width: 60%;
+    text-align: center;
+    transform: rotate(90deg);
 }
 
 button{
