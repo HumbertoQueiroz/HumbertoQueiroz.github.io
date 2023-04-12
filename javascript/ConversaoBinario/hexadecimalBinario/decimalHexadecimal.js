@@ -1,7 +1,12 @@
 var para = document.querySelector('.p1');
 
 var result='';
+var input;
 var inputNumber;
+var hex1 = '';
+var hex2 = '';
+
+
 
 function alerta() {
     input = document.getElementById('botao').value;
@@ -20,10 +25,15 @@ function alerta() {
 
 
     while (inputNumber > 0) {
-        result = (inputNumber % 2)+result;
-        inputNumber = Math.floor(inputNumber / 2);
-
-        para.innerHTML = 'O valor '+input+' convertido para binário é '+result+'.';
+        hex1 = Math.floor(inputNumber / 16);
+        hex2 = inputNumber % 16;
+        console.log(hex1);
+        console.log(hex2);
+        
+        
+        //result = (inputNumber % 2) + result;
+        //inputNumber = Math.floor(inputNumber / 2);
+        //para.innerHTML = 'O valor '+input+' convertido para binário é '+result+'.';
     }
 }
 
