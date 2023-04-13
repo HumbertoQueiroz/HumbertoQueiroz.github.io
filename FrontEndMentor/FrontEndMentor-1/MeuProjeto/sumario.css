@@ -1,0 +1,56 @@
+html{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+}
+
+main{
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    border-radius: 0px 0px 80px 80px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main p {
+    opacity: 50%;
+    padding: 15px;
+    text-align: center;
+}
+h3{
+    opacity: 50%;
+}
+
+.circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 250px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+
+.circulo__numeroGrande{
+font-size: 4rem;
+font-weight: bold;
+}
+
+.circulo__numeroPequeno{
+    opacity: 50%;
+    font-size: 18px;
+    
+}
