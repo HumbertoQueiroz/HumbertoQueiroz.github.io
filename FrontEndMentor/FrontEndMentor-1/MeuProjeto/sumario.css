@@ -3,6 +3,10 @@ html{
     font-size: 18px;
 }
 body{
+margin: 0px;
+padding: 0px;
+}
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +28,7 @@ main{
 }
 
 main p {
-    opacity: 70%;
+    opacity: 60%;
     padding: 5px;
     text-align: center;
     margin: 0px 30px 30px 30px;
@@ -51,7 +55,7 @@ font-weight: bold;
 }
 
 .circulo__numeroPequeno{
-    opacity: 50%;
+    opacity: 40%;
     font-size: 18px;
     
 }
@@ -89,6 +93,10 @@ h4{
     margin-bottom: 10px;
 }
 
+.container__sumario__item:hover, button:hover, .circulo{
+    cursor: pointer;
+}
+
 .container__sumario__item__texto{
     display: flex;
     flex-direction: row;
@@ -123,18 +131,94 @@ img{
 }
 
 span{
-    opacity: 50%;
+   color: hsl(0, 2%, 62%)
 }
 
+.container__botao{
+    width: 100%;
+}
 
 button{
-    width: 85%;
+    width: calc(100% - 50px);
     background-color: hsl(224, 30%, 27%);
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%, 0.9);
     border-radius: 25px;
     margin: 5px;
-    padding: 10px;
+    padding: 15px;
     font-size: 1rem;
     font-weight: bold;
 
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 50px; 
+    margin-bottom: 5px; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (min-width: 760px) {
+    
+    body{
+        padding: 15% 10% 10% 10% ;
+        width: 80%;
+        background-color: #ffffff;
+
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 35px;
+        box-shadow:
+        0.9px 1.2px 3px -13px rgba(0, 0, 0, -0.016),
+        2.3px 3px 6.9px -13px rgba(0, 0, 0, -0.022),
+        4.6px 6.2px 12.9px -13px rgba(0, 0, 0, -0.012),
+        9.5px 12.8px 24.4px -13px rgba(0, 0, 0, 0.036),
+        26px 35px 61px -13px rgba(0, 0, 0, 0.22);
+    }
+
+    main{
+        border-radius: 35px;
+
+    }
+
+    h4{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .container__sumario{
+        padding: 0px 15px 0 15px;
+    }
+
+    .container__sumario__item{
+        margin-right: 0px;
+    }
+
+    button{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    body{
+            padding: 10% 0% 25% 25% ;
+            width: 50%;
+            background-color: #ffffff;
+
+        }
+    
+    .container{
+        height: 450px;
+    }
+    main{
+        height: 96%;
+    }
 }
