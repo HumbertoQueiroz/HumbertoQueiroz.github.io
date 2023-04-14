@@ -24,9 +24,10 @@ main{
 }
 
 main p {
-    opacity: 50%;
-    padding: 15px;
+    opacity: 70%;
+    padding: 5px;
     text-align: center;
+    margin: 0px 30px 30px 30px;
 }
 h3{
     opacity: 50%;
@@ -53,4 +54,87 @@ font-weight: bold;
     opacity: 50%;
     font-size: 18px;
     
+}
+
+h1{
+    margin: 3px;
+}
+
+section{
+    width: 100%;
+}
+
+.container__sumario{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #262F3E
+}
+
+.container__sumario__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    margin-left: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container__sumario__item__texto{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    margin: 10px;
+}
+
+.reacao {
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%, 0.10);
+}
+
+.memoria {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%, 0.10);
+}
+
+.verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, .10);
+}
+
+.visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.10);
+}
+
+.container__sumario__item__numero {
+    color: black;
+}
+
+span{
+    opacity: 50%;
+}
+
+
+button{
+    width: 85%;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+
 }
