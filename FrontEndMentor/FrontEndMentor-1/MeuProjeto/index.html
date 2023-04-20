@@ -90,7 +90,11 @@
         let dadosJson = document.querySelector("#dados");
         fetch("data.json").then((response) => {
             response.json().then((dados) => {
-                console.log(dados);
+                dados.usuarios.map((usuario)=> {
+
+                    dadosJson.innerHTML += usuario.category;
+                })
+              
             })
         })
     </script>
