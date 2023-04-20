@@ -3,12 +3,12 @@
 
 [
   {
-    "category": "Reaction",
+    "category": "Reação",
     "score": 80,
     "icon": "./assets/images/icon-reaction.svg"
   },
   {
-    "category": "Memory",
+    "category": "Memória",
     "score": 92,
     "icon": "./assets/images/icon-memory.svg"
   },

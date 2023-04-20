@@ -1,6 +1,7 @@
 html{
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
+    
 }
 body{
 margin: 0px;
@@ -128,9 +129,13 @@ img{
 
 .container__sumario__item__numero {
     color: black;
+    display: flex;
+    flex-direction: row;
+
 }
 
 span{
+    margin-left: 10px;
    color: hsl(0, 2%, 62%)
 }
 
@@ -159,6 +164,68 @@ button{
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+#dados{
+    height: 100px;
+    width: 350px;
+    background-color: #ffffff;
+    border: solid 2px rgba(0, 0, 0);
+    border-radius: 25px;
+    position: absolute;
+    padding-top: 55px;
+    transform: translate(-40px,-180px);
+    text-align: center; 
+    
+
+    display: none;
+}
+
+#dados svg{
+    transform: translate(155px, -75px);
+    width: 25px;
+    height: 25px;
+
+    
+   
+}
+
+#dados svg:hover{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    opacity: .8;
+}
+
+.opacidade{
+    opacity: 100%;
+}
+@media screen and (min-width: 375px) {
+
+    #dados{
+        transform: translate(-35px,-180px);
+    }
+}
+
+@media screen and (min-width: 412px) {
+
+    #dados{
+        transform: translate(-15px,-180px);
+    }
+}
+
+@media screen and (min-width: 414px) {
+
+    #dados{
+        transform: translate(-10px,-180px);
+    }
+}
+
+@media screen and (min-width: 540px) {
+
+    #dados{
+        transform: translate(50px,-180px);
+    }
 }
 
 
@@ -204,6 +271,9 @@ button{
 
     button{
         width: 100%;
+    }
+    #dados{
+        transform: translate(-150px,-180px);
     }
 }
 
