@@ -88,17 +88,6 @@
     </div>
 
     <div id="dados"></div>
-    <script>
-        let dadosJson = document.querySelector("#dados");
-        fetch("data.json").then((response) => {
-            response.json().then((dados) => {
-                dados.usuarios.map((usuario)=> {
-
-                    dadosJson.innerHTML += usuario.score;
-                })
-              
-            })
-        })
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
