@@ -3,7 +3,7 @@ fetch("data.json").then((response) => {
     response.json().then((dados) => {
         dados.usuarios.map((usuario)=> {
 
-            dadosJson.innerHTML += usuario.score;
+            dadosJson.innerHTML += '<div> ${usuario.category} <div> <div> ${usuario.score} <div>';
         })
       
     })
