@@ -77,10 +77,22 @@
                     <button>Continue</button>
                 </div>
             </div>
+            <div id="dados">
+
+
+            </div>
         </section>
     </div>
     <div class="attribution">
         Veja a inspiração para esse desafio no <a href="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV" target="_blank">Frontend Mentor</a>, código desenvolvido por <a href="https://humbertoqueiroz.github.io/">Humberto Queiroz</a>.
     </div>
+    <script>
+        let dadosJson = document.querySelector("#dados");
+        fetch("data.json").then((response) => {
+            response.json().then((dados) => {
+                console.log(dados);
+            })
+        })
+    </script>
 </body>
 </html>
