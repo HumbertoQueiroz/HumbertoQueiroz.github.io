@@ -18,17 +18,35 @@ int main (){
             printf("%d, ", a[i]);
     }
 
-        printf("\nNúmeros positivos: ");
+        printf("\n\nNúmeros positivos: ");
 
     for (int i = 0; i < SIZE; ++i){
-           if(a[i]>0) printf("%d, ", a[i]);
+           if(a[i]>0) {
+                printf("%d, ", a[i]);
+                d++;
+            }
     }
+    printf("\n%d São positivos.\n",d);
+    d=0;
     
     printf("\nNúmeros negativos: ");
 
     for (int i = 0; i < SIZE; ++i){
-           if(a[i]<0) printf("%d, ", a[i]);
+           if(a[i]<0) {
+                printf("%d, ", a[i]);
+                d++;
+            }
     }
+     printf("\n%d São negativos.\n",d);
+     d=0;
 
+    for (int i = 0; i < SIZE; ++i){
+               if(a[i]==0) {
+                    d++;
+                }
+        }
+    if(d>0){
+        printf("\n%d números nulos ou negativos", d);
+    }
     return 0;
 }
