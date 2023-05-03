@@ -1,0 +1,57 @@
+
+.container__botao{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container__para, .container__para2{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.p1{
+    width: 60%;
+}
+.p2{
+    width: 60%;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.input{
+    width: 50%;
+    margin-top: 2%;
+    border: solid 1px #d4d4d4f1;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    min-width: 340px;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+
+button:hover{
+    font-size: 1.7rem;
+    padding: 12px;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+}
