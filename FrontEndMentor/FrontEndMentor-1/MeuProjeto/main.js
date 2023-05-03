@@ -13,6 +13,8 @@ let divNumero3 = document.querySelector("#numero3");
 let divNome4 = document.querySelector("#nome4");
 let divNumero4 = document.querySelector("#numero4");
 
+let resultado= document.querySelector('.circulo__numeroGrande');
+
 fetch("data.json").then((response) => {
     response.json().then((dados) => {
         
@@ -26,9 +28,13 @@ fetch("data.json").then((response) => {
         divNumero3.innerHTML = dados.usuarios[2].score + divNumero3.textContent;
        
         divNome4.innerHTML += dados.usuarios[3].category;
-        divNumero4.innerHTML = dados.usuarios[3].score + divNumero4.textContent;      
+        divNumero4.innerHTML = dados.usuarios[3].score + divNumero4.textContent;   
+        
+        total = parseInt((dados.usuarios[0].score+dados.usuarios[1].score+dados.usuarios[2].score+dados.usuarios[3].score)/4);
+        resultado.innerHTML += total;
     })
 })
+
 
 function alerta() {
     divDados.style.display = 'inline';

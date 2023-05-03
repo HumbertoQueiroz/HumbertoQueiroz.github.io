@@ -1,16 +1,18 @@
-# Frontend Mentor - Results summary component
+# Desafio do Frontend Mentor - Sumário
 
-![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
+![Veja o designer base para esse desafio em:](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
 
-## Welcome! 👋
+## Oi, bem-vindo! 👋
 
-Thanks for checking out this front-end coding challenge.
+Eu sou `Humberto Queiroz` desenvolvedor Web Front-End, estudo por conta própria programação a 2 anos, faço o curso Técno em Análise de Desenvolvimento de Sistemas-TADS no IFMT e tenho meu próprio site hospedado no Github.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+**Venha conhecer meus projetos** 
+[https://humbertoqueiroz.github.io/] 
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+## Sobre o desafio
 
-## The challenge
+Desafio de copiar o designer de forma fiel, coloquei mais algumas funcionalidades para deixar mais dinámico, pego informações do `data.json` para preencher os campos de resultado geral e de cada categoria.  
+
 
 Your challenge is to build out this results summary component and get it looking as close to the design as possible.
 
