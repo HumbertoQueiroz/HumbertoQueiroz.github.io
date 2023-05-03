@@ -155,14 +155,14 @@ button{
 
 }
 
-.attribution {
+.flooter {
     font-size: 11px; 
     text-align: center; 
     margin-top: 50px; 
     margin-bottom: 5px; 
 }
 
-.attribution a { 
+.flooter a { 
     color: hsl(228, 45%, 44%); 
 }
 

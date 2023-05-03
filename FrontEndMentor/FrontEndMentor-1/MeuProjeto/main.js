@@ -1,5 +1,5 @@
 let divDados = document.querySelector("#dados");
-let opacidade = document.querySelector(".opacidade")
+let opacidade = document.querySelectorAll(".opacidade")
 
 let divNome1 = document.querySelector("#nome1");
 let divNumero1 = document.querySelector("#numero1");
@@ -38,12 +38,23 @@ fetch("data.json").then((response) => {
 
 function alerta() {
     divDados.style.display = 'inline';
-    opacidade.style.opacity = '60%';
-    opacidade.style.curso = 'hover'
+
+    opacidade.forEach(function (opacidade) {
+        opacidade.style.opacity = '60%';
+        opacidade.addEventListener("mouseover", function() {
+            opacidade.style.cursor = "auto";
+        });
+
+    })
 
 }
 
 function fecha(){
     divDados.style.display = 'none';
-     opacidade.style.opacity = '';
+        opacidade.forEach(function (opacidade) {
+            opacidade.style.opacity = '';
+            opacidade.addEventListener("mouseover", function() {
+                opacidade.style.cursor = "pointer";
+            });
+        })
 }
