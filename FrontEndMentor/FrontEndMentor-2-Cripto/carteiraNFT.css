@@ -26,7 +26,7 @@ html{
     background-color: hsl(178, 100%, 50%);   
 }
 
-.container__margin__container:hover, h1:hover, footer span:hover, footer img:hover{
+.container__margin__container:hover, h1:hover, footer span:hover, footer img:hover, .footer a:hover{
     cursor: pointer;
     color: hsl(178, 100%, 50%);
     border-color: hsl(178, 100%, 50%);
@@ -56,6 +56,7 @@ h1{
     color: hsl(0, 0%, 100%);
     font-weight: 400;
     margin-top: 20px;
+    display: inline-block;
 }
 
 h2{
@@ -103,10 +104,111 @@ footer span{
 
 .footer{
     text-align: center;
+    padding: 0 3%;
 }
 
 .footer a {
-    opacity: 50%;
-    cursor: pointer;
+    color: hsl(0, 0%, 100%);
     padding-bottom: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .container{
+        width: 65%;
+        margin: 5% 17.5%;
+    }
+    .footer{
+        width: 65%;
+        margin-left: 17.5%;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .container{
+        width: 55%;
+        margin: 5% 22.5%;
+    }
+    .footer{
+        width: 55%;
+        margin-left: 22.5%;
+    }    
+}
+
+@media screen and (min-width: 650px) {
+    .container{
+        width: 50%;
+        margin: 5% 25%;
+    }
+    .footer{
+        width: 50%;
+        margin-left: 25%;
+    }    
+}
+
+@media screen and (min-width: 700px) {
+    .container{
+        width: 45%;
+        margin: 4% 27.5%;
+    }
+    .footer{
+        width: 45%;
+        margin-left: 27.5%;
+    }    
+}
+
+@media screen and (min-width: 800px) {
+    .container{
+        width: 40%;
+        margin: 6% 35%;
+    }
+    .footer{
+        width: 40%;
+        margin-left: 35%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container{
+        width: 35%;
+        margin: 4% 37.5%;
+    }
+
+    .footer{
+        width: 35%;
+        margin-left: 37.5%;
+}
+
+}
+
+@media screen and (min-width: 1000px) {
+    .container{
+        width: 30%;
+        margin: 4% 37.5%;
+    }
+    .footer{
+        width: 30%;
+        margin-left: 37.5%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .container{
+        width: 27%;
+        margin: 4% 36.5%;
+    }
+    .footer{
+        width: 27%;
+        margin-left: 36.5%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 25%;
+        margin: 3.5% 37.5%;
+    }
+    .footer{
+        width: 25%;
+        margin-left: 37.5%;
+    }
 }
