@@ -11,6 +11,10 @@ animation-name: pisca;
     }
 }
 
+#container{
+    height: 100vh;
+}
+
 .projetos__card__texto{
     height:130px;
     overflow: auto;
