@@ -15,6 +15,10 @@ animation-name: pisca;
     height: 100vh;
 }
 
+.bg-carossel{
+    background-color: #edfaff;
+}
+
 .projetos__card__texto{
     height:130px;
     overflow: auto;
