@@ -2,6 +2,12 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
+header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
 .containerTopo{
     background-color: #0e315d;
     color: white;
@@ -49,6 +55,7 @@ svg:hover {
     transition: 1s;
 }
 
+
 .containerRedesSociais{
     padding: 10px 20px;
     border: 2px solid rgb(72,203,255,.0);
@@ -68,12 +75,13 @@ svg:hover {
     border-bottom: 2px double rgb(72,203,255);
 }
 
+/* -------- Sobre mim ---------*/
 .containerApresentacao{
     font-weight: 400;
     font-size: 2.5rem;
     color: #0d519b;
     text-align: center;
-    padding: 15vh;
+    padding: 25vh 5vh 5vh 15vh;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(30,173,255,1) 100%);
 }
@@ -110,7 +118,52 @@ svg:hover {
 }
 
 .containerSobremim{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 200px;
+    align-items: center;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-250px);
+              transform: translateX(-250px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-250px);
+              transform: translateX(-250px);
+    }
+  }
+
+.containerSobremim h2{
+    width: 80%;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #0d519b;
+    margin-right: 50px;
+}
+
+.containerSobremim a {
+    color: #5eaafc;
+}
+
+.containerSobremim img{
+    border-radius: 100px;
 }
 
 
