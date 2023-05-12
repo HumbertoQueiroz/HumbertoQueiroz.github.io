@@ -247,6 +247,40 @@ svg:hover {
   line-height: 1.5;
 }
 
+#button__html, #button__css, #button__js, #button__bootstraps{
+ animation-name: slides;
+}
+
+#button__html{
+   animation-duration: 8s;
+}
+
+#button__css{
+   animation-duration: 6s;
+}
+
+#button__js{
+   animation-duration: 4s;
+}
+
+#button__bootstraps{
+   animation-duration: 2s;
+}
+
+
+
+
+@keyframes slides {
+  0%{
+    transform: translateX(-250px);
+  }
+
+  100%{
+     transform: translateX(0);
+  }
+}
+
+
 #descricao__html{
   display: inline;
 }
@@ -262,6 +296,59 @@ svg:hover {
 #descricao__bootstraps{
 display: none;
 }
+
+#container__carosel{
+  display: flex;
+  flex-direction: column;
+}
+
+.container__projeto{
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  justify-content: space-around;
+}
+
+
+.container__projeto a{
+  width: 50%;
+}
+
+.container__projeto a img{
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.container__projeto__descricao__titulo{
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 15px;
+}
+
+.container__projeto__descricao__tags{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container__projeto__descricao__tags p {
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  background-color: #48cbff;
+  width: 50%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.container__projeto__descricao{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
 
 
 

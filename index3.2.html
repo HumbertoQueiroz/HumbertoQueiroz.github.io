@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   </head>
 <div class='containerInicial'>
-  <body>
+<body>
     <header>
         <!-- Menu do topo-->
         <div class='containerTopo'>
@@ -34,9 +34,9 @@
             <!--Menu de navegacao-->
             <nav>
                 <div class='containerNav'>
-                    <a href="#sobreMim" class=''>Sobre mim</a>
-                    <a href="#conhecimentos" class=''>Conhecimentos</a>
-                    <a href="#" class=''>Projetos</a>
+                    <a href="#sobreMim" >Sobre mim</a>
+                    <a href="#conhecimentos">Conhecimentos</a>
+                    <a href="#projetos">Projetos</a>
                     <a href="#" class=''>Contato</a>
                 </div>
             </nav>  
@@ -49,53 +49,76 @@
             </div>  
         </div>
     </header>
-    <body>
-        <main>
-            
-            <!-- Apresentação-->
-            <div class="containerApresentacao" id='sobreMim' >
-                <h1>Olá! Sou <span class='containerApresentacao__nome'>Humberto Queiroz</span>, desenvolvedor Web Front-End.</h1>
-            </div>
-            
-            <!-- Sobre mim --->
-            <div class='containerSobremim'>
-                <h2>Sou apaixonado por programação, comecei a estudar por conta própria vendo vídeos e fóruns na internet, fiz alguns <a href='#' title='Currículo e Certificações'>cursos de programação</a> e atualmente curso faculdade de Técnico em Análise e Desenvolvimento de Sistemas-TADS no IFMT.</h2>
+    
+    <main>
+        
+        <!-- Apresentação-->
+        <div class="containerApresentacao" id='sobreMim' >
+            <h1>Olá! Sou <span class='containerApresentacao__nome'>Humberto Queiroz</span>, desenvolvedor Web Front-End.</h1>
+        </div>
+        
+        <!-- Sobre mim --->
+        <div class='containerSobremim'>
+            <h2>Sou apaixonado por programação, comecei a estudar por conta própria vendo vídeos e fóruns na internet, fiz alguns <a href='#' title='Currículo e Certificações'>cursos de programação</a> e atualmente curso faculdade de Técnico em Análise e Desenvolvimento de Sistemas-TADS no IFMT.</h2>
 
-                <img src="imagens/HumbertoQueirozPetroBranco.jpg" alt="Foto do Devesenvolvedor / Programador Humberto Queiroz" width='200px' height='200px' title='Humberto Queiroz'>
-            </div>
+            <img src="imagens/HumbertoQueirozPetroBranco.jpg" alt="Foto do Devesenvolvedor / Programador Humberto Queiroz" width='200px' height='200px' title='Humberto Queiroz'>
+        </div>
 </div>
-              
-            <!-- Conhecimentos --->
-            <div class='containerMargin'>
-                <h3 class='titulo' id='conhecimentos'>Conhecimentos</h3>
-                <div class='containerConhecimentos'>
-                    <div class='containerConhecimentos__button'>
-                        <button id='button__html' onclick="exibeDescricao('html')">HTML5</button>
-                        <button id='button__css' onclick="exibeDescricao('css')">CSS3</button>
-                        <button id='button__js' onclick="exibeDescricao('js')">JavaScript</button>
-                        <button id='button__bootstraps' onclick="exibeDescricao('bootstraps')">Bootstraps</button>
-                    </div>
-                    <div class='containerConhecimentos__descricao'>
-                        <p id='descricao__html'>HTML semântico e metha tags para rankeamento de SEO, como Keywords para palavras chave, description para identificar o texto que vai aparecer no resutado da busca após o link do site, robots para indicar que deve ser indexado em buscas, canonical para definir o link canonico.</p>
-                        <p id='descricao__css'>CSS para estilização do layout como animações, boxshadow, fontes, manipulação de elementos com o evento hover do mouse, position fixed para manter o menu no topo, display e visibility para mostar e esconder elementos e para responsividade utilizei  Flexbox e @mediaquery. <br> Utilizado <strong style='font-weight: 500;'>Metodologia BEM</strong> para nomeação e organização das classes.</p>
-                        <p id='descricao__javascript'>JavaScript para manipulação de atributos e elementos do html, alteração de propriedades como display, visibility, dando uma interatividade e tornando a página dinâmica, etc...</p>
-                        <p id='descricao__bootstraps'>Framework BootStraps, para produtividade utilizando elementos e classes  pré-prontos diminuindo o tempo de criação de um projeto.</p>
+            
+        <!-- Conhecimentos --->
+        <div class='containerMargin'>
+            <h3 class='titulo' id='conhecimentos'>Conhecimentos</h3>
+            <div class='containerConhecimentos'>
+                <div class='containerConhecimentos__button'>
+                    <button id='button__html' onclick="exibeDescricao('html')">HTML5</button>
+                    <button id='button__css' onclick="exibeDescricao('css')">CSS3</button>
+                    <button id='button__js' onclick="exibeDescricao('js')">JavaScript</button>
+                    <button id='button__bootstraps' onclick="exibeDescricao('bootstraps')">Bootstraps</button>
+                </div>
+                <div class='containerConhecimentos__descricao'>
+                    <p id='descricao__html'>HTML semântico e metha tags para rankeamento de SEO, como Keywords para palavras chave, description para identificar o texto que vai aparecer no resutado da busca após o link do site, robots para indicar que deve ser indexado em buscas, canonical para definir o link canonico.</p>
+                    <p id='descricao__css'>CSS para estilização do layout como animações, boxshadow, fontes, manipulação de elementos com o evento hover do mouse, position fixed para manter o menu no topo, display e visibility para mostar e esconder elementos e para responsividade utilizei  Flexbox e @mediaquery. <br> Utilizado <strong style='font-weight: 500;'>Metodologia BEM</strong> para nomeação e organização das classes.</p>
+                    <p id='descricao__javascript'>JavaScript para manipulação de atributos e elementos do html com utilização de eventos como onclick para ativar funções, seletores como querySelector e GetElementById para selecionar elementos e alterar propriedades como display, visibility, color, fontWeight dando uma interatividade e tornando a página dinâmica, etc...</p>
+                    <p id='descricao__bootstraps'>Framework BootStraps, para produtividade utilizando elementos e classes  pré-prontos diminuindo o tempo de criação de um projeto.</p>
 
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Projetos -->
+        <h3 class='titulo' id='projetos'>Projetos</h3>
+        <div class='containerMargin' id='contaniner__carosel'>
+            <div class='container__projeto'>
+                <a href="FrontEndMentor/FrontEndMentor-2-Cripto/index.html"><img src="imagens/imgCarteiraCripto.png" alt="Imagem do layout do projeto Carteira Cripto"></a>
+                <div class='container__projeto__descricao'>
+                    <p class='container__projeto__descricao__titulo'> Apeperia Alura</p>
+                    <div class='container__projeto__descricao__tags'>
+                        <p>HTML5</p>
+                        <p>CSS3</p>
                     </div>
+                    <p>Site desenvolvido para treinar CSS, flexbox, adaptabilidade Web, Mobile e tablete</p>
+
 
                 </div>
             </div>
-                <h3 class='titulo'>Projetos</h3>
-
-
-                <h2 class='col-12 mt-3'>Estou focado em ser um desenvolvedor Front-End, esta página tem o intuito de mostrar alguns <a href='#'>Projetos que desenvolvi</a> e <a href='#'>ferramentas e linguagens</a> que domino.</h2>
 
 
 
 
-        </main>
-        <footer>
-        </footer>
-        <script src="javascript/portifolio.js"></script>
-    </body> 
+
+
+        </div>    
+
+
+            <h2 class='col-12 mt-3'>Estou focado em ser um desenvolvedor Front-End, esta página tem o intuito de mostrar alguns <a href='#'>Projetos que desenvolvi</a> e <a href='#'>ferramentas e linguagens</a> que domino.</h2>
+
+
+
+
+    </main>
+    <footer>
+    </footer>
+    <script src="javascript/portifolio.js"></script>
+</body> 
 </html>
