@@ -1,43 +1,49 @@
 html{
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #0d519b;
+  
+}
+
+.containerInicial{
+  height: 100vh;
 }
 
 header{
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
 }
 
 .containerTopo{
-    background-color: #0e315d;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    height: 15vh;
-    padding: 15px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    font-size: 1.25rem;
+  background-color: #0e315d;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  padding: 15px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.25rem;
     
 }
 
 .containerIcone{
   width: 60px;
-    border-radius: 300px;
-    padding: 10px;
-    border: 2px solid #ffffff;
-    display: flex;
+  border-radius: 300px;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  display: flex;
 }
 
 .containerIcone:hover{
-    border: 5px solid#48cbff;
-    transition: .8s;
+  border: 5px solid#48cbff;
+  transition: .8s;
 }
 
 .containerIcone img{
-    width: 50px;
+  width: 50px;
 }
 
 svg:hover {
@@ -81,13 +87,19 @@ svg:hover {
     font-size: 2.5rem;
     color: #0d519b;
     text-align: center;
-    padding: 25vh 5vh 5vh 15vh;
+    padding: 30vh 5vh 15vh 15vh;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(30,173,255,1) 100%);
 }
 
+.containerApresentacao:hover{
+  font-size: 2.8rem;
+  transition: 1s;
+}
+
 .containerApresentacao h1{
-    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+  font-weight: 900;
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
 	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
 }
 
@@ -113,18 +125,18 @@ svg:hover {
 }
 
 .containerApresentacao__nome{
-    color: #007bff;
-    font-weight: 500;
+  color: #007bff;
+  font-weight: 500;
 }
 
 .containerSobremim{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0 200px;
-    align-items: center;
-    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
-    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 200px 100px 200px;
+  align-items: center;
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+  animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
 }
 
 @-webkit-keyframes slide-left {
@@ -149,22 +161,113 @@ svg:hover {
   }
 
 .containerSobremim h2{
-    width: 80%;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    text-align: center;
-    color: #0d519b;
-    margin-right: 50px;
+  width: 80%;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #0d519b;
+  margin-right: 50px;
+}
+
+.containerSobremim:hover h2{
+  font-size: 1.6rem;
+  transition: 1s;
 }
 
 .containerSobremim a {
-    color: #5eaafc;
+  color: #5eaafc;
 }
 
 .containerSobremim img{
-    border-radius: 100px;
+  border-radius: 100px;
 }
+
+.containerSobremim img:hover{
+  width: 220px;
+  height: 220px;
+  border-radius: 250px;
+  transition: 1s;
+}
+
+.containerMargin{
+  margin: 5vh 15vh;
+  box-shadow: #d6f2ff 0px 7px 29px 0px;
+  border-radius: 10px;
+  padding: 5vh;
+}
+
+.titulo{
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  width: auto;
+  padding: 15px;
+  color: #085ec5;
+  margin: 0 30% 0 30%;
+  border-radius: 5px;
+}
+
+.containerConhecimentos{
+  background-color: #d6f2ff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  margin: 5vh;
+  justify-content: space-around;
+}
+
+.containerConhecimentos__button, .containerConhecimentos__descricao{
+  width: 45%;
+}
+
+.containerConhecimentos__button button{
+  padding: 15px;
+  background-color: #83dfff;
+  border-radius: 10px;
+  width: 45%;
+  margin: 10px;
+  height: 15vh;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #085ec5;
+  cursor: pointer;
+}
+
+.containerConhecimentos__descricao{
+  background-color: #edfaff;
+  border-radius: 10px;
+  padding: 25px;
+  line-height: 1.5;
+}
+
+#descricao__html{
+  display: inline;
+}
+
+#descricao__css{
+  display: none;
+}
+
+#descricao__javascript{
+  display: none;
+}
+
+#descricao__bootstraps{
+display: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

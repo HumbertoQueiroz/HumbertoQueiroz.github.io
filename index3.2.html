@@ -18,8 +18,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   </head>
-
+<div class='containerInicial'>
   <body>
     <header>
         <!-- Menu do topo-->
@@ -32,7 +35,7 @@
             <nav>
                 <div class='containerNav'>
                     <a href="#sobreMim" class=''>Sobre mim</a>
-                    <a href="#" class=''>Conhecimentos</a>
+                    <a href="#conhecimentos" class=''>Conhecimentos</a>
                     <a href="#" class=''>Projetos</a>
                     <a href="#" class=''>Contato</a>
                 </div>
@@ -46,9 +49,9 @@
             </div>  
         </div>
     </header>
-    <main>
-        <body>
-
+    <body>
+        <main>
+            
             <!-- Apresentação-->
             <div class="containerApresentacao" id='sobreMim' >
                 <h1>Olá! Sou <span class='containerApresentacao__nome'>Humberto Queiroz</span>, desenvolvedor Web Front-End.</h1>
@@ -56,20 +59,41 @@
             
             <!-- Sobre mim --->
             <div class='containerSobremim'>
-                <h2>Sou apaixonado por programação, comecei a estudar por conta própria vendo vídeos e fóruns na internet, fiz alguns <a href='#'>cursos de programação</a> e atualmente curso faculdade de Técnico em Análise e Desenvolvimento de Sistemas-TADS no IFMT.</h2>
+                <h2>Sou apaixonado por programação, comecei a estudar por conta própria vendo vídeos e fóruns na internet, fiz alguns <a href='#' title='Currículo e Certificações'>cursos de programação</a> e atualmente curso faculdade de Técnico em Análise e Desenvolvimento de Sistemas-TADS no IFMT.</h2>
 
-                <img src="imagens/HumbertoQueirozPetroBranco.jpg" alt="Foto do Devesenvolvedor / Programador Humberto Queiroz" width='200px' height='200px'>
+                <img src="imagens/HumbertoQueirozPetroBranco.jpg" alt="Foto do Devesenvolvedor / Programador Humberto Queiroz" width='200px' height='200px' title='Humberto Queiroz'>
             </div>
-      
-            <h2 class='col-12 mt-3'>Estou focado em ser um desenvolvedor Front-End, esta página tem o intuito de mostrar alguns <a href='#'>Projetos que desenvolvi</a> e <a href='#'>ferramentas e linguagens</a> que domino.</h2>
+</div>
+              
+            <!-- Conhecimentos --->
+            <div class='containerMargin'>
+                <h3 class='titulo' id='conhecimentos'>Conhecimentos</h3>
+                <div class='containerConhecimentos'>
+                    <div class='containerConhecimentos__button'>
+                        <button>HTML5</button>
+                        <button>CSS3</button>
+                        <button>JavaScript</button>
+                        <button>Bootstraps</button>
+                    </div>
+                    <div class='containerConhecimentos__descricao'>
+                        <p id='descricao__html'>HTML semântico e metha tags para rankeamento de SEO, como Keywords para palavras chave, description para identificar o texto que vai aparecer no resutado da busca após o link do site, robots para indicar que deve ser indexado em buscas, canonical para definir o link canonico.</p>
+                        <p id='descricao__css'>CSS para estilização do layout como animações, boxshadow, fontes, manipulação de elementos com o evento hover do mouse, position fixed para manter o menu no topo, display e visibility para mostar e esconder elementos e para responsividade utilizei  Flexbox e @mediaquery. <br> Utilizado <strong style='font-weight: 500;'>Metodologia BEM</strong> para nomeação e organização das classes.</p>
+                        <p id='descricao__javascript'>JavaScript para manipulação de elementos do html, alteração de propriedades como display, visibility, etc...</p>
+                        <p id='descricao__bootstraps'>Framework BootStraps, para produtividade utilizando classes e elementos pré-prontos diminuindo o tempo de criação de um projeto</p>
+
+                    </div>
+
+                </div>
+            </div>
+                <h3 class='titulo'>Projetos</h3>
+
+
+                <h2 class='col-12 mt-3'>Estou focado em ser um desenvolvedor Front-End, esta página tem o intuito de mostrar alguns <a href='#'>Projetos que desenvolvi</a> e <a href='#'>ferramentas e linguagens</a> que domino.</h2>
 
 
 
 
-        </body>
-    </main>
-    </footer>
-
-   
-  </body>
+        </main>
+        </footer>
+    </body> 
 </html>
