@@ -227,13 +227,17 @@ svg:hover {
   padding: 15px;
   background-color: #83dfff;
   border-radius: 10px;
-  width: 45%;
+  width: 43%;
   margin: 10px;
   height: 15vh;
   font-weight: 500;
   font-size: 1.2rem;
   color: #085ec5;
   cursor: pointer;
+}
+
+.containerConhecimentos__button button:hover{
+  border: 2px solid #5eaafc;
 }
 
 .containerConhecimentos__descricao{
