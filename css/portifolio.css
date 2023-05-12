@@ -191,7 +191,7 @@ svg:hover {
 }
 
 .containerMargin{
-  margin: 5vh 15vh;
+  margin: 10vh 15vh;
   box-shadow: #d6f2ff 0px 7px 29px 0px;
   border-radius: 10px;
   padding: 5vh;
@@ -205,7 +205,7 @@ svg:hover {
   width: auto;
   padding: 15px;
   color: #085ec5;
-  margin: 0 30% 0 30%;
+  margin: 10px 30% 0 30%;
   border-radius: 5px;
 }
 
