@@ -398,11 +398,14 @@ display: none;
   color: white;
   background-color: #4c4d4d;
   border-radius: 10px;
-  cursor: pointer;
   padding: 5px 10px;
   text-align: center;
-  
 }
+
+.container__projeto__descricao__texto__linkGithub button{
+  cursor: pointer;
+}
+
 
 
 
