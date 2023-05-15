@@ -91,6 +91,26 @@
         <!-- Projetos -->
         <h3 class='titulo'>Projetos</h3>
         <div class='containerMargin' id='contaniner__carosel'>
+            <!-- Calculadora Iphone-->
+            <div class='container__projeto'>
+                <div class='container__projeto__descricao'>
+                    <p class='container__projeto__descricao__titulo'> <a href="teste-calculadora.html" title='Clique para ver o projeto em execução' target="_blank"> Calculadora do Iphone</a></p>
+                    <div class='container__projeto__descricao__tags'>
+                        <p>HTML5</p>
+                        <p>CSS3</p>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class='container__projeto__descricao__texto'>
+                        <p><span>JavaScript:</span> Projeto desenvolvido para treinar conceitos de JavaScript, utilizei onclick para chamar funções que eu mesmo desenvolvi, utilizadas para armazenar o valor clicado e mostrar no display da calculado, armazenar a operação clicada utilizando switch case e por fim realizar o calculo quando solicitado e retornando no display o resultado.</p>
+                        <p><span>Mobile First:</span> Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compatível com smartphone, tablet ou desktop.</p>
+                        <p><span>CSS e Flexbox:</span> Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.</p>
+                        <div class="container__projeto__descricao__texto__linkGithub">
+                            <a href="https://github.com/HumbertoQueiroz/CalculadoraJS-v.1.0/tree/main" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="teste-calculadora.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/caculadora figma.png" alt="Imagem do layout do projeto Calculadora"></a>
+            </div>
             <!-- Carteira Cripto-->
             <div class='container__projeto'>
                 <a href="FrontEndMentor/FrontEndMentor-2-Cripto/index.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/imgCarteiraCripto.png" alt="Imagem do layout do projeto Carteira Cripto"></a>
@@ -101,7 +121,7 @@
                         <p>CSS3</p>
                     </div>
                     <div class='container__projeto__descricao__texto'>
-                        <p><span>Mobile First:</span>Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compativel com smartphone, tablet ou desktop.</p>
+                        <p><span>Mobile First:</span>Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compatível com smartphone, tablet ou desktop.</p>
                         <p><span>Acessibilidade:</span> Todas as imagens contem o atributo alt com descrição do conteúdo da imagem.</p>
                         <p><span>HTML5 e SEO:</span> Utilizado tags  semânticas e metha tags para rankeamento de SEO.</p>
                         <p><span>CSS e Flexbox:</span> Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.</p>
@@ -111,32 +131,56 @@
                     </div>
                 </div>
             </div>
-            <!--Sumário-->
+            <!-- Apeperia-->
             <div class='container__projeto'>
                 <div class='container__projeto__descricao'>
-                    <p class='container__projeto__descricao__titulo'> <a href="FrontEndMentor/FrontEndMentor-2-Cripto/index.html" title='Clique para ver o projeto em execução' target="_blank"> Carteira de Cripto moedas</a></p>
+                    <p class='container__projeto__descricao__titulo'> <a href="https://humbertoqueiroz.github.io/drive/Portifolio/HTML%20e%20CSS/2/projeto-apeperia-b2501c63b2ebdfd8226473a6c8ffa8777e559efe/index.html" title='Clique para ver o projeto em execução' target="_blank">Apeperia</a></p>
                     <div class='container__projeto__descricao__tags'>
                         <p>HTML5</p>
                         <p>CSS3</p>
                     </div>
                     <div class='container__projeto__descricao__texto'>
-                        <p><span>Mobile First:</span>Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compativel com smartphone, tablet ou desktop.</p>
-                        <p><span>Acessibilidade:</span> Todas as imagens contem o atributo alt com descrição do conteúdo da imagem.</p>
-                        <p><span>HTML5 e SEO:</span> Utilizado tags  semânticas e metha tags para rankeamento de SEO.</p>
+                        <p><span>Mobile First:</span> Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compatível com smartphone, tablet ou desktop.</p>
                         <p><span>CSS e Flexbox:</span> Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.</p>
+                        <p><span>Acessibilidade:</span> Todas as imagens contem o atributo alt com descrição do conteúdo da imagem.</p>
+                        <div class="container__projeto__descricao__texto__linkGithub">
+                            <a href="https://github.com/HumbertoQueiroz/Appeperia-site" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
+                        </div>
                     </div>
                 </div>
-                <a href="FrontEndMentor/FrontEndMentor-2-Cripto/index.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/imgCarteiraCripto.png" alt="Imagem do layout do projeto Carteira Cripto"></a>
+                <a href="https://humbertoqueiroz.github.io/drive/Portifolio/HTML%20e%20CSS/2/projeto-apeperia-b2501c63b2ebdfd8226473a6c8ffa8777e559efe/index.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/Apeperia figma.png" alt="Imagem do layout do projeto Apeperia"></a>
             </div>
+            <!--Botão Mais projetos-->
+            <div class='buttonMaisProjetos'>
+                <div class='buttonMaisProjetos__centro' >
+                    <button onclick='mostraMais()'>Mais projetos<img src="imagens/botão mais.svg" alt="Mostrar mais" id='mostrarMais'>
+                    <img src="imagens/botão menos.svg" alt="Mostrar menos" id='mostrarMenos'></button>
+                    
+                </div>
+            </div>
+            <div id='demaisProjetos'>
+                <h2 class='col-12 mt-3'>Estou focado em ser um desenvolvedor Front-End, esta página tem o intuito de mostrar alguns <a href='#'>Projetos que desenvolvi</a> e <a href='#'>ferramentas e linguagens</a> que domino.</h2>
+            </div>
+
+
+
+
+
+
             
             
             
+            
+
+
+
+
 
 
         </div>    
 
 
-            <h2 class='col-12 mt-3'>Estou focado em ser um desenvolvedor Front-End, esta página tem o intuito de mostrar alguns <a href='#'>Projetos que desenvolvi</a> e <a href='#'>ferramentas e linguagens</a> que domino.</h2>
+            
 
 
 

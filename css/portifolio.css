@@ -356,6 +356,7 @@ display: none;
   flex-direction: row;
   justify-content: space-around;
   height: 13%;
+  align-items: center;
 }
 
 .container__projeto__descricao__tags p {
@@ -371,7 +372,6 @@ display: none;
 .container__projeto__descricao{
   display: flex;
   flex-direction: column;
-  padding: 15px;
   width: 50%;
   justify-content: space-around;
 }
@@ -382,6 +382,8 @@ display: none;
   justify-content: space-between;
   height: 60%;
   margin-top: 5px;
+  line-height: 1.2;
+  
 }
 
 .container__projeto__descricao__texto span{
@@ -404,6 +406,42 @@ display: none;
 
 .container__projeto__descricao__texto__linkGithub button{
   cursor: pointer;
+}
+
+.buttonMaisProjetos, .buttonMaisProjetos__centro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+.buttonMaisProjetos__centro{
+  background-color: #48cbff;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+#mostrarMais, #mostrarMenos{
+margin-left: 10px;
+}
+
+
+#mostrarMais{
+  display: inline;
+}
+
+#mostrarMenos{
+  display: none;
+}
+
+.buttonMaisProjetos__centro:hover, .buttonMaisProjetos__centro:hover button{
+cursor: pointer;
+}
+
+.buttonMaisProjetos__centro:hover img{
+  width: 16px;
+  height: 16px;
+  
 }
 
 

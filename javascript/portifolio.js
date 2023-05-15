@@ -1,3 +1,6 @@
+/*Mostrar descrição dos conhecimnetos no card dolado direito no container
+dos conhecimentos*/
+
 var descricaoHTML = document.getElementById('descricao__html');
 var descricaoCSS = document.getElementById('descricao__css');
 var descricaoJS = document.getElementById('descricao__javascript');
@@ -82,4 +85,20 @@ function exibeDescricao(e) {
             buttonBootstraps.style.textDecoration = 'underline';
             break;
     }
+}
+
+/*Função mostra mais projetos*/
+var iconeMostrarMais = document.getElementById('mostrarMais');
+var iconeMostrarMenos = document.getElementById('mostrarMenos');
+var demaisProjetos = document.getElementById('demaisProjetos');
+
+function mostraMais(e) {
+    console.log(iconeMostrarMais.style.display);
+    if (iconeMostrarMais.style.display == 'inline') {
+        console.log('entrou no if');
+        iconeMostrarMais.style.display = 'none'
+        iconeMostrarMenos.style.display='inline'
+    }
+
+    
 }
