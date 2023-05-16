@@ -1,4 +1,4 @@
-/*Mostrar descrição dos conhecimnetos no card dolado direito no container
+/*Mostrar descrição dos conhecimnetos no card do lado direito no container
 dos conhecimentos*/
 
 var descricaoHTML = document.getElementById('descricao__html');
@@ -87,17 +87,32 @@ function exibeDescricao(e) {
     }
 }
 
+/* aminação esquerda para direita*/
+
+
+
+
+
+
 /*Função mostra mais projetos*/
 var iconeMostrarMais = document.getElementById('mostrarMais');
 var iconeMostrarMenos = document.getElementById('mostrarMenos');
 var demaisProjetos = document.getElementById('demaisProjetos');
+var containerVisivel = false;
 
 function mostraMais(e) {
     console.log(iconeMostrarMais.style.display);
-    if (iconeMostrarMais.style.display == 'inline') {
+    if (containerVisivel == false) {
         console.log('entrou no if');
-        iconeMostrarMais.style.display = 'none'
-        iconeMostrarMenos.style.display='inline'
+        iconeMostrarMais.style.display = 'none';
+        iconeMostrarMenos.style.display = 'inline';
+        demaisProjetos.style.display = 'inline';
+        containerVisivel = true;
+    } else {
+        iconeMostrarMais.style.display = 'inline';
+        iconeMostrarMenos.style.display = 'none';
+        demaisProjetos.style.display = 'none';
+        containerVisivel = false;
     }
 
     

@@ -8,6 +8,8 @@ html{
   height: 100vh;
 }
 
+/* --- Menu topo --- */
+
 header{
   position: fixed;
   z-index: 9999;
@@ -61,7 +63,6 @@ svg:hover {
     transition: 1s;
 }
 
-
 .containerRedesSociais{
     padding: 10px 20px;
     border: 2px solid rgb(72,203,255,.0);
@@ -81,7 +82,10 @@ svg:hover {
     border-bottom: 2px double rgb(72,203,255);
 }
 
+
 /* -------- Sobre mim ---------*/
+
+
 .containerApresentacao{
     font-weight: 400;
     font-size: 2.5rem;
@@ -190,6 +194,11 @@ svg:hover {
   transition: 1s;
 }
 
+
+/* Definição geral para titulo e 
+contaniner de fundo com shadown box azul claro*/
+
+
 .containerMargin{
   margin: 10vh 15vh;
   box-shadow: #d6f2ff 0px 7px 29px 0px;
@@ -209,6 +218,10 @@ svg:hover {
   border-radius: 5px;
 }
 
+
+/* --- Conhecimentos --- */
+
+
 .containerConhecimentos{
   background-color: #d6f2ff;
   border-radius: 10px;
@@ -218,6 +231,7 @@ svg:hover {
   margin: 5vh;
   justify-content: space-around;
 }
+
 
 .containerConhecimentos__button, .containerConhecimentos__descricao{
   width: 45%;
@@ -247,8 +261,11 @@ svg:hover {
   line-height: 1.5;
 }
 
+
+
 #button__html, #button__css, #button__js, #button__bootstraps{
  animation-name: slides;
+ animation-delay: 0.4;
 }
 
 #button__html{
@@ -267,8 +284,8 @@ svg:hover {
    animation-duration: 2s;
 }
 
-
-
+/*animação que faz os botões virem
+da esquerda para a direita*/
 
 @keyframes slides {
   0%{
@@ -297,7 +314,13 @@ svg:hover {
 display: none;
 }
 
-#container__carosel{
+
+
+/*  --- Projetos --- */
+
+
+
+#container__geral__projetos{
   display: flex;
   flex-direction: column;
 }
@@ -312,15 +335,11 @@ display: none;
   margin-bottom: 15px;
 }
 
-
-.container__projeto a{
-  width: 50%;
-}
-
 .container__projeto__link__img{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .container__projeto a img{
@@ -335,8 +354,6 @@ display: none;
   transition: 1s;
 }
 
-
-
 .container__projeto__descricao__titulo{
   font-weight: 500;
   font-size: 1.8rem;
@@ -348,6 +365,7 @@ display: none;
 .container__projeto__descricao__titulo:hover{
   font-size: 2rem;
   text-decoration: underline;
+  color: rgb(72,203,255);
   transition: 1s;
 }
 
@@ -363,32 +381,53 @@ display: none;
   padding: 10px;
   margin: 5px;
   color: white;
-  background-color: #48cbff;
+  background-color: #69b4ff;
   width: 50%;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 2px;
+  animation-name: pula;
+  animation-delay: 0.4;
+  animation-duration: 5s;
+
 }
+
+@keyframes pula {
+  0%{ 
+    transform: translateX(-350px) rotate(90deg);
+  }
+
+  100%{ 
+    transform: translate(0) rotate(0);
+
+  }
+}
+
 
 .container__projeto__descricao{
   display: flex;
   flex-direction: column;
   width: 50%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .container__projeto__descricao__texto{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 60%;
+  height: 65%;
   margin-top: 5px;
   line-height: 1.2;
-  
+}
+
+.container__projeto__descricao__texto p{
+  margin-bottom: 5px;
+   color: #0d529b;
 }
 
 .container__projeto__descricao__texto span{
   font-weight: bold;
 }
+
 .container__projeto__descricao__texto__linkGithub{
   display: flex;
   justify-content: center;
@@ -408,24 +447,25 @@ display: none;
   cursor: pointer;
 }
 
-.buttonMaisProjetos, .buttonMaisProjetos__centro{
+/* Botão Mais projetos*/
+
+.buttonMaisProjetos, .buttonMaisProjetos button{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.buttonMaisProjetos button{
+  background-color: #48cbff;
   color: white;
   font-weight: bold;
-}
-.buttonMaisProjetos__centro{
-  background-color: #48cbff;
   padding: 10px;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 #mostrarMais, #mostrarMenos{
 margin-left: 10px;
 }
-
-
 #mostrarMais{
   display: inline;
 }
@@ -434,14 +474,14 @@ margin-left: 10px;
   display: none;
 }
 
-.buttonMaisProjetos__centro:hover, .buttonMaisProjetos__centro:hover button{
-cursor: pointer;
-}
-
 .buttonMaisProjetos__centro:hover img{
   width: 16px;
-  height: 16px;
-  
+  height: 16px; 
+}
+
+/* Container Com Mais projetos*/
+#demaisProjetos{
+  display: none;
 }
 
 
