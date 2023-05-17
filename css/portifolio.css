@@ -13,6 +13,8 @@ html{
 header{
   position: fixed;
   z-index: 9999;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -53,33 +55,33 @@ svg:hover {
 }
 
 .containerTopo nav a {
-    margin-left: 5px;
-    text-decoration: underline;
+  margin-left: 5px;
+  text-decoration: underline;
 }
 
-.containerTopo nav a:hover{
-    color: #48cbff;
-    font-size: 1.8rem;
-    transition: 1s;
+.containerNav a:hover{
+  color: #48cbff;
+  font-size: 1.8rem;
+  transition: 1s;
 }
 
 .containerRedesSociais{
-    padding: 10px 20px;
-    border: 2px solid rgb(72,203,255,.0);
-    border-radius: 100px;
+  padding: 10px 20px;
+  border: 2px solid rgb(72,203,255,.0);
+  border-radius: 100px;
 }
 
 .containerRedesSociais:hover{
-    border-color: rgb(72,203,255);
-    transition: 0.8s;
+  border-color: rgb(72,203,255);
+  transition: 0.8s;
 }
 
 .containerRedesSociais a{
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .containerRedesSociais img:hover{
-    border-bottom: 2px double rgb(72,203,255);
+  border-bottom: 2px double rgb(72,203,255);
 }
 
 
@@ -87,13 +89,13 @@ svg:hover {
 
 
 .containerApresentacao{
-    font-weight: 400;
-    font-size: 2.5rem;
-    color: #0d519b;
-    text-align: center;
-    padding: 30vh 5vh 15vh 15vh;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(30,173,255,1) 100%);
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #0d519b;
+  text-align: center;
+  padding: 30vh 5vh 15vh 15vh;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(30,173,255,1) 100%);
 }
 
 .containerApresentacao:hover{
@@ -144,15 +146,15 @@ svg:hover {
 }
 
 @-webkit-keyframes slide-left {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(-250px);
-              transform: translateX(-250px);
-    }
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
+  100% {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+}
   @keyframes slide-left {
     0% {
       -webkit-transform: translateX(0);
@@ -162,7 +164,7 @@ svg:hover {
       -webkit-transform: translateX(-250px);
               transform: translateX(-250px);
     }
-  }
+}
 
 .containerSobremim h2{
   width: 80%;
@@ -263,7 +265,7 @@ contaniner de fundo com shadown box azul claro*/
 
 
 
-#button__html, #button__css, #button__js, #button__bootstraps{
+#button__html, #button__css, #button__js, #button__bootstraps, #button__github{
  animation-name: slides;
  animation-delay: 0.4;
 }
@@ -282,6 +284,10 @@ contaniner de fundo com shadown box azul claro*/
 
 #button__bootstraps{
    animation-duration: 2s;
+}
+
+#button__github{
+   animation-duration: 1s;
 }
 
 /*animação que faz os botões virem
@@ -312,6 +318,10 @@ da esquerda para a direita*/
 
 #descricao__bootstraps{
 display: none;
+}
+
+#descricao__github{
+  display: none;
 }
 
 
@@ -377,6 +387,7 @@ display: none;
   align-items: center;
 }
 
+
 .container__projeto__descricao__tags p {
   padding: 10px;
   margin: 5px;
@@ -387,21 +398,38 @@ display: none;
   border-radius: 2px;
   animation-name: pula;
   animation-delay: 0.4;
-  animation-duration: 5s;
-
+  animation-duration: 3s;
 }
-
+/*
 @keyframes pula {
   0%{ 
-    transform: translateX(-350px) rotate(90deg);
+    transform: translateX(-500px) rotate(-180deg);
+    width: 100px;
+  }
+  25%{  transform: translateX(-140px) rotate(-180deg);
+    width: 100px;
   }
 
+  35%{
+    transform: translateX(-140px) rotate(-180deg);
+    width: 100px;
+  }
+
+  65%{
+    transform: rotate(-90deg);
+    width: 100px;
+  }
+  90%{
+    width: 100px;
+    transform: translate(0) rotate(0);
+  }
   100%{ 
     transform: translate(0) rotate(0);
 
   }
-}
 
+}
+*/
 
 .container__projeto__descricao{
   display: flex;
@@ -485,9 +513,109 @@ margin-left: 10px;
 }
 
 
+/* Contato */
+
+.contato{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contato p {
+  margin-bottom: 20px;
+}
+
+.contato a{
+  color: #007bff;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
 
 
 
+
+/* Footer */
+
+footer{
+  background: rgb(181,234,255);
+background: linear-gradient(0deg, rgba(181,234,255,1) 52%, rgba(255,255,255,1) 95%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer nav{
+  margin: 50px;
+}
+
+.footer__containerTituloSVG{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer__containerTituloSVG svg{
+  border: 3px solid #48cbff;
+  border-radius: 100%;
+}
+
+.footer__containerTituloSVG svg:hover{
+  border: 5px solid #48cbff;
+  width: 60px;
+  height: 60px;
+  transition: 1s;
+}
+
+footer nav li{
+  margin: 15px;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+footer nav a:hover{
+  text-decoration: underline;
+}
+
+footer p{
+  font-size: 2rem;
+  padding: 15px;
+  color: #007bff;
+  font-weight: 500;
+}
+
+footer .containerRedesSociais{
+  display: flex;
+}
+
+footer .containerRedesSociais img{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+
+@media screen and (max-width: 400px) {
+  
+  /*Menu topo*/
+  
+  .containerInicial{
+    height: auto;
+  }
+
+  .containerTopo{
+    justify-content: space-around;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  /*Sobre Mim*/
+
+  
+
+}
 
 
 
