@@ -19,17 +19,17 @@ header{
 }
 
 .containerTopo{
+  align-items: center;
   background-color: #0e315d;
   color: white;
   display: flex;
   flex-direction: row;
+  font-size: 1.25rem;
+  font-weight: 500;
   height: 15vh;
+  justify-content: space-between;
   padding: 15px;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 500;
-  font-size: 1.25rem;
     
 }
 
@@ -537,7 +537,7 @@ margin-left: 10px;
 
 footer{
   background: rgb(181,234,255);
-background: linear-gradient(0deg, rgba(181,234,255,1) 52%, rgba(255,255,255,1) 95%);
+  background: linear-gradient(0deg, rgba(181,234,255,1) 52%, rgba(255,255,255,1) 95%);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -588,6 +588,10 @@ footer .containerRedesSociais{
   display: flex;
 }
 
+footer .containerRedesSociais:hover{
+  border: none;
+}
+
 footer .containerRedesSociais img{
   width: 50px;
   height: 50px;
@@ -595,25 +599,108 @@ footer .containerRedesSociais img{
 }
 
 
-@media screen and (max-width: 400px) {
-  
+
+@media screen and (max-width: 450px) {
+  html{
+    font-size: 1.3rem;
+  }
+
+
   /*Menu topo*/
   
   .containerInicial{
-    height: auto;
+  height: auto;
   }
 
   .containerTopo{
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  header nav {
-    display: none;
+  header ul {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    left: 10px;
+    top: 12vh;
+    padding: 10px;
+    background-color: #0e315d;
+    border: 2px solid white;
+  }
+
+  header ul a{
+    padding: 5px;
+  }
+
+  .containerRedesSociais img{
+    width: 40px;
+    height: 40px;
   }
 
   /*Sobre Mim*/
 
+  .containerApresentacao{
+    padding: 45vh 20px;
+    margin: 0;
+  }
+
+  .containerSobremim{
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .containerSobremim h2{
+    margin: 0;
+  }
+
+  .containerSobremim img{
+    margin-top: 15px;
+  }
+
   
+  /*Conhecimentos*/
+
+  .containerMargin{
+    margin: 0;
+    padding: 4vh;
+  }
+
+  .titulo{
+    margin: 30% 0 20% 0;
+    text-align: center;
+  }
+
+  .containerConhecimentos{
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .containerConhecimentos__button, .containerConhecimentos__descricao{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /*Projetos*/
+
+  .container__projeto{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .container__projeto__descricao__titulo, .container__projeto__descricao__titulo a{ 
+    width: auto;
+  } 
+  
+
+
+
+  /*Footer*/
+  
+  footer{
+    flex-direction: column;
+  }
 
 }
 
