@@ -127,7 +127,22 @@ function exibeDescricao(e) {
     }
 }
 
-/* aminação esquerda para direita*/
+/* mostra Menu no mobile*/
+var menu = document.getElementById('mostraMenu');
+var controleMenu = true;
+var larguraDaTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+console.log(larguraDaTela);
+function MostraMenu() {
+    if(larguraDaTela<950){
+        if (controleMenu == true) {
+            menu.style.display = 'inline';
+            controleMenu = false;
+        } else {
+            menu.style.display = 'none';
+            controleMenu = true;
+        }
+    }    
+}
 
 
 

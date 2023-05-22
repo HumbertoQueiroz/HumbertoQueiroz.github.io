@@ -27,13 +27,13 @@
     <header>
         <!-- Menu do topo-->
         <div class='containerTopo'>
-            <a href='#' class='containerIcone' title='Home'>
+            <a  class='containerIcone' title='Home' onclick='MostraMenu()'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px" fill="#ffffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
             </a>
 
             <!--Menu de navegacao-->
             <nav>
-                <ul class='containerNav'>
+                <ul class='containerNav' id='mostraMenu'>
                     <a href="#sobreMim" >Sobre mim</a>
                     <a href="#conhecimentos">Conhecimentos</a>
                     <a href="#projetos">Projetos</a>
@@ -105,12 +105,18 @@
                         <p><span>CSS e Flexbox:</span> Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.</p>
                     </div>
                     <div class='container__projeto__descricao__tags'>
-                        <div class='circulo-html'></div>
-                        <p>HTML5</p>
-                        <div class='circulo-css'></div>
-                        <p>CSS3</p>
-                        <div class='circulo-js'></div>
-                        <p>JavaScript</p>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-html'></div>   
+                            <p>HTML5</p>
+                        </div>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-css'></div>
+                            <p>CSS3</p>
+                        </div>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-js'></div>
+                            <p>JavaScript</p>
+                        </div>
                         <div class="container__projeto__descricao__texto__linkGithub">
                             <a href="https://github.com/HumbertoQueiroz/CalculadoraJS-v.1.0/tree/main" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
                         </div>
@@ -121,7 +127,7 @@
             </div>
 
             <!-- Carteira Cripto-->
-            <div class='container__projeto'>
+            <div class='container__projeto container__projeto__inverte'>
                 <!--imagem do projeto-->
                 <a href="FrontEndMentor/FrontEndMentor-2-Cripto/index.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/imgCarteiraCripto.png" alt="Imagem do layout do projeto Carteira Cripto"></a>
                 <!--Descrição do projeto-->
@@ -134,10 +140,14 @@
                         <p><span>CSS e Flexbox:</span> Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.</p>
                     </div>
                     <div class='container__projeto__descricao__tags'>
-                        <div class='circulo-html'></div>
-                        <p>HTML5</p>
-                        <div class='circulo-css'></div>
-                        <p>CSS3</p>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-html'></div>   
+                            <p>HTML5</p>
+                        </div>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-css'></div>
+                            <p>CSS3</p>
+                        </div>
                         <div class="container__projeto__descricao__texto__linkGithub">
                             <a href="https://github.com/HumbertoQueiroz/Cripto-FrontEndoMentor" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
                         </div>
@@ -156,10 +166,14 @@
                         <p><span>Acessibilidade:</span> Todas as imagens contem o atributo alt com descrição do conteúdo da imagem.</p>
                     </div>
                     <div class='container__projeto__descricao__tags'>
-                        <div class='circulo-html'></div>
-                        <p>HTML5</p>
-                        <div class='circulo-css'></div>
-                        <p>CSS3</p>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-html'></div>   
+                            <p>HTML5</p>
+                        </div>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-css'></div>
+                            <p>CSS3</p>
+                        </div>
                         <div class="container__projeto__descricao__texto__linkGithub">
                             <a href="https://github.com/HumbertoQueiroz/Appeperia-site" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
                         </div>
@@ -191,26 +205,32 @@
                             <p><span>CSS:</span> Neste projeto utilizei CSS para estilização geral da página.</p>
                         </div>
                         <div class='container__projeto__descricao__tags'>
-                            <div class='circulo-html'></div>
-                            <p>HTML5</p>
-                            <div class='circulo-css'></div>
-                            <p>CSS3</p>
-                            <div class='circulo-js'></div>
-                            <p>JavaScript</p>
+                            <div class='container__circulo-html'>
+                                <div class='circulo-html'></div>   
+                                <p>HTML5</p>
+                            </div>
+                            <div class='container__circulo-html'>
+                                <div class='circulo-css'></div>
+                                <p>CSS3</p>
+                            </div>
+                            <div class='container__circulo-html'>
+                                <div class='circulo-js'></div>
+                                <p>JavaScript</p>
+                            </div>
                             <div class="container__projeto__descricao__texto__linkGithub">
                                 <a href="https://github.com/HumbertoQueiroz/AluraMidi" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
                             </div>
                         </div>
                     </div>
                     <!--imagem do projeto-->
-                    <a href="BateriaDigital/aluraMidi.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/BateriaDigital.jpg" alt="Imagem do layout do projeto Calculadora"></a>
+                    <a href="BateriaDigital/aluraMidi.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/Bateria layout.png" alt="Imagem do layout do projeto Calculadora"></a>
                 </div>
 
                 <!-- Site Barbearia -->
             
-                <div class='container__projeto'>
+                <div class='container__projeto container__projeto__inverte'>
                     <!--imagem do projeto-->
-                    <a href="barbearia/barbearia-index.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="barbearia/imagens/logo.png" alt="Imagem do layout do projeto Carteira Cripto"></a>
+                    <a href="barbearia/barbearia-index.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="barbearia/imagens/logo.png" id='imagemMenor' alt="Imagem do layout do projeto Carteira Cripto"></a>
                     <!--Descrição do projeto-->
                     <div class='container__projeto__descricao'>
                         <p class='container__projeto__descricao__titulo'> <a href="barbearia/barbearia-index.html" title='Clique para ver o projeto em execução' target="_blank">Site Institucional Barbearia</a></p>

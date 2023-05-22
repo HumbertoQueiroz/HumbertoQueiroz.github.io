@@ -240,14 +240,13 @@ contaniner de fundo com shadown box azul claro*/
 }
 
 .containerConhecimentos__button button{
-  padding: 15px;
   background-color: #83dfff;
   border-radius: 10px;
   width: 43%;
   margin: 10px;
-  height: 15vh;
+  height: 18vh;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #085ec5;
   cursor: pointer;
 }
@@ -342,7 +341,7 @@ display: none;
   justify-content: space-around;
   padding-bottom: 15px;
   border-bottom: 2px solid #d6f2ff ;
-  margin-bottom: 15px;
+  margin-bottom: 45px;
 }
 
 .container__projeto__link__img{
@@ -395,27 +394,27 @@ display: none;
   text-align: center;
 }
 
-.circulo-html{
+.container__circulo-html{
+  display: flex;
+  align-items: center;
+}
+
+.circulo-html, .circulo-css, .circulo-js{
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 20px;
   height: 20px;
+  margin-right: 5px;
   background-color: #E34C26;
 }
 
 .circulo-css {
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 100%;
-  width: 20px;
-  height: 20px;
+
   background-color: #563D7C;
 }
 
 .circulo-js {
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 100%;
-  width: 20px;
-  height: 20px;
+
   background-color: #F1E05A;
 }
 
@@ -449,7 +448,7 @@ display: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 65%;
+  height: 70%;
   margin-top: 5px;
   line-height: 1.2;
 }
@@ -460,6 +459,14 @@ display: none;
 
 .container__projeto__descricao__texto span{
   font-weight: bold;
+}
+
+#imagemMenor{
+  width: 50%;
+}
+
+#imagemMenor:hover{
+  width: 60%;
 }
 
 
@@ -516,6 +523,7 @@ margin-left: 10px;
   color: #007bff;
   font-weight: 500;
   font-size: 1.3rem;
+  word-wrap: break-word;
 }
 
 
@@ -588,11 +596,10 @@ footer .containerRedesSociais img{
 
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 950px) {
   html{
     font-size: 1.3rem;
   }
-
 
   /*Menu topo*/
   
@@ -617,6 +624,7 @@ footer .containerRedesSociais img{
 
   header ul a{
     padding: 5px;
+    display: block;
   }
 
   .containerRedesSociais img{
@@ -672,17 +680,62 @@ footer .containerRedesSociais img{
   /*Projetos*/
 
   .container__projeto{
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
     align-items: center;
+    padding: 15px 10px;
+    box-shadow: #d6f2ff 0px 5px 20px 0px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
   }
 
-  .container__projeto__descricao__titulo, .container__projeto__descricao__titulo a{ 
-    width: auto;
-  } 
-  
+  .container__projeto__inverte{
+    flex-direction: column;
+  }
+    
 
+  .container__projeto__descricao{
+    width: 90%;
+  }
+    
+  .container__projeto__descricao__titulo{
+  margin-bottom: 15px;
+  }
 
+  .container__projeto__descricao__texto p{
+    display: none;
+  }
+
+  .container__projeto__descricao__tags{
+    flex-wrap: wrap;
+    font-size: .9rem;
+  }
+
+  .container__projeto__descricao__texto__linkGithub{
+    margin: 25px;
+  }
+
+  .container__circulo-html{
+    margin: 8px;
+  }
+
+  .container__projeto__descricao__texto__linkGithub{
+    margin: 5px;
+  }
+
+  .container__projeto a{
+    width: 100%;
+    text-decoration: underline;
+  }
+
+  .container__projeto a img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .buttonMaisProjetos{
+    margin-bottom: 15px;
+  }
 
   /*Footer*/
   
