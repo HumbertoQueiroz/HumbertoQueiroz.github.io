@@ -338,7 +338,7 @@ display: none;
 .container__projeto{
   display: flex;
   flex-direction: row;
-  height: 60vh;
+  height: 70vh;
   justify-content: space-around;
   padding-bottom: 15px;
   border-bottom: 2px solid #d6f2ff ;
@@ -365,11 +365,13 @@ display: none;
 }
 
 .container__projeto__descricao__titulo{
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.8rem;
   text-align: center;
   padding: 15px;
   height: 15%;
+  color: #007bff;
+
 }
 
 .container__projeto__descricao__titulo:hover{
@@ -389,77 +391,37 @@ display: none;
 
 
 .container__projeto__descricao__tags p {
-  padding: 10px;
-  margin: 5px;
-  color: white;
-  background-color: #69b4ff;
-  width: 50%;
+  padding: 0 10px 0 3px;
   text-align: center;
-  border-radius: 2px;
-  animation-name: pula;
-  animation-delay: 0.4;
-  animation-duration: 3s;
-}
-/*
-@keyframes pula {
-  0%{ 
-    transform: translateX(-500px) rotate(-180deg);
-    width: 100px;
-  }
-  25%{  transform: translateX(-140px) rotate(-180deg);
-    width: 100px;
-  }
-
-  35%{
-    transform: translateX(-140px) rotate(-180deg);
-    width: 100px;
-  }
-
-  65%{
-    transform: rotate(-90deg);
-    width: 100px;
-  }
-  90%{
-    width: 100px;
-    transform: translate(0) rotate(0);
-  }
-  100%{ 
-    transform: translate(0) rotate(0);
-
-  }
-
-}
-*/
-
-.container__projeto__descricao{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  justify-content: space-between;
 }
 
-.container__projeto__descricao__texto{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 65%;
-  margin-top: 5px;
-  line-height: 1.2;
+.circulo-html{
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #E34C26;
 }
 
-.container__projeto__descricao__texto p{
-  margin-bottom: 5px;
-   color: #0d529b;
+.circulo-css {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  background-color: #563D7C;
 }
 
-.container__projeto__descricao__texto span{
-  font-weight: bold;
+.circulo-js {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  background-color: #F1E05A;
 }
 
 .container__projeto__descricao__texto__linkGithub{
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 #codigoGithub{
   width: auto;
@@ -474,6 +436,32 @@ display: none;
 .container__projeto__descricao__texto__linkGithub button{
   cursor: pointer;
 }
+
+
+.container__projeto__descricao{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.container__projeto__descricao__texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 65%;
+  margin-top: 5px;
+  line-height: 1.2;
+}
+
+.container__projeto__descricao__texto p{
+  margin-bottom: 15px;
+}
+
+.container__projeto__descricao__texto span{
+  font-weight: bold;
+}
+
 
 /* Botão Mais projetos*/
 
