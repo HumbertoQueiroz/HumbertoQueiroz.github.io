@@ -6,320 +6,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="Keywords" content="Humberto Caio França de Queiroz, Humberto Queiroz, Devesenvolvedor, Programador, Front-End, portifólio, Dev Humberto">
-    <meta name="description" content="Olá, sou Humberto Queiroz programador Front-End, neste site você vai conhecer um pouco do meus conhecimentos e dos projetos que desenvolvi. Entre e conheça mais...">
+    <meta name="description" content="Olá, sou Humberto Queiroz programador Front-End, este é meu portifólio e você vai conhecer um pouco do meus conhecimentos e dos projetos que desenvolvi. Entre e conheça mais...">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://humbertoqueiroz.github.io/">
     
     <title>Portifólio Dev Humberto ;-)</title>
     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/13/13973.png">
-      <link rel="stylesheet" href="css/Style2.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/portifolio.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   </head>
-
-  <body>
+<div class='containerInicial'>
+<body>
     <header>
-        <div class="container">
+        <!-- Menu do topo-->
+        <div class='containerTopo'>
+            <a  class='containerIcone' title='Home' onclick='MostraMenu()'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px" fill="#ffffff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+            </a>
 
-          <div class="row justify-content-center" >
-            <svg class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 align-self-center mt-3 pt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100"><path d="M11.97 6.97a.75.75 0 0 0 0 1.06l2.47 2.47-2.47 2.47a.75.75 0 1 0 1.06 1.06l3-3a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 0 0-1.06 0ZM9.03 8.03a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 0 0 1.06-1.06L6.56 10.5l2.47-2.47Z"></path><path d="M10.5 0C16.299 0 21 4.701 21 10.5a10.457 10.457 0 0 1-2.564 6.875l4.344 4.345a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-4.345-4.344A10.459 10.459 0 0 1 10.5 21C4.701 21 0 16.299 0 10.5S4.701 0 10.5 0Zm-9 10.5a9 9 0 0 0 9 9 9 9 0 0 0 9-9 9 9 0 0 0-9-9 9 9 0 0 0-9 9Z"></path></svg>
-            <h1 class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8 align-self-center text-center mt-3 pt-3">Olá! Sou <span class='font-weight-bold text-primary'>Humberto Queiroz</span>, desenvolvedor Web Front-End.</h1>
-        
-            <nav class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 align-self-center mt-3 pt-3" id='animacao'>
-              <ul class='row justify-content-center justify-content-around'>
-                  <a href="https://github.com/HumbertoQueiroz"> <img src="https://github.com/fluidicon.png" alt='Logo GitHub' width='40px' height='40px'></a>
-                  <a href="https://www.linkedin.com/in/humberto-queiroz-37385a1b6/"><img src="https://static-exp1.licdn.com/sc/h/3loy7tajf3n0cho89wgg0fjre" alt='Logo Linkedin' width='40px' height='40px'></a>
-                  <a href="https://www.workana.com/freelancer/e2326db4301d70101af7d43742cafb11"><img src="https://wkncdn.com/newx/assets/build/img/favicon.57f21bf36.png" alt='Logo Workana' width='40px' height='40px'></a>
-              </ul>
-            </nav>
-          </div>
+            <!--Menu de navegacao-->
+            <nav>
+                <ul class='containerNav' id='mostraMenu'>
+                    <a href="#sobreMim" >Sobre mim</a>
+                    <a href="#conhecimentos">Conhecimentos</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
+                </ul>
+            </nav>  
 
-          <!-- Currículo --->
-
-          <div class="row" >
-            <div class="row col-12 col-sm-12 col-md-8">
-              <h2 class='col-12 align-self-center text-center mt-3 pt-3 '>Conheça um pouco mais sobre minha trajetoria profissional e minha experiência no meu currículo acessando no link a seguir:</h2>
-              <ul class='row col-12 p-0 m-0 justify-content-center'>
-                <li class="row col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 m-3">
-                  <a href="curriculo.html" class="col-12">
-                    <h2 class='col-12 list-group-item  font-weight-bold list-group-item-primary text-center p-3'>Currículo Web</h2> 
-                  </a><br>
-                            
-                </li>
-                <li class="row rounded col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 m-3">
-                    <a href="curriculo_pdf/Desenvolvedor.pdf" class="col-12 rounded">
-                      <h2 class='col-12 list-group-item  font-weight-bold list-group-item-primary text-center p-3'>Currículo pdf</h2> 
-                    </a><br>
-                              
-                </li>
-                
-            </ul> 
-
-            </div>
-            <img class='col-12 col-sm-12 col-md-4 rounded' src="imagens/HumbertoQueirozPetroBranco.jpg" alt="Foto do Devesenvolvedor Humberto Queiroz">
-          </div>
-        </div>  
-      </header>
-      <main>
-        <br>
-        
-        <!--Conhecimentos-->
+            <!--Links de redes sociais-->
+            <div class='containerRedesSociais'>
+                <a href="https://github.com/HumbertoQueiroz" target="_blank"> <img src="https://github.com/fluidicon.png" alt='Logo GitHub' width='30px' height='30px' title='Github'></a>
+                <a href="https://www.linkedin.com/in/humberto-queiroz-37385a1b6/" target="_blank"><img src="https://static-exp1.licdn.com/sc/h/3loy7tajf3n0cho89wgg0fjre" alt='Logo Linkedin' width='30px' height='30px' title='Linkedin'></a>
+                <a href="https://www.workana.com/freelancer/e2326db4301d70101af7d43742cafb11" target="_blank"><img src="https://wkncdn.com/newx/assets/build/img/favicon.57f21bf36.png" alt='Logo Workana' width='30px' height='30px' title='Workana'></a>
+            </div>  
+        </div>
+    </header>
     
-       <div class="container">
-         <div class="row align-items-center justify-content-center" >
-             <h2 class='col-12 text-center mx-auto bg-primary text-white p-3 ml-5 mr-5'>Conhecimentos</h2>  
-         </div>
-         <br>
+    <main>
         
-        <div class="container">
-          <div class="row align-items-center" >
-              <h3 class='col-12 align-self-center text-center mt-3 pt-3 '>Este é o meu portofólio, explore os projetos que desenvolvi e sabia quais conhecimentos apliquei.</h3>
-          </div>
-          <br>
-        </div> 
-        <div class='row justify-content-around mt-3 pt-3'>
-            <div class='col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 align-self-center border border-primary rounded p-3 m-3'>
-              <img class='rounded mx-auto d-block' src="imagens/LogoHTML.png" alt="Logo oficial HTML" width='150px' height='150px'>
-            </div>
-            <div class='col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 border border-primary rounded p-3 m-3'>
-              <img class='rounded mx-auto d-block' src="imagens/LogoCSS.png" alt="Logo oficial do CSS3" width='150px' height='150px'>
-            </div>
-            <div class='col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 border border-primary rounded p-3 m-3'>
-              <img class='rounded mx-auto d-block' src="imagens/LogoJS.svg" alt="Logo oficial do JavaScript" width='150px' height='150px'>
-            </div>
-            <div class='col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 border border-primary rounded p-3 m-3'>
-              <img class='rounded mx-auto d-block' src="imagens/github.png" alt="Logo oficial do GitHub" width='150px' height='150px'>
-            </div>
-            <div class='col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 border border-primary rounded p-3 m-3'>
-              <img  class='rounded mx-auto d-block' src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" alt="Logo oficial do Bootstrap" width='150px' height='150px'>
-            </div>            
-            <div class='col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 border border-primary rounded p-3 m-3'>
-              <img class='rounded mx-auto d-block' src="imagens/bem.jpg" alt="Imagem fazendo alusão a metodologia bem de escrita de css" width='150px' height='150px'>
-            </div>
-            <div class='col-8 col-sm-6 col-md-4 col-lg-3 col-xl-3 border border-primary rounded p-3 m-3'>
-              <img  class='rounded mx-auto d-block' src="imagens/mobile first.png" alt="Logo mobile first" width='150px' height='150px'>
-            </div>
-        </div>
-
-        <!--projetos-->
-
-        <div class="row">
-          <h2 class='col-12 text-center mx-auto bg-primary text-white p-3 m-5'>Projetos</h2>
+        <!-- Apresentação-->
+        <div class="containerApresentacao" id='sobreMim' >
+            <h1>Olá! Sou <span class='containerApresentacao__nome'>Humberto Queiroz</span>, desenvolvedor Web Front-End.</h1>
         </div>
         
-        <ul class='row p-0 m-0'>
-          <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-            <li class="row">
-                <a class='list-group-item text-uppercase font-weight-bold list-group-item-primary text-center mx-auto col-8 m-3 p-sm-1 p-md-3 p-lg-3' style='height: 60px;' href="estacionamento/estacionamento.html">Site Estacionamento</a><br>
-                <a href="estacionamento/estacionamento.html" class='text-center mx-auto'><img class='border border-primary rounded p-3 m-3' src="estacionamento/imagens/logoLelao.jpg" alt="Logo Estacionamento"  width='200px' height='200px'></a>
-                <p class='col-8 text-justify mx-auto projetos__card__texto'>Aplicação de conhecimento de HTML semântico, com metha tags como Keywords, description, robots e canonica! para um bom ranqueamento no SEO. CSS desenvolvido com Mobile force, site responsivo para todos os tipos de aparelhos, smartphone, tablet e desktop através de @media query.</p>                
-            </li>
-          </div>
-          <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-            <li class="row">
-                <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3' style='height: 60px;' href="barbearia/barbearia-index.html">Barbearia</a><br>
-                <a href="barbearia/barbearia-index.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="barbearia/imagens/logo.png" alt="Imagem da aplicação Bateria Digital"  width='200px' height='200px'></a>
-                <p class='col-8 text-justify mx-auto projetos__card__texto'>Desenvolvimento de um site de Barbearia completo, aplicando boas práticas no html e css, desenvolvido com responsividade e compatibilidade web e mobile, com inserção de mídia dentro do html (vídeo, mapa).</p>
-            </li>
-          </div>
-          <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-            <li class="row" >
-                <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3' style='height: 60px;' href="/BateriaDigital/aluraMidi.html">Bateria digital</a><br>
-                <a href="/BateriaDigital/aluraMidi.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/BateriaDigital.jpg" alt="Imagem da aplicação Bateria Digital"  width='200px' height='200px'></a>   
-                <p class='col-8 text-justify mx-auto projetos__card__texto'>Aplicação do conhecimento para criar funções, function, estrutura de repetição, for, estrutura condicional, if e else em JavaScript para manipular saudio dentro do HTML.</p>         
-            </li>
-          </div>
-          <div class='col-6col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-            <li class="row">
-                <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3' style='height: 60px;' href="galeriaImagens.html">Galeria de Imagens</a>
-                <a href="galeriaImagens.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/Galeria.jpg" alt="Imagem do projeto Jogo de adivinhar número aleatório"  width='200px' height='200px'></a>
-                <p class='col-8 text-justify mx-auto projetos__card__texto'>Aplicação de conhecimento de JavaScript para adicionar e alterar propriedades de elementos no html de forma automática em vários elementos através de uma estrutura de repetição com o for, acionamento de eventos com event handler/event listeners</p>
-            </li>
-          </div>
-          <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-            <li class="row">
-                <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-1 p-md-3 p-lg-3' style='height: 60px;' href="geradorDeHistoria.html">Gerador de Histórias Bobas</a>
-                <a href="geradorDeHistoria.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/GeradorHistorias.jpg" alt="Imagem do projeto gerador de histórias bobas"  width='200px' height='200px'></a>
-                <p class='col-8 text-justify mx-auto projetos__card__texto'>Utilização de Event Listener para manipular o html através do JavaScript</p>
-            </li>
-          </div>
-          <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-            <li class="row" >
-                <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="jogoDeAdivinhar.html">Jogo de Adivinhar Número</a>
-                <a href="jogoDeAdivinhar.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/JogoAdvinhar.jpg" alt="Imagem do projeto Jogo de adivinhar número aleatório"  width='200px' height='200px'></a>
-                <p class='col-8 text-justify mx-auto projetos__card__texto'>Desenvolvimento de um jogo de adivinhar um número aleatório, gerado por random, aplicando JavaScript ao html para gerar, alterar e ocultar elementos.</p>
-            </li>            
-          </div>
-        </ul>
+        <!-- Sobre mim --->
+        <div class='containerSobremim'>
+            <h2>Sou apaixonado por programação, comecei a estudar por conta própria vendo vídeos e fóruns na internet, fiz alguns <a href='#' title='Currículo e Certificações'>cursos de programação</a> e atualmente curso faculdade de Tecnólogo em Análise e Desenvolvimento de Sistemas-TADS no IFMT.</h2>
 
-        <!-- HTML e CSS --->
-
-        <div class="row">
-          <h2 class='col-12 text-center mx-auto bg-primary text-white p-3 m-5'>HTML e CSS</h2>
+            <img src="imagens/HumbertoQueirozPetroBranco.jpg" alt="Foto do Devesenvolvedor / Programador Humberto Queiroz" width='200px' height='200px' title='Humberto Queiroz'>
         </div>
-
-        <ul class='row p-0 m-0'>
-            <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-              <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="FrontEndMentor/FrontEndMentor-2-Cripto/index.html">Carteira Cripto</a>
-                  <a href="FrontEndMentor/FrontEndMentor-2-Cripto/index.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/CarteiraCripto.jpg" alt="Imagem da carteira cripto"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Site desenvolvido para treinar CSS, flexbox, adaptabilidade Web, Mobile e tablete.</p>
-              </li>            
-            </div>
-            <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-              <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="FrontEndMentor/FrontEndMentor-1-Sumario/MeuProjeto/index.html">Sumário estilizado</a>
-                  <a href="FrontEndMentor/FrontEndMentor-1-Sumario/MeuProjeto/index.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/sumario.jpg" alt="Imagem do site sumário"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Site desenvolvido para treinar CSS, flexbox, adaptabilidade Web, Mobile e tablete, aplicação de conhecimento de JS.</p>
-              </li>            
-            </div>
-            <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-              <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="drive/Portifolio/HTML e CSS/2/projeto-apeperia-b2501c63b2ebdfd8226473a6c8ffa8777e559efe/index.html">Apeperia</a>
-                  <a href="drive/Portifolio/HTML e CSS/2/projeto-apeperia-b2501c63b2ebdfd8226473a6c8ffa8777e559efe/index.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/appeperia.PNG" alt="Imagem do site Apeperia"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Site focado em adaptabilidade Web, Mobile e tablete.</p>
-              </li>            
-            </div>
-            <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-              <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="drive/Portifolio/HTML e CSS/4 - flex-box/posicione-elementos-com-flexbox-809f39a39e473c574e3c6d9d9929626f8d1352fa/index.html">Site de cursos com FlexBox</a>
-                  <a href="drive/Portifolio/HTML e CSS/4 - flex-box/posicione-elementos-com-flexbox-809f39a39e473c574e3c6d9d9929626f8d1352fa/index.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/FlexBox.jpg" alt="Imagem do site Apeperia"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Site focado em adaptabilidade Web, Mobile e tablete através de FlexBox.</p>
-              </li>            
-            </div>
-        </ul>
-
-          <!-- JavaScript --->
-
-        <div class="row">
-          <h2 class='col-12 text-center mx-auto bg-primary text-white p-3 m-5'>JavaScript</h2>
-        </div>
-        <ul class='row p-0 m-0'>
-          <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-            <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="teste-calculadora.html">Calculadcora em JS v.1.2</a>
-                  <a href="teste-calculadora.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/calculadora.PNG.jpg" alt="Imagem Calculadcora em JS"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Aplicação de JavaScript para manpular html, criar e manipular variáveis, extruturas de repetição e relizar calculos.</p>
-              </li>            
-            </div>
-            <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-              <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="javascript/ConversaoBinario/hexadecimalBinario/decimalHexadecimal.html">Conversor de decimal para Hexadecimal</a>
-                  <a href="javascript/ConversaoBinario/hexadecimalBinario/decimalHexadecimal.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/conversorDecimalBinario.jpg" alt="Imagem da página"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Utilizando funções onclick, while para converter números em decimal para Hexadecimal.</p>
-              </li>            
-            </div> 
-            <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-              <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="javascript/ConversaoBinario/decimalBinario/decimalBinario.html">Conversor de decimal para binário</a>
-                  <a href="javascript/ConversaoBinario/decimalBinario/decimalBinario.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/conversorDecimalBinario.jpg" alt="Imagem da página"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Utilizando funções onclick, while para converter números em decimal para binário.</p>
-              </li>            
-            </div> 
-            <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-              <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="tudoBemJS/tudoBem.html">Dicas dependendo do Clima</a>
-                  <a href="javascript/tempo/tempo.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/tudoBem.jpg" alt="Imagem da página"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Utilizando switch case para executar códigos diferentes dependendo do input do usuário.</p>
-              </li>            
-            </div>            
-            <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-              <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="tudoBemJS/tudoBem.html">Cumprimento em JS</a>
-                  <a href="tudoBemJS/tudoBem.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/tudoBem.jpg" alt="Imagem do dilálogo"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Cumprimento ao visitante em JS, usando funções onclick, alert, prompt e confirm</p>
-              </li>            
-            </div>
-            <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-              <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="tudoBemJS/tudoBem.html">Exibindo números pares</a>
-                  <a href="javascript/descobrindoNumerosPares/descobrindoPares.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/tudoBem.jpg" alt="Imagem da página"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Extraindo números pares em JS, usando funções onclick, alert e prompt</p>
-              </li>            
-            </div>            
-            <div class='col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6'>
-              <li class="row" >
-                  <a class='list-group-item text-uppercase font-weight-bold  list-group-item-primary text-center mx-auto col-8 m-3 pt-1 p-sm-0 p-md-3 p-lg-3' style='height: 60px;' href="javascript/testes/manipulandoHTML1.html">Evento Onclick no JS</a>
-                  <a href="javascript/testes/manipulandoHTML1.html" class='text-center mx-auto'><img class='border border-primary rounded m-3 p-3' src="imagens/LogoJS.svg" alt="Imagem do Logo JavaScript"  width='200px' height='200px'></a>
-                  <p class='col-8 text-justify mx-auto projetos__card__texto'>Aplicação do evento onclick no JS.</p>
-              </li>            
-            </div>
-        </ul>
+        <div id='conhecimentos'></div>
+</div>
             
-    
+        <!-- Conhecimentos --->
+        <div class='containerMargin'>
+            <h3 class='titulo' >Conhecimentos</h3>
+            <div class='containerConhecimentos'>
+                <div class='containerConhecimentos__button'>
+                    <button id='button__html' onclick="exibeDescricao('html')">HTML5</button>
+                    <button id='button__css' onclick="exibeDescricao('css')">CSS3</button>
+                    <button id='button__js' onclick="exibeDescricao('js')">JavaScript</button>
+                    <button id='button__bootstraps' onclick="exibeDescricao('bootstraps')">Bootstraps</button>
+                    <button id='button__github' onclick="exibeDescricao('github')">GitHub</button>
+                </div>
+                <div class='containerConhecimentos__descricao'>
+                    <p id='descricao__html'>HTML semântico e metha tags para rankeamento de SEO, como Keywords para palavras chave, description para identificar o texto que vai aparecer no resutado da busca após o link do site, robots para indicar que deve ser indexado em buscas, canonical para definir o link canonico.</p>
+                    <p id='descricao__css'>CSS para estilização do layout como animações, boxshadow, fontes, manipulação de elementos com o evento hover do mouse, position fixed para manter o menu no topo, display e visibility para mostar e esconder elementos e para responsividade utilizei  Flexbox e @mediaquery. <br> Utilizado <strong style='font-weight: 500;'>Metodologia BEM</strong> para nomeação e organização das classes.</p>
+                    <p id='descricao__javascript'>JavaScript para manipulação de atributos e elementos do html com utilização de eventos como onclick para ativar funções, seletores como querySelector e GetElementById para selecionar elementos e alterar propriedades como display, visibility, color, fontWeight dando uma interatividade e tornando a página dinâmica, etc...</p>
+                    <p id='descricao__bootstraps'>Framework BootStraps, para produtividade utilizando elementos e classes  pré-prontos diminuindo o tempo de criação de um projeto.</p>
+                    <p id='descricao__github'>GitHub para versionamento e armazenamento do código fonte.</p>
+
+                </div>
+
+            </div>
+            <div  id='projetos'></div>
+        </div>
+
+        <!-- Projetos -->
+        <div class='containerMargin' id='contaniner__geral__projetos'>
+            <h3 class='titulo'>Projetos</h3>
+
+            <!-- Calculadora Iphone-->
+            <div class='container__projeto'>
+                <!--Descrição do projeto-->
+                <div class='container__projeto__descricao'>
+                    <p class='container__projeto__descricao__titulo'> <a href="teste-calculadora.html" title='Clique para ver o projeto em execução' target="_blank"> Calculadora do Iphone</a></p>
+                    <div class='container__projeto__descricao__texto'>
+                        <p><span>JavaScript:</span> Projeto desenvolvido para treinar conceitos de JavaScript, utilizei onclick para chamar funções que eu mesmo desenvolvi, utilizadas para armazenar o valor clicado e mostrar no display da calculado, armazenar a operação clicada utilizando switch case e por fim realizar o calculo quando solicitado e retornando no display o resultado.</p>
+                        <p><span>Mobile First:</span> Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compatível com smartphone, tablet ou desktop.</p>
+                        <p><span>CSS e Flexbox:</span> Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.</p>
+                    </div>
+                    <div class='container__projeto__descricao__tags'>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-html'></div>   
+                            <p>HTML5</p>
+                        </div>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-css'></div>
+                            <p>CSS3</p>
+                        </div>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-js'></div>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="container__projeto__descricao__texto__linkGithub">
+                            <a href="https://github.com/HumbertoQueiroz/CalculadoraJS-v.1.0/tree/main" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--imagem do projeto-->
+                <a href="teste-calculadora.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/caculadora figma.png" alt="Imagem do layout do projeto Calculadora"></a>
+            </div>
+
+            <!-- Carteira Cripto-->
+            <div class='container__projeto container__projeto__inverte'>
+                <!--imagem do projeto-->
+                <a href="FrontEndMentor/FrontEndMentor-2-Cripto/index.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/imgCarteiraCripto.png" alt="Imagem do layout do projeto Carteira Cripto"></a>
+                <!--Descrição do projeto-->
+                <div class='container__projeto__descricao'>
+                    <p class='container__projeto__descricao__titulo'> <a href="FrontEndMentor/FrontEndMentor-2-Cripto/index.html" title='Clique para ver o projeto em execução' target="_blank"> Carteira de Cripto moedas</a></p>
+                    <div class='container__projeto__descricao__texto'>
+                        <p><span>Mobile First:</span>Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compatível com smartphone, tablet ou desktop.</p>
+                        <p><span>Acessibilidade:</span> Todas as imagens contem o atributo alt com descrição do conteúdo da imagem.</p>
+                        <p><span>HTML5 e SEO:</span> Utilizado tags  semânticas e metha tags para rankeamento de SEO.</p>
+                        <p><span>CSS e Flexbox:</span> Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.</p>
+                    </div>
+                    <div class='container__projeto__descricao__tags'>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-html'></div>   
+                            <p>HTML5</p>
+                        </div>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-css'></div>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="container__projeto__descricao__texto__linkGithub">
+                            <a href="https://github.com/HumbertoQueiroz/Cripto-FrontEndoMentor" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apeperia-->
+            <div class='container__projeto'>
+                <!--Descrição do projeto-->
+                <div class='container__projeto__descricao'>
+                    <p class='container__projeto__descricao__titulo'> <a href="https://humbertoqueiroz.github.io/drive/Portifolio/HTML%20e%20CSS/2/projeto-apeperia-b2501c63b2ebdfd8226473a6c8ffa8777e559efe/index.html" title='Clique para ver o projeto em execução' target="_blank">Apeperia</a></p>
+                    <div class='container__projeto__descricao__texto'>
+                        <p><span>Mobile First:</span> Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compatível com smartphone, tablet ou desktop.</p>
+                        <p><span>CSS e Flexbox:</span> Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.</p>
+                        <p><span>Acessibilidade:</span> Todas as imagens contem o atributo alt com descrição do conteúdo da imagem.</p>
+                    </div>
+                    <div class='container__projeto__descricao__tags'>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-html'></div>   
+                            <p>HTML5</p>
+                        </div>
+                        <div class='container__circulo-html'>
+                            <div class='circulo-css'></div>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="container__projeto__descricao__texto__linkGithub">
+                            <a href="https://github.com/HumbertoQueiroz/Appeperia-site" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--imagem do projeto-->
+                <a href="https://humbertoqueiroz.github.io/drive/Portifolio/HTML%20e%20CSS/2/projeto-apeperia-b2501c63b2ebdfd8226473a6c8ffa8777e559efe/index.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/Apeperia figma.png" alt="Imagem do layout do projeto Apeperia"></a>
+            </div>
+
+
+            <!------- Botão Mais projetos - ----->
+            <div class='buttonMaisProjetos'>
+                    <button onclick='mostraMais()'>Mais projetos<img src="imagens/botão mais.svg" alt="Mostrar mais" id='mostrarMais'>
+                    <img src="imagens/botão menos.svg" alt="Mostrar menos" id='mostrarMenos'></button>
+            </div>
+
+            
+            <!----  Container Com mais projetos *visivel/invisivel* ---->
+            <div id='demaisProjetos'>
+
+
+                <!-- Bateria digital -->
+                <div class='container__projeto'>
+                    <!--Descrição do projeto-->
+                    <div class='container__projeto__descricao'>
+                        <p class='container__projeto__descricao__titulo'> <a href="BateriaDigital/aluraMidi.html" title='Clique para ver o projeto em execução' target="_blank"> Bateria Digital</a></p>
+                        <div class='container__projeto__descricao__texto'>
+                            <p><span>JavaScript:</span> Projeto desenvolvido para treinar manipulação de mídia com JavaScript, utilizei for, onclick, onkeyup, onkeydown, if else e criei minha prórpia função para criar uma bateria digital, executando o som quando clica no botão.</p>
+                            <p><span>CSS:</span> Neste projeto utilizei CSS para estilização geral da página.</p>
+                        </div>
+                        <div class='container__projeto__descricao__tags'>
+                            <div class='container__circulo-html'>
+                                <div class='circulo-html'></div>   
+                                <p>HTML5</p>
+                            </div>
+                            <div class='container__circulo-html'>
+                                <div class='circulo-css'></div>
+                                <p>CSS3</p>
+                            </div>
+                            <div class='container__circulo-html'>
+                                <div class='circulo-js'></div>
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="container__projeto__descricao__texto__linkGithub">
+                                <a href="https://github.com/HumbertoQueiroz/AluraMidi" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--imagem do projeto-->
+                    <a href="BateriaDigital/aluraMidi.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="imagens/Bateria layout.png" alt="Imagem do layout do projeto Calculadora"></a>
+                </div>
+
+                <!-- Site Barbearia -->
+            
+                <div class='container__projeto container__projeto__inverte'>
+                    <!--imagem do projeto-->
+                    <a href="barbearia/barbearia-index.html" title='Clique para ver o projeto em execução' class='container__projeto__link__img' target="_blank"><img src="barbearia/imagens/logo.png" id='imagemMenor' alt="Imagem do layout do projeto Carteira Cripto"></a>
+                    <!--Descrição do projeto-->
+                    <div class='container__projeto__descricao'>
+                        <p class='container__projeto__descricao__titulo'> <a href="barbearia/barbearia-index.html" title='Clique para ver o projeto em execução' target="_blank">Site Institucional Barbearia</a></p>
+                        <div class='container__projeto__descricao__texto'>
+                            <p><span>Mobile First:</span>Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compatível com smartphone, tablet ou desktop.</p>
+                            <p><span>Acessibilidade:</span> Todas as imagens contem o atributo alt com descrição do conteúdo da imagem.</p>
+                            <p><span>HTML5 e SEO:</span> Utilizado tags  semânticas e metha tags para rankeamento de SEO.<br> Integração com API do Google Maps e video do Youtube.</p>
+                            <p><span>CSS e Flexbox:</span> Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.</p>                            
+                        </div>
+                        <div class='container__projeto__descricao__tags'>
+                            <div class='circulo-html'></div>
+                            <p>HTML5</p>
+                            <div class='circulo-css'></div>
+                            <p>CSS3</p>
+                            <div class="container__projeto__descricao__texto__linkGithub">
+                                <a href="https://github.com/HumbertoQueiroz/Projeto-site-completo-barbearia" target="_blank" id="codigoGithub"><button title="Saiba mais sobre esse projeto no arquivo  Redme no Github"> Código fonte no Github</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>    
+        <!-- Contato -->
+        <div class='containerMargin contato'>
+            <p class='titulo' id='contato'>Contato</p>
+            <p>Entre em contato pelo e-mail:</p>
+            <a href="mailto:devhumbertoqueiroz@gmail.com" >devhumbertoqueiroz@gmail.com</a></p>
+        </div>
+
     </main>
-
-        <!-- Rodapé --->
-
     <footer>
-      <section class='container'>
-      
-        <div class='row'>
-          <p class='col-12 mt-3'>Esta página esta na <span class='text-info'>versão 1.3.1</span> e foi criada utilizando <span class='font-weight-bold text-info'>Bootstrap v4.1</span>, utilizando boas práticas no desenvolvimento, como HTML semântico e aplicação de metha tags para SEO, responsividade e compatibilidade em dispositivos móveis e desktops.</p>
-        </div>
-
-        <!-- Versões-->
-
-        <div class="row justify-content-center" >
-          <div class="col-6 border rounded bg-info text-white p-0">
-            
-            <div class="row">
-              <p class='text-center col-12 pt-3'>Conheça as verções anteriores desta página nos links a seguir:</p>
-              
+        <nav>
+            <div class='footer__containerTituloSVG'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50px" fill="#48cbff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>                
+                <p>Portifólio Humberto Queiroz</p>
             </div>
-          </div>
-        </div>
-
-        <div class="slider">
-          <div class="slide-track">
-            
-            <div class="slide">
-              <a href="index1.1.html" class='text-black-50'>versão 1.1</a>
-            </div>
-            <div class="slide">
-              <a href="index1.2.html" class='text-black-50'>versão 1.2</a>
-            </div>
-            <div class="slide">
-              <a href="#" class='text-black-50'>versão 1.3</a>
-            </div>
-              
-
-            <div class="slide">
-              <a href="index1.1.html" class='text-black-50'>versão 1.1</a>
-            </div>
-            <div class="slide">
-              <a href="index1.2.html" class='text-black-50'>versão 1.2</a>
-            </div>
-            <div class="slide">
-              <a href="#" class='text-black-50'>versão 1.3</a>
-            </div>
-
-            <div class="slide">
-              <a href="index1.1.html" class='text-black-50'>versão 1.1</a>
-            </div>
-            <div class="slide">
-              <a href="index1.2.html" class='text-black-50'>versão 1.2</a>
-            </div>
-            <div class="slide">
-              <a href="#" class='text-black-50'>versão 1.3</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class='container'>
-            <p class='mt-3 text-center'>A versão atual esta em desenvolvimento, caso encontre um bug, erro ou queria entrar em contato, encaminhe um e-mail para: <span class='font-weight-bold text-info' type='e-mail'>devhumbertoqueiroz@gmail.com</span> </p>
-          </div>
-      </section>
+            <ul class='containerNav' >
+                <li><a href="#sobreMim" >Sobre mim</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class='containerRedesSociais'>
+                <a href="https://github.com/HumbertoQueiroz" target="_blank"> <img src="https://github.com/fluidicon.png" alt='Logo GitHub' width='30px' height='30px' title='Github'></a>
+                <a href="https://www.linkedin.com/in/humberto-queiroz-37385a1b6/" target="_blank"><img src="https://static-exp1.licdn.com/sc/h/3loy7tajf3n0cho89wgg0fjre" alt='Logo Linkedin' width='30px' height='30px' title='Linkedin'></a>
+                <a href="https://www.workana.com/freelancer/e2326db4301d70101af7d43742cafb11" target="_blank"><img src="https://wkncdn.com/newx/assets/build/img/favicon.57f21bf36.png" alt='Logo Workana' width='30px' height='30px' title='Workana'></a>
+            </div>  
     </footer>
-
-      
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-   
-  </body>
+    <script src="javascript/portifolio.js"></script>
+</body> 
 </html>
