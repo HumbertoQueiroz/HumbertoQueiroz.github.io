@@ -127,7 +127,7 @@ function exibeDescricao(e) {
     }
 }
 
-/* mostra Menu no mobile*/
+/* mostra Menu no mobile ou botaão HOME em desktop*/
 var menu = document.getElementById('mostraMenu');
 var controleMenu = true;
 var larguraDaTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -141,7 +141,9 @@ function MostraMenu() {
             menu.style.display = 'none';
             controleMenu = true;
         }
-    }    
+    } else {
+        window.location.href = "https://humbertoqueiroz.github.io/";
+    }
 }
 
 

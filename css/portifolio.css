@@ -37,21 +37,26 @@ header{
   width: 60px;
   border-radius: 300px;
   padding: 10px;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
   display: flex;
 }
 
+
 .containerIcone:hover{
-  border: 5px solid#48cbff;
-  transition: .8s;
+  border: 3px solid#48cbff;
+  transform: rotate(1turn);
+  transition: 1.2s;
+  cursor: pointer;
 }
 
 .containerIcone img{
   width: 50px;
 }
 
-svg:hover {
+.containerIcone:hover svg {
   fill: #48cbff;
+  transition: .8s;
+
 }
 
 .containerTopo nav a {
@@ -261,8 +266,6 @@ contaniner de fundo com shadown box azul claro*/
   padding: 25px;
   line-height: 1.5;
 }
-
-
 
 #button__html, #button__css, #button__js, #button__bootstraps, #button__github{
  animation-name: slides;
@@ -527,8 +530,6 @@ margin-left: 10px;
 }
 
 
-
-
 /* Footer */
 
 footer{
@@ -550,18 +551,42 @@ footer nav{
   align-items: center;
   margin-top: 20px;
 }
+.footer__containerTituloSVG p{
+  color: #fff;
+  animation: mudaCor infinite 4s;
+}
 
 .footer__containerTituloSVG svg{
-  border: 3px solid #48cbff;
+  border: 3px solid #ffffff;
   border-radius: 100%;
-}
-
-.footer__containerTituloSVG svg:hover{
-  border: 5px solid #48cbff;
   width: 60px;
   height: 60px;
-  transition: 1s;
+  animation: mudaCor infinite 4s;
+}  
+
+@keyframes mudaCor{
+    25%{
+      border-color: #48cbff;
+      fill:#48cbff;
+      color: #48cbff;
+    }
+    50%{
+      border-color: #007bff;
+      fill:#007bff;
+      color: #007bff;
+    }
 }
+
+.footer__containerTituloSVG:hover svg{
+  border-color:#48cbff;
+  fill: #48cbff;
+  transform: rotate(1turn);
+  transition: 1.5s;
+}
+
+
+
+
 
 footer nav li{
   margin: 15px;
@@ -569,7 +594,7 @@ footer nav li{
   display: inline-block;
 }
 
-footer nav a:hover{
+footer nav a{
   text-decoration: underline;
 }
 
@@ -609,6 +634,14 @@ footer .containerRedesSociais img{
 
   .containerTopo{
     justify-content: space-between;
+  }
+
+  .containerIcone{
+    visibility: visible;
+  }
+
+  .containerIcone:hover{
+    cursor: pointer;
   }
 
   header ul {
