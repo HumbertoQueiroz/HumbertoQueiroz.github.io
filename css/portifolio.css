@@ -269,7 +269,7 @@ contaniner de fundo com shadown box azul claro*/
 
 #button__html, #button__css, #button__js, #button__bootstraps, #button__github{
  animation-name: slides;
- animation-delay: 0.4;
+ animation-delay: 1s;
 }
 
 #button__html{
@@ -554,7 +554,7 @@ footer nav{
 }
 .footer__containerTituloSVG p{
   color: #fff;
-  animation: mudaCor infinite 4s;
+  animation: mudaCor infinite 4s ease-in;
 }
 
 .footer__containerTituloSVG svg{
@@ -562,7 +562,7 @@ footer nav{
   border-radius: 100%;
   width: 60px;
   height: 60px;
-  animation: mudaCor infinite 4s;
+  animation: mudaCor infinite 4s ease-in;
 }  
 
 @keyframes mudaCor{
