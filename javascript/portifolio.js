@@ -131,7 +131,6 @@ function exibeDescricao(e) {
 var menu = document.getElementById('mostraMenu');
 var controleMenu = true;
 var larguraDaTela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-console.log(larguraDaTela);
 function MostraMenu() {
     if(larguraDaTela<950){
         if (controleMenu == true) {
@@ -147,7 +146,7 @@ function MostraMenu() {
 }
 
 
-
+/*Animação direita para esquerda Conhecimentos*/
 
 
 
@@ -158,9 +157,7 @@ var demaisProjetos = document.getElementById('demaisProjetos');
 var containerVisivel = false;
 
 function mostraMais(e) {
-    console.log(iconeMostrarMais.style.display);
     if (containerVisivel == false) {
-        console.log('entrou no if');
         iconeMostrarMais.style.display = 'none';
         iconeMostrarMenos.style.display = 'inline';
         demaisProjetos.style.display = 'inline';

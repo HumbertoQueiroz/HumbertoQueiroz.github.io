@@ -267,9 +267,14 @@ contaniner de fundo com shadown box azul claro*/
   line-height: 1.5;
 }
 
+.containerConhecimentos:hover #button__html, #button__css, #button__js, #button__bootstraps, #button__github{
+ animation-name: slides;
+ animation-delay: 0.4;
+}
+
 #button__html, #button__css, #button__js, #button__bootstraps, #button__github{
  animation-name: slides;
- animation-delay: 1s;
+ animation-delay: 0.4;
 }
 
 #button__html{
