@@ -259,11 +259,118 @@ contaniner de fundo com shadown box azul claro*/
   font-size: 1.1rem;
   color: #085ec5;
   cursor: pointer;
+  animation: infinite 7s linear;
+  animation-delay: 1s;
 }
 
+#button__html{
+  animation-name: vibra1;
+}
+
+#button__css{
+  animation-name: vibra2;
+}
+
+#button__js{
+  animation-name: vibra3;
+}
+
+#button__bootstraps{
+  animation-name: vibra4;
+}
+
+#button__github{
+  animation-name: vibra5;
+}
+
+@keyframes vibra1 {
+  10%{transform: rotate(0deg)}
+  12% {transform: rotate(2deg)}
+  14% {transform: rotate(-2deg)}
+  16% {transform: rotate(2deg)}
+  18% {transform: rotate(-2deg)}
+  20% {transform: rotate(0deg)}
+}
+
+@keyframes vibra2 {
+  20%{transform: rotate(0deg)}
+  22% {transform: rotate(2deg)}
+  24% {transform: rotate(-2deg)}
+  26% {transform: rotate(2deg)}
+  28% {transform: rotate(-2deg)}
+  30% {transform: rotate(0deg)}
+}
+
+@keyframes vibra3 {
+  30%{transform: rotate(0deg)}
+  32% {transform: rotate(2deg)}
+  34% {transform: rotate(-2deg)}
+  36% {transform: rotate(2deg)}
+  38% {transform: rotate(-2deg)}
+  40% {transform: rotate(0deg)}
+}
+
+@keyframes vibra4 {
+  40%{transform: rotate(0deg)}
+  42% {transform: rotate(2deg)}
+  44% {transform: rotate(-2deg)}
+  46% {transform: rotate(2deg)}
+  48% {transform: rotate(-2deg)}
+  50% {transform: rotate(0deg)}
+}
+
+@keyframes vibra5 {
+  50%{transform: rotate(0deg)}
+  52% {transform: rotate(2deg)}
+  54% {transform: rotate(-2deg)}
+  56% {transform: rotate(2deg)}
+  58% {transform: rotate(-2deg)}
+  60% {transform: rotate(0deg)}
+}
 .containerConhecimentos__button button:hover{
   border: 2px solid #5eaafc;
 }
+
+/* 
+
+-- Animação que talvez eu deixei no projeto final --
+
+#button__html:hover, #button__css:hover, #button__js:hover, #button__bootstraps:hover, #button__github:hover{
+animation: brilho 1 .5s;
+}
+
+
+
+@keyframes brilho{
+ 0%{background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,255,1) 2%, rgba(131,223,255,1) 9%);
+      }
+  12.5%{background: rgb(131,223,255);
+        background: linear-gradient(90deg, rgba(131,223,255,1) 0%, rgba(255,255,255,1) 12%, rgba(131,223,255,1) 25%);
+      }
+  25%{background: rgb(131,223,255);
+      background: linear-gradient(90deg, rgba(131,223,255,1) 0%, rgba(255,255,255,1) 25%, rgba(131,223,255,1) 50%);
+      }
+  37.5%{background: rgb(131,223,255);
+        background: linear-gradient(90deg, rgba(131,223,255,1) 25%, rgba(255,255,255,1) 37%, rgba(131,223,255,1) 50%);
+        }
+  50%{background: rgb(131,223,255);
+      background: linear-gradient(90deg, rgba(131,223,255,1) 25%, rgba(255,255,255,1) 50%, rgba(131,223,255,1) 75%);
+      }
+  62.5%{background: rgb(131,223,255);
+        background: linear-gradient(90deg, rgba(131,223,255,1) 50%, rgba(255,255,255,1) 62%, rgba(131,223,255,1) 75%);
+        }
+  75%{background: rgb(131,223,255);
+        background: linear-gradient(90deg, rgba(131,223,255,1) 50%, rgba(255,255,255,1) 75%, rgba(131,223,255,1) 100%);
+      }
+  87.5%{background: rgb(131,223,255);
+      background: linear-gradient(90deg, rgba(131,223,255,1) 75%, rgba(255,255,255,1) 82%, rgba(131,223,255,1) 100%);
+      }
+  100%{background: rgb(131,223,255);
+        background: linear-gradient(90deg, rgba(131,223,255,1) 75%, rgba(255,255,255,1) 100%);
+      }
+}
+*/
 
 .containerConhecimentos__descricao{
   background-color: #edfaff;
@@ -272,11 +379,7 @@ contaniner de fundo com shadown box azul claro*/
   line-height: 1.5;
 }
 
-.containerConhecimentos:hover #button__html, #button__css, #button__js, #button__bootstraps, #button__github{
- animation-name: slides;
- animation-delay: 0.4;
-}
-
+/*
 #button__html, #button__css, #button__js, #button__bootstraps, #button__github{
  animation-name: slides;
  animation-delay: 0.4;
@@ -301,6 +404,8 @@ contaniner de fundo com shadown box azul claro*/
 #button__github{
    animation-duration: 1s;
 }
+
+/*
 
 /*animação que faz os botões virem
 da esquerda para a direita*/
@@ -632,6 +737,10 @@ footer .containerRedesSociais img{
 
 
 
+
+/*Style para celulares e tablets*/
+
+
 @media screen and (max-width: 950px) {
   html{
     font-size: 1.3rem;
@@ -806,7 +915,58 @@ footer .containerRedesSociais img{
 }
 
 
+ /*  -------  Estilo Certificados --------*/
 
+ .container__flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+
+ .tituloCurso{
+  font-size: 4.5rem;
+  align-content: center ;
+ }
+
+ .imgCertificado{
+  width: 100%;
+ }
+
+ .container__flex .titulo{
+  text-align: start;
+  margin-left: 10px;
+  width: 100%;
+ }
+
+
+
+ .azul{
+  border: solid 5px #48cbff;
+  margin-right: 5px;
+ }
+
+ .vermelho{
+  border: solid 5px #F16165;
+  margin-right: 5px;
+ }
+
+ .verde{
+   border: solid 5px #9CD33B;
+  margin-right: 5px;
+ }
+
+ .container__flex p{
+ color: #9B9CA4;
+ text-align: start;
+ margin: 10px;
+ width: 100%;
+ }
+
+ .AlinhaTextoCentro{
+  text-align: center;
+ }
 
 
 

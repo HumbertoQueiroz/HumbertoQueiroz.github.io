@@ -146,7 +146,8 @@ function MostraMenu() {
 }
 
 
-/*Animação direita para esquerda Conhecimentos*/
+/* ATivação Animação direita para esquerda Conhecimentos*/
+
 
 
 
