@@ -44,9 +44,14 @@ header{
 
 .containerIcone:hover{
   border: 3px solid#48cbff;
-  transform: rotate(1turn);
-  transition: 1.2s;
   cursor: pointer;
+  animation: gira 1s ease-out;
+}
+
+@keyframes gira{
+  from{
+  transform: rotate(2turn);
+  }
 }
 
 .containerIcone img{
