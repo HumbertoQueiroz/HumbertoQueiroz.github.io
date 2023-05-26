@@ -141,7 +141,7 @@ function MostraMenu() {
             controleMenu = true;
         }
     } else {
-        window.location.href = "https://humbertoqueiroz.github.io/";
+        window.location.href = "index.html";
     }
 }
 
