@@ -1,4 +1,8 @@
-
+h1{
+    text-align: center;
+    display: block;
+    margin-top: 200px;
+}
 .container__botao{
     width: 90%;
     display: flex;
@@ -14,6 +18,25 @@
     text-align: center;
 }
 
+.botaoBlock{
+    margin: 5px;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: block;
+    width: 150px;
+    
+}
+
+input{
+    width: 100%;
+    margin: 5px;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: block;
+}
+
 .p1{
     width: 60%;
 }
@@ -27,6 +50,7 @@ button{
     margin-top: 250px;
     font-size: 1.5rem;
     padding: 10px;
+    
 }
 
 button:hover{
