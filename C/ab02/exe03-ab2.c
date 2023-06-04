@@ -1,4 +1,4 @@
- /* 3. Jogo da forca: 
+/* 3. Jogo da forca: 
 Implemente o jogo da forca, em que um usuário deve escolher uma palavra qualquer e outro
 usuário terá que adivinhar a palavra, fornecendo letras como palpites.
 - O jogador tem um número limitado de tentativas antes de perder o jogo de 5.
@@ -15,6 +15,7 @@ usuário terá que adivinhar a palavra, fornecendo letras como palpites.
 void jogo(char palavra[],int tamanho, char palavraMostraAcerto[], int tentativas, char letra, int controleErro){
     int controleGanha =0;
    
+   
    // Checa se encontrou todas as letras
     for (int i = 0; i < tamanho; i++) {
         if(palavraMostraAcerto[i]!='-'){
@@ -22,7 +23,8 @@ void jogo(char palavra[],int tamanho, char palavraMostraAcerto[], int tentativas
         }
     }
     if(controleGanha==tamanho){
-        printf("\n\n\n     ***Parabéns!***\n    ***Você ganhou*** ");
+        system ("clear");
+        printf("\n\n\n     *Parabéns!\n    Você ganhou* ");
         return;
     }
     
@@ -32,6 +34,7 @@ void jogo(char palavra[],int tamanho, char palavraMostraAcerto[], int tentativas
         //recebe a letra digitada
         printf("\nDigite uma letra: ");
         scanf("%s", &letra);
+        
         
 //*2.    executa a função testa
         if(testa(palavra,tamanho, palavraMostraAcerto, tentativas, letra, controleErro)>0){
@@ -43,6 +46,7 @@ void jogo(char palavra[],int tamanho, char palavraMostraAcerto[], int tentativas
         //aqui reinicio a função para fazer a checagem de tentativas
         jogo(palavra,tamanho, palavraMostraAcerto, tentativas, letra, controleErro);
     } else{
+        system ("clear");
         printf("\n\n    *** FIM DE JOGO ***");
     }
 }
@@ -56,7 +60,7 @@ int testa (char palavra[],int tamanho, char palavraMostraAcerto[], int tentativa
             printf("\n\n -- Acertou! --");
             palavraMostraAcerto[i]=letra;
             mostraForca(controleErro);
-            printf("\n %s", palavraMostraAcerto);
+            printf("\n      * %s *", palavraMostraAcerto);
             tentativas++;
             return 0;
         }
@@ -75,6 +79,7 @@ int testa (char palavra[],int tamanho, char palavraMostraAcerto[], int tentativa
 
 //*5 mostra uma figua diferente dependendo
 int mostraForca(int controleErro){
+    system ("clear");
     if(controleErro==1){
         printf("\n ___\n|/ 0\n|\n|\n");
         return controleErro;
@@ -105,12 +110,15 @@ int main() {
     char letra;
     int controleErro=0;
     
+    system ("clear");
+    
     printf("\n ------- Jogo da Forca -------\n\n");
 
     //Define a palavra da forca
-    printf("Digite a palavra da forca:");
+    printf("Usuário 01 digite a palavra da forca:");
     scanf("%s", palavra);
     printf("\nNúmeros de tentativas possíveis: 5.\n");
+    system ("clear");
     
     //define variavel de controle do tamanho
     // cria variavel que sera exibido os acertos
@@ -123,7 +131,8 @@ int main() {
     }
     
     //imprime a forca
-    printf("\n ___\n|/\n|\n|\n");
+    printf("\n __\n|/ \n|\n|\n");
+    
     
     //obrigado a colocar no final o '\0' para função não exibir um erro no final
     palavraMostraAcerto[tamanho] = '\0';
@@ -133,7 +142,7 @@ int main() {
     
     //inicia o jogo
     jogo(palavra,tamanho, palavraMostraAcerto, tentativas, letra, controleErro);
-    
+
     
     
     
