@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>/*
+Escreva uma função chamada range que recebe dois argumentos, start (início) e end (fim), e retorna um array
+contendo todos os números a partir do valor start até o valor end (incluindo-o).
+Em seguida, escreva a função sum que recebe um array de números como argumento e retorna a soma desses
+números. Execute o programa anterior e veja se o resultado retornado é de fato 55.
+Como exercício bônus, modifique a sua função range para aceitar um terceiro argumento opcional que indica o
+tamanho do "incremento" usado para construir o array. Se nenhum valor for atribuído ao tamanho do incremento, o
+array de elementos será percorrido em incrementos de um, correspondendo ao comportamento original.*/
+
+    function range(start, end, incremento){
+        let myArray=[];
+
+        //checa se incremento esta vazio 'undefined' e executa normal
+        //if(incremento==undefined){
+
+        //Ou checa a quantidade de argumentos menor que 3    
+        if(arguments.length<3){
+            
+            for(i=0; i<(end-start+1); i++){
+                myArray.push(start+i);
+            }
+            return myArray;
+        } 
+        //caso tenha o terceiro elemento (incremento)
+        else{
+            //positivo
+            if(incremento>0){
+                myArray.push(start);
+                for(i=0; (myArray[i]+incremento)<=end; i++){
+                    myArray.push(myArray[i]+incremento);
+                    
+                }
+                return myArray;
+
+            }
+            //negativo
+            else{
+                  myArray.push(start);
+                for(i=0; (myArray[i]+incremento)>=end; i++){
+                    console.log(myArray[i]+incremento)
+                    myArray.push(myArray[i]+incremento);
+                    
+                }
+                return myArray;
+            }
+            
+        }
+    }
+
+    function sum (localArray){
+        let result=0;
+        for(i=0; i<localArray.length; i++){
+            result+=localArray[i];
+        }
+        return result;
+    }
+</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+/*Para esse exercício, escreva duas funções: reverseArray e reverseArrayInPlace . Aprimeira ( reverseArray ) recebe
+um array como argumento e produz um novo array que tem os mesmos elementos com ordem inversa. 
+A segunda ( reverseArrayInPlace ) funciona da mesma forma que o método reverse , só que nesse caso, invertendo
+os elementos do próprio array que foi fornecido como argumento. Ambas as funções não devem usar o método
+padrão reverse .*/
+var arrayValue = [1, 2, 3, 4, 5];
+arrayInvertida=[];
+function reverseArray(arrayRecebida){
+    aux=0;
+    /*
+    for(i=0; i<arrayRecebida.length;i++){
+        aux=arrayRecebida[arrayRecebida.length-i-1];
+        arrayInvertida[i]=aux;
+    }
+    */
+
+   //ou
+
+   /*
+    for(i=0; i<arrayRecebida.length;i++){
+        arrayInvertida.unshift(arrayRecebida[i]);
+        
+    }
+    */
+
+    //ou
+
+    for (i = arrayRecebida.length - 1; i >= 0; i--) {
+        arrayInvertida.push(arrayRecebida[i])
+        
+    }
+
+    return arrayInvertida;
+
+
+
+}
+
+
+function reverseArrayInPlace (arrayRecebida){
+for(i=0; i<Math.floor(arrayRecebida.length/2);i++){
+        aux=arrayRecebida[i];
+        arrayRecebida[i]=arrayRecebida[arrayRecebida.length-i-1];
+        arrayRecebida[arrayRecebida.length-i-1]=aux;
+    }
+    arrayRecebida=arrayInvertida;
+}
+
+console.log('Antes:\n',arrayValue);
+reverseArrayInPlace(arrayValue);
+console.log('\nDepois da função reverseArrayInPlace: \n', arrayValue);
+</script>
+</html>
