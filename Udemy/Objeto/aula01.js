@@ -36,9 +36,30 @@ const carro = {
             numero: 1,
             bairro: 'centro'
         }
+    },
+    condutores: [{
+        nome: 'Jão',
+        idade: 18
+    }, {
+        nome: 'Ana',
+        idade: 48
+        }],
+    calcularValorSeguro: function () {
+        //código
     }
 }
 
 console.log(carro);
 console.log(carro.proprietario);
 console.log(carro.proprietario.endereco);
+
+carro.proprietario.endereco.numero = 100;
+carro['proprietario']['endereco']['logradouro'] = 'br 001';
+console.log(carro);
+
+delete carro.condutores;
+//Deletar um atributo do objeto que seja outro objeto ou array vai deletar tudo que tem dentro dele, retornando undefined se tentar acessar.
+delete carro.proprietario.endereco;
+delete carro.calcularValorSeguro;
+console.log(carro);
+console.log(carro.condutores)
