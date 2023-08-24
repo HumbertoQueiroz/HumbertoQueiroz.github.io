@@ -13,4 +13,4 @@ console.log(objeto1);
 
 console.log(objeto1.nome);
 console.log(objeto1.altura);
-funcao1(objeto1);
+funcao1(objeto1);e.lenght
