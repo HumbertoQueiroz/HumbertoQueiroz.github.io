@@ -8,7 +8,7 @@ const alunos = [
 console.log(alunos.map(a => a.nota))
 
 
-//Reduce é um lop que pega um acumulador e o valor atual, faz uma operação e  passa isso de parametro de acumulador para o próximo loop
+//Reduce é um lop que pega um acumulador e o valor atual, faz uma operação e passa isso de parametro de acumulador para o próximo loop
 const resultado = alunos.map(a => a.nota).reduce(function (acumulador, atual) {
     console.log(acumulador, atual, '\n');
     return acumulador+atual
