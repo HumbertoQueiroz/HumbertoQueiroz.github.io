@@ -1,3 +1,11 @@
+Array.prototype.reduce2 = function (callback) {
+    let acumulador=callback;
+    let atual;
+    return acumulador+atual
+}
+
+
+
 const alunos = [
   { nome: 'João', nota: 7.3, bolsista: false },
   { nome: 'Maria', nota: 9.2, bolsista: true },
