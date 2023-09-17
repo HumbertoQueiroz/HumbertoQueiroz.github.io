@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    /* Estilos adicionais específicos para mobile */
+    body {
+      background-image: url('paisagem-prado-ensolarado.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 20px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold; 
+    }
+
+    @media (min-width: 1000px) {
+      .card {
+        width: 500px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container d-flex align-items-center justify-content-center" style="height: 100%;">
+    <div class="card" style="width: 400px;">
+      <div class="card-header text-center">
+        Login
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="username">Nome de usuário:</label>
+            <input type="text" class="form-control" id="username" placeholder="Digite seu nome de usuário">
+          </div>
+          <div class="form-group">
+            <label for="password">Senha:</label>
+            <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+          </div>
+          <a href="home.html">
+        </a>
+        <button type="button" class="btn btn-primary btn-block" onclick="enviarDados()">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
