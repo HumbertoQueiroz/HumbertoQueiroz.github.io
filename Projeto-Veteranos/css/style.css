@@ -1,0 +1,70 @@
+:root {
+    --verde-bg: #1E3706;
+    --amarelo-titulo: #F7D380;
+    --verde-Claro: #005447
+}
+body{
+    height: 100vh;
+    background: #e5e5e5;
+}
+.container-bg{
+    background:var(--verde-bg);
+}
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+h1{
+    color: var(--amarelo-titulo);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+.container-bg button{
+    background: var(--verde-Claro);
+    color: var(--amarelo-titulo);
+}
+
+h2{
+    padding-top: 20px;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.tela-inteira{
+    height:50vh;
+}
+
+/*Tela de Login*/
+.bg{
+    background-image: url(imagens/Foto-Planta-Login.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card{
+    background: var(--amarelo-titulo);
+    color: var(--verde-bg);
+}
+.card button{
+    background: var(--verde-bg);
+    color: var(--amarelo-titulo);
+}
+@media (min-width: 700px) {
+    h1{
+        font-size: 2rem;
+    }
+    .tela-inteira{
+        height: 65vh;
+    }
+
+}
+
+@media (min-width: 700px) {
+    .tela-inteira{
+        height: 95vh;
+    }   
+}
+
