@@ -19,19 +19,6 @@
     background:var(--verde-bg-Cabecario);
 }
 
-
-
-
-
-
-body{
-    height: 100vh;
-    background: var(--cinza-bg);
-}
-
-.container-bg{
-    background:var(--verde-bg-Cabecario);
-}
 .logo{
     width: 70px;
     height: 70px;
@@ -44,6 +31,19 @@ h1{
     padding-top: 10px;
     font-weight: 100;
 }
+
+
+
+
+body{
+    height: 100vh;
+    background: var(--cinza-bg);
+}
+
+.container-bg{
+    background:var(--verde-bg-Cabecario);
+}
+
 
 .container-bg button{
     color: var(--amarelo-titulo);
