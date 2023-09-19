@@ -1,14 +1,36 @@
 :root {
-    --verde-bg: #1E3706;
+    --verde-bg-Cabecario: #1E3706;
     --amarelo-titulo: #F7D380;
-    --verde-Claro: #005447
+    --verdeClaro-bg-btn: #005447;
+    --cinza-bg: #FAF9F8;
+    --vermelho-sair: #FF5757;
+    --verdeClaro-bg-ContainerBordar:#859764;
 }
+
+.container-primario{
+    min-height: 100vh;
+    width: 100%;
+    background: var(--cinza-bg);
+}
+
+/*--------  Cabeçario  --------*/
+.container-cabecario{
+    height: 70px;
+    background:var(--verde-bg-Cabecario);
+}
+
+
+
+
+
+
 body{
     height: 100vh;
-    background: #e5e5e5;
+    background: var(--cinza-bg);
 }
+
 .container-bg{
-    background:var(--verde-bg);
+    background:var(--verde-bg-Cabecario);
 }
 .logo{
     width: 70px;
@@ -20,11 +42,17 @@ h1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.25rem;
     padding-top: 10px;
+    font-weight: 100;
 }
 
 .container-bg button{
-    background: var(--verde-Claro);
     color: var(--amarelo-titulo);
+}
+
+.btn{
+    background: var(--verdeClaro-bg-btn);
+    border-radius: 20px;
+    padding: 5px 20px;
 }
 
 h2{
@@ -38,18 +66,12 @@ h2{
 }
 
 /*Tela de Login*/
-.bg{
-    background-image: url(imagens/Foto-Planta-Login.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .card{
     background: var(--amarelo-titulo);
-    color: var(--verde-bg);
+    color: var(--verde-bg-Cabecario);
 }
 .card button{
-    background: var(--verde-bg);
+    background: var(--verdeClaro-bg-btn);
     color: var(--amarelo-titulo);
 }
 @media (min-width: 700px) {
@@ -68,3 +90,32 @@ h2{
     }   
 }
 
+/*home*/
+
+.btn-sair{
+    background-color: var(--vermelho-sair);
+}
+
+.container-conteudo-bordas{
+    background: var(--verdeClaro-bg-ContainerBordar);
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.negrito{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container-pesquisa{
+    background-color: #fff;
+    padding: 2px;
+}
+
+.container-pesquisa input{
+    border: none;
+}
+
+.cliente{
+    background: var(--cinza-bg);
+}
