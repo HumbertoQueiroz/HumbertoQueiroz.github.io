@@ -1,0 +1,67 @@
+:root {
+    --verde-bg-Cabecario: #1E3706;
+    --amarelo-titulo: #F7D380;
+    --verdeClaro-bg-btn: #005447;
+    --cinza-bg: #FAF9F8;
+    --vermelho-sair: #FF5757;
+    --verdeClaro-bg-ContainerBordar:#859764;
+    --tamanho-cabecario:10vh;
+}
+
+.container-primario{
+    min-height: 100vh;
+    width: 100%;
+    background: var(--cinza-bg);
+    min-width: 400px;
+}
+
+/*--------  Cabeçario  --------*/
+.container-cabecario{
+    height: var(--tamanho-cabecario);
+    background:var(--verde-bg-Cabecario);
+}
+
+.logo{
+    width: var(--tamanho-cabecario);
+    height: var(--tamanho-cabecario);
+}
+
+h1{
+    color: var(--amarelo-titulo);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+.btnLogin-bg{
+    background: var(--verdeClaro-bg-btn);
+    color: var(--amarelo-titulo);
+}
+
+/*--------  Quem Somos  --------*/
+
+.imgPlantaGerminandoPrimeiraTela, .containerQuemSomos{
+    min-height: 45vh;
+    min-width: 50%;
+}
+
+h2{
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+
+
+
+
+
+@media (min-width: 700px) {
+    h1{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .imgPlantaGerminandoPrimeiraTela, .containerQuemSomos{
+        min-height: 90vh;
+    }
+}

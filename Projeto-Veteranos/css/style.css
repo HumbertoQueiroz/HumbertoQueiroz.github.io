@@ -11,6 +11,7 @@
     min-height: 100vh;
     width: 100%;
     background: var(--cinza-bg);
+    min-width: 400px;
 }
 
 /*--------  Cabeçario  --------*/
@@ -94,6 +95,7 @@ h2{
 
 .btn-sair{
     background-color: var(--vermelho-sair);
+    color: var(--amarelo-titulo);
 }
 
 .container-conteudo-bordas{
