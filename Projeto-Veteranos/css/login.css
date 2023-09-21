@@ -1,5 +1,33 @@
-@media (max-width: 700px){
-    .tela-inteira img{
-        display: none;
+@import url(style.css);
+
+/*--------  Login  --------*/
+.container-login{
+    max-width: 99%;
+}
+.container-login .d-flex{
+    background-color: var(--amarelo-titulo);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 25px;
+}
+
+.container-login input{
+    border: none;    
+}
+
+.container-login button{
+    color: var(--amarelo-titulo);
+    background: var(--verde-bg-Cabecario);
+}
+
+.imgPlantaGerminandoPrimeiraTela{
+    max-height:50%;
+    max-width: 100%;
+    margin: 0px;
+}
+
+@media (min-width:992px){
+    .container-login{
+        padding: 3rem !important;
     }
 }

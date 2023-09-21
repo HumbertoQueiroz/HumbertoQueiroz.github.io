@@ -14,51 +14,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <!--Css-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/login.css">
+
 </head>
 <body>
-    <div class="container-fluid container-bg">
-        <div class="row justify-content-center align-items-center">            
-            <div class="col-3 g-0">
-                <a href="index.html">
-                    <img src="imagens/Logo.png" alt="Logo do Sistema Integrado de Análise de Solos" class="logo ">
-                </a>
-            </div>
-            <h1 class="col-6 mb-0 text-center">SISTEMA INTEGRADO DE ANALISE DE SOLOS</h1>
-        </div>
+    <div class="d-flex flex-row justify-content-around align-items-center container-cabecario ">
+        <a href="index.html">
+            <img src="imagens/Logo.png" alt="Logo do Sistema Integrado de Análise de Solos" class="logo">
+        </a>
+        <h1 class="text-center">SISTEMA INTEGRADO DE ANALISE DE SOLOS</h1>
     </div>
-    <div class="container-fluid tela-inteira">
-        <div class="row justify-content-center align-items-center tela-inteira">
-            <img src="imagens/Foto-Planta-Login.jpg" alt="Foto de uma planta germinando" class="col-12 col-lg-6 p-0 tela-inteira">
-            <div class="col-12 col-lg-6 ">
-                <div class="container d-flex align-items-center justify-content-center" style="height: 100%;">
-                    <div class="card" style="width: 400px;">
-                      <div class="card-header text-center">
-                        Login
-                      </div>
-                      <div class="card-body">
-                        <form>
-                          <div class="form-group">
-                            <label for="username">Nome de usuário:</label>
-                            <input type="text" class="form-control" id="username" placeholder="Digite seu nome de usuário">
-                          </div>
-                          <div class="form-group">
-                            <label for="password">Senha:</label>
-                            <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
-                          </div>
-                          <a href="home.html">
-                        </a>
-                        <a href="home.html"><button type="button" class="btn btn-primary btn-block" onclick="enviarDados()">Entrar</button></a>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
+    <div class="d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center">
+        <img src="imagens/Foto-Planta-Login.jpg" alt="Foto de planta germinando" class="imgPlantaGerminandoPrimeiraTela">
+        <div class="d-flex p-3 justify-content-center container-login">
+            <div class="d-flex flex-column justify-content-around m-3 p-5 ">
+                <h2 class="text-center">LOGIN</h2>
+                <p class='mb-1 mt-2'>Nome de usuário:</p>
+                <input type="email" name="user" id="user" placeholder='Digite o nome do usuário' class='rounded pl-2'>
+                <p class='mb-1 mt-2'>Senha:</p>
+                <input type="password" name='password' id='password' placeholder='Digite a senha' class='rounded pl-2'>
+                <div class='text-center'>
+                    <a href="home.html"><button type="submit" class='btn mt-3'>LOGIN</button></a>
+                </div>
             </div>
         </div>
     </div>
-
-
 
 
   

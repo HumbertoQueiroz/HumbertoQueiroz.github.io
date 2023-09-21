@@ -1,28 +1,16 @@
-:root {
-    --verde-bg-Cabecario: #1E3706;
-    --amarelo-titulo: #F7D380;
-    --verdeClaro-bg-btn: #005447;
-    --cinza-bg: #FAF9F8;
-    --vermelho-sair: #FF5757;
-    --verdeClaro-bg-ContainerBordar:#859764;
-}
+@import url(cores.css);
 
-.container-primario{
-    min-height: 100vh;
-    width: 100%;
-    background: var(--cinza-bg);
-    min-width: 400px;
-}
+
 
 /*--------  Cabeçario  --------*/
 .container-cabecario{
-    height: 70px;
+    height: var(--tamanho-cabecario);
     background:var(--verde-bg-Cabecario);
 }
 
 .logo{
-    width: 70px;
-    height: 70px;
+    width: var(--tamanho-cabecario);
+    height: var(--tamanho-cabecario);
 }
 
 h1{
@@ -30,94 +18,48 @@ h1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.25rem;
     padding-top: 10px;
-    font-weight: 100;
 }
 
-
-
-
-body{
-    height: 100vh;
-    background: var(--cinza-bg);
-}
-
-.container-bg{
-    background:var(--verde-bg-Cabecario);
-}
-
-
-.container-bg button{
-    color: var(--amarelo-titulo);
-}
-
-.btn{
-    background: var(--verdeClaro-bg-btn);
-    border-radius: 20px;
-    padding: 5px 20px;
-}
-
-h2{
-    padding-top: 20px;
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 1.5rem;
-}
-
-.tela-inteira{
-    height:50vh;
-}
-
-/*Tela de Login*/
-.card{
-    background: var(--amarelo-titulo);
-    color: var(--verde-bg-Cabecario);
-}
-.card button{
+.btnLogin-bg{
     background: var(--verdeClaro-bg-btn);
     color: var(--amarelo-titulo);
 }
-@media (min-width: 700px) {
-    h1{
-        font-size: 2rem;
-    }
-    .tela-inteira{
-        height: 65vh;
-    }
-
-}
-
-@media (min-width: 700px) {
-    .tela-inteira{
-        height: 95vh;
-    }   
-}
-
-/*home*/
 
 .btn-sair{
     background-color: var(--vermelho-sair);
     color: var(--amarelo-titulo);
 }
 
-.container-conteudo-bordas{
-    background: var(--verdeClaro-bg-ContainerBordar);
-    border-radius: 25px;
-    padding: 25px;
+/*--------  Quem Somos  --------*/
+
+
+.imgPlantaGerminandoPrimeiraTela, .containerQuemSomos, .container-login, .container-clientes{
+    min-height: 45vh;
+    min-width: 50%;
 }
 
-.negrito{
-    font-weight: bold;
-    font-size: 1.5rem;
+
+h2{
+    font-family: 'Tenor Sans', sans-serif;
 }
 
-.container-pesquisa{
-    background-color: #fff;
-    padding: 2px;
+@media (min-width: 768) {
+    h1{
+        font-size: 1.5rem;
+    }
 }
 
-.container-pesquisa input{
-    border: none;
+@media (min-width: 992px) {
+    .imgPlantaGerminandoPrimeiraTela, .containerQuemSomos, .container-login, .container-clientes{
+        min-height: 90vh;
+        max-width: 50%;
+    }
+    h1{
+        font-size: 2rem;
+    }
 }
 
-.cliente{
-    background: var(--cinza-bg);
-}
+
+
+
+

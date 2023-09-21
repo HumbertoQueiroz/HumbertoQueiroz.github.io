@@ -1,0 +1,17 @@
+:root {
+    --verde-bg-Cabecario: #1E3706;
+    --amarelo-titulo: #F7D380;
+    --verdeClaro-bg-btn: #005447;
+    --cinza-bg: #FAF9F8;
+    --vermelho-sair: #FF5757;
+    --verdeClaro-bg-ContainerBordar:#859764;
+    --tamanho-cabecario:10vh;
+}
+
+.body{
+    min-height: 100vh;
+    width: 100%;
+    background: var(--cinza-bg);
+    min-width: 400px;
+}
+

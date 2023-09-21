@@ -15,73 +15,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <!--Css-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <div class="container-fluid container-bg">
-        <div class="row justify-content-center align-items-center">            
-            <div class="col-3 g-0">
-                <a href="index.html">
-                    <img src="imagens/Logo.png" alt="Logo do Sistema Integrado de Análise de Solos" class="logo ">
-                </a>
-            </div>
-            <h1 class="col-6 mb-0 text-center">SISTEMA INTEGRADO DE ANALISE DE SOLOS</h1>
-            <a href="index.html"><button type="submit" class="btn btn-sair">SAIR</button></a>
-        </div>
+    <div class="d-flex flex-row justify-content-around align-items-center container-cabecario ">
+        <a href="index.html">
+            <img src="imagens/Logo.png" alt="Logo do Sistema Integrado de Análise de Solos" class="logo">
+        </a>
+        <h1 class="text-center">SISTEMA INTEGRADO DE ANALISE DE SOLOS</h1>
+        <a href="login.html"><button type="submit" class="btn btn-sair">SAIR</button></a>
     </div>
-    <div class="container-fluid">
-        <div class='container-conteudo-bordas'>
-            <div class='row '>
-                <div class='col-12 col-lg-6 '>
-                    <p class='negrito col-12'>LISTA DE CLIENTES</p>
-                    <div class='col-12 col-lg-6 mb-3 rounded container-pesquisa'>
-                        <img src="imagens/search.svg" class='col-2 '>
-                        <input type="text" name="pesquisa-cliente" id="pesquisa-cliente" placeholder='Digite o nome do cliente' class='col-9 p-0'>
-                        <img src="imagens/x-pesquisa.svg" alt="Apagar texto de pesquisa digitado" class=''>
-                    </div>
-                    <div class='col-6 cliente text-center rounded mr-0'>
-                        <p >Cliente 1</p>
-                    </div>
-                    <div class='col-2'>
-                        <img src="imagens/eye.svg" alt="Visualizar cliente">
-                    </div>
-                    <div class='col-2'>
-                        <img src="imagens/pencil.svg" alt="Editar cliente">
-                    </div>
-                    <div class='col-2'>
-                        <img src="imagens/x.svg" alt="Deletar cliente">
-                    </div>
-                    
-                    <p class='col-6 cliente text-center rounded'>Cliente 2</p>
-                    <div class='col-2'>
-                        <img src="imagens/eye.svg" alt="Visualizar cliente">
-                    </div>
-                    <div class='col-2'>
-                        <img src="imagens/pencil.svg" alt="Editar cliente">
-                    </div>
-                    <div class='col-2'>
-                        <img src="imagens/x.svg" alt="Deletar cliente">
-                    </div>
-
-                    <p class='col-6 cliente text-center rounded'>Cliente 3</p>
-                    <div class='col-2'>
-                        <img src="imagens/eye.svg" alt="Visualizar cliente">
-                    </div>
-                    <div class='col-2'>
-                        <img src="imagens/pencil.svg" alt="Editar cliente">
-                    </div>
-                    <div class='col-2'>
-                        <img src="imagens/x.svg" alt="Deletar cliente">
-                    </div>
-
-                        
-                        
-                    
-                </div>
-                <div class='col-6'>
+    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center container-bg-clientes p-5">
+        <div class="d-flex flex-column container-clientes">
+            <p class='text-center'>LISTA DE CLIENTES</p>
+            <div class='text-center'>
+                <input type="text" name='pesquisaCliente' id='pesquisaCliente' placeholder='Digite o nome do cliente' class='rounded border-0'>
+                <a href="#"><img src="imagens/search.svg" alt="Pesquisar Cliente"></a>
+                <a href="#"><img src="imagens/x-pesquisa.svg" alt="Limpar filtro"></a>
+            </div>
+            <div>
+                <div class='d-flex flex-row justify-content-around'>
+                    <div class='cliente p-2 m-3'>Cliente 01</div>
+                    <a href="#"><img src="imagens/eye.svg" alt="Visualizar Cliente"></a>
+                    <a href="#"><img src="imagens/pencil.svg" alt="Editar cliente"></a>
+                    <a href="#"><img src="imagens/x.svg" alt="Deletar Cliente"></a>
                 </div>
             </div>
         </div>
+        <div class="d-flex p-3 justify-content-center imgPlantaGerminandoPrimeiraTela">
+            
+        </div>
+        
+
     </div>
 
 

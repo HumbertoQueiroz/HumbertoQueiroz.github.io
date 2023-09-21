@@ -1,0 +1,36 @@
+@import url(style.css);
+
+.container-bg-clientes{
+    background: var(--verdeClaro-bg-ContainerBordar);
+    border-radius: 50px;
+}
+
+.container-bg-clientes p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container-bg-clientes input{
+    min-width: 50%;
+}
+
+.container-bg-clientes img{
+margin: 0 10px;
+}
+
+.cliente{
+    background: var(--cinza-bg);
+    padding: 10px;
+    min-width: 50%;
+    border-radius: 25px;
+}
+.justify-content-around a{
+    display: flex;    
+}
+
+.justify-content-around img{
+    justify-content: center;
+    align-items: center;
+}
+
+
