@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SOLOS - Cadastrar cliente</title>
+    <title>SOLOS - Cadastrar área</title>
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--fonts-->
@@ -26,22 +26,28 @@
         <h1 class="text-center">SISTEMA INTEGRADO DE ANALISE DE SOLOS</h1>
         <a href="login.html"><button type="submit" class="btn btn-sair">SAIR</button></a>
     </div>
-    <!-- Container Conteudo Clientes -->
+    <!-- Container Conteudo -->
     <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center container-bg-clientes p-5 mx-md-4 mx-lg-5">
         <div class="d-flex flex-column container-clientes">
-            <p class='text-center border-bottom border-dark'>CADASTRAR NOVO CLIENTE</p>
-            <!-- Dados Novo Cliente -->
-                <input type="text" placeholder='Nome' class='cliente dados'>
-                <input type="tel" placeholder='Telefone' class='cliente dados'>
-                <input type="number" placeholder='CPF ou CNPJ' class='cliente dados'>
-                <input type="text" placeholder='Estado' class='cliente dados'>
-                <input type="text" placeholder='Cidade' class='cliente dados'>
-                <input type="text" placeholder='Endereço' class='cliente dados'>
+            <div class='border-bottom border-dark'>
+                <p class='text-center '>CADASTRAR NOVA ÁREA</p>
+                <div class='cliente dados-width50 mb-2'>NOME CLIENTE</div>
+            </div>
+            <!-- Dados Nova Área -->
+            <input type="text" placeholder='Nome da área' class='cliente dados mt-3'>
+            <input type="number" placeholder='Inscrição Estadual' class='cliente dados'>
+            <input type="text" placeholder='Estado' class='cliente dados'>
+            <input type="text" placeholder='Cidade' class='cliente dados'>
+            <input type="text" placeholder='Endereço' class='cliente dados'>
+            <div class='d-flex mt-3'>
+                <div type="tel" placeholder='' class='cliente dados-width50 text-center'>IMPORTAR .ZIP DA SHAPEFILE</div>
+                <img src="imagens/link24px.svg" alt="IMPORTAR" class='ml-3 btnLogin-bg rounded-circle btn'>
+            </div>
             
-            <!-- Lista de clientes Clientes -->
+            
             
             <div class='d-flex justify-content-around align-items-center m-5'>
-                <a href="home.html"><button type='button' class='btn btnVoltar-bg'>VOLTAR</button></a>
+                <a href="cliente.html"><button type='button' class='btn btnVoltar-bg'>VOLTAR</button></a>
                 <a href="cliente.html"><button type='button' class='btn btnLogin-bg'>SALVAR</button></a>
             </div>
         </div>

@@ -4,11 +4,22 @@
 }
 
 .dados{
-    width: 90%;
+    width: 99%;
     margin: 5px 0;
+    margin-right: 4px;
 }
 
 .btnVoltar-bg{
     background: var(--marronEscuro-bg-btn);
     color: var(--amarelo-titulo);
+}
+
+.dados-width50{
+    width: 50%;
+}
+
+@media (max-width: 760px){
+    .dados-width50{
+    width: 100%;
+}
 }

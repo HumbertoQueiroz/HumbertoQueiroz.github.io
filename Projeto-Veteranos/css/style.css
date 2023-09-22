@@ -44,7 +44,7 @@ h2{
     font-family: 'Tenor Sans', sans-serif;
 }
 
-@media (min-width: 768) {
+@media (min-width: 768px) {
     h1{
         font-size: 1.5rem;
     }
@@ -74,7 +74,7 @@ h2{
 .cliente{
     background: var(--cinza-bg);
     padding: 10px;
-    min-width: 50%;
+    min-width: 45%;
     border-radius: 25px;
     border: none;
 }

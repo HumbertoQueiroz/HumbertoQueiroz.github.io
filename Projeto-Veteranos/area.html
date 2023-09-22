@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SOLOS - Home</title>
+    <title>SOLOS - Área</title>
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--fonts-->
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
     <!--Css-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cadastrarNovoCliente.css">
 </head>
 <body>
     <!-- Cabecario -->
@@ -26,50 +26,45 @@
         <h1 class="text-center">SISTEMA INTEGRADO DE ANALISE DE SOLOS</h1>
         <a href="login.html"><button type="submit" class="btn btn-sair">SAIR</button></a>
     </div>
-    <!-- Container Conteudo Clientes -->
-    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center container-bg-clientes p-5 mx-md-4 mx-lg-5">
+    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center container-bg-clientes p-4 mx-md-4 mx-lg-5">
+    <!-- Container Conteudo -->
         <div class="d-flex flex-column container-clientes">
-            <p class='text-center'>LISTA DE CLIENTES</p>
-            <!-- Pesquisar cliente -->
-            <div class='d-flex align-items-center justify-content-center mt-3 mb-5'>
-                
-                    <input type="text" name='pesquisaCliente' id='pesquisaNomeCliente' placeholder='Digite o nome do cliente' class='rounded border-0'>
-                    <a href="#" ><img src="imagens/search.svg" alt="Pesquisar Cliente" id='PesquisarCliente'></a>
-                    <a href="#"><img src="imagens/x2.svg" alt="Limpar filtro" id='LimparFiltroCliente'></a>
-                
+            <div class='border-bottom border-dark'>
+                <p class='text-center '>ÁREA DO CLIENTE</p>
+                <div class='cliente dados-width50 mb-2'>NOME CLIENTE</div>
+                <div class='cliente dados-width50 mb-2'>NOME ÁREA</div>
             </div>
-            <!-- Lista de clientes Clientes -->
+            <!-- ANALISE DA AREA Área -->
             <div>
-                <div class='d-flex flex-row justify-content-around'>
-                    <div class='cliente p-2 m-3'>Cliente 01</div>
-                    <a href="cliente.html"><img src="imagens/eye.svg" alt="Visualizar Cliente"></a>
-                    <a href="#"><img src="imagens/pencil.svg" alt="Editar cliente"></a>
-                    <a href="#"><img src="imagens/x.svg" alt="Deletar Cliente"></a>
-                </div>
-                <div class='d-flex flex-row justify-content-around'>
-                    <div class='cliente p-2 m-3'>Cliente 02</div>
+                <p class='m-2'>ANÁLISES DA ÁREA</p>
+                <div class='d-flex flex-row justify-content-between align-items-center mr-3'>
+                    <div class='cliente p-2 my-3'>ANÁLISE 1</div>
                     <a href="#"><img src="imagens/eye.svg" alt="Visualizar Cliente"></a>
                     <a href="#"><img src="imagens/pencil.svg" alt="Editar cliente"></a>
                     <a href="#"><img src="imagens/x.svg" alt="Deletar Cliente"></a>
                 </div>
-                <div class='d-flex flex-row justify-content-around'>
-                    <div class='cliente p-2 m-3'>Cliente 03</div>
-                    <a href="cliente.html"><img src="imagens/eye.svg" alt="Visualizar Cliente"></a>
+                <div class='d-flex flex-row justify-content-between align-items-center mr-3'>
+                    <div class='cliente p-2 my-3'>ANÁLISE 2</div>
+                    <a href="#"><img src="imagens/eye.svg" alt="Visualizar Cliente"></a>
                     <a href="#"><img src="imagens/pencil.svg" alt="Editar cliente"></a>
                     <a href="#"><img src="imagens/x.svg" alt="Deletar Cliente"></a>
                 </div>
-                <div class='d-flex flex-row justify-content-around'>
-                    <div class='cliente p-2 m-3'>Cliente 04</div>
-                    <a href="cliente.html"><img src="imagens/eye.svg" alt="Visualizar Cliente"></a>
+                <div class='d-flex flex-row justify-content-between align-items-center mr-3'>
+                    <div class='cliente p-2 my-3'>ANÁLISE 3</div>
+                    <a href="#"><img src="imagens/eye.svg" alt="Visualizar Cliente"></a>
                     <a href="#"><img src="imagens/pencil.svg" alt="Editar cliente"></a>
                     <a href="#"><img src="imagens/x.svg" alt="Deletar Cliente"></a>
-                </div>
+                </div>    
+            <button class='btn btnLogin-bg'>NOVA ANÁLISE</button>
+            </div>  
+            <div class='d-flex justify-content-around align-items-center m-2'>
+                <a href="cliente.html"><button type='button' class='btn btnLogin-bg'>RESULTADOS</button></a>
             </div>
-            <div class='text-center m-5'>
-                <a href="cadastroNovoClinete.html"><button type='button' class='btn btnLogin-bg'>NOVO CLIENTE</button></a>
+            <div class='d-flex justify-content-end mr-2'>
+                <a href="cliente.html"><button type='button' class='btn btnVoltar-bg'>VOLTAR</button></a>
             </div>
         </div>
-        <img src="imagens/documentos-de-organizacao-de-jovens-adultos.jpg" alt="Imagem de um arquivo" class='imgPlantaGerminandoPrimeiraTela'>
+        <img src="imagens/cadastro.jpg" alt="Imagem de um arquivo" class='imgPlantaGerminandoPrimeiraTela'>
         
         
 
