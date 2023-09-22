@@ -1,0 +1,14 @@
+.border-bottom{
+    border-bottom: solid 4px !important;
+    margin-right: 15px;
+}
+
+.dados{
+    width: 90%;
+    margin: 5px 0;
+}
+
+.btnVoltar-bg{
+    background: var(--marronEscuro-bg-btn);
+    color: var(--amarelo-titulo);
+}
