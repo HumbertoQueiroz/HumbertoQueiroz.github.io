@@ -11,8 +11,8 @@
 
 .body{
     min-height: 100vh;
+    min-width: 400px;
     width: 100%;
     background: var(--cinza-bg);
-    min-width: 400px;
 }
 
