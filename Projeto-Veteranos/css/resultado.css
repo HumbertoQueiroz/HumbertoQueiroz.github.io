@@ -13,21 +13,19 @@
 }
 
 .container-mapa .caixa{
-    width: 90%;
-    height: 70vh;
+    width: 100%;
+    height: 100%;
 }
 
 .container-mapa .caixa img{
-    width: 90%;
+    width: 87%;
 }
 
 .container-substancias{
     overflow-y: scroll;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     background: var(--amarelo-titulo);
-    width: 10%;
+    width: 11%;
     border-bottom: solid rgb(134, 134, 134) 2px;
 }
 
@@ -39,7 +37,7 @@
     background: var(--cinza-bg);
     width: 80px;
     height: 80px;
-    padding: 2px;
+    padding: 30px;
 }
 
 .analises{
@@ -47,13 +45,46 @@
     overflow-x: scroll;
     text-align: center;
     background: var(--amarelo-titulo);
-    width: 90%;
+    width: 98%;
 }
 
 .analises .substancia{
-    width: 400px;
+    width: 400px !important;
     height: 50px;
 }
 
+@media (min-width: 993px){
+.container-substancias{
+    overflow-y: scroll;
+    justify-content: center;
+    }
+    .container-mapa .caixa{
+    width: 100%;
+    }
+
+    .container-mapa .caixa img{
+        width: 87%;
+    }
+
+}
+
+@media (max-width: 992px){
+    .dados-width50{
+        width: 90%;
+    }
+    .container-mapa .caixa img{
+        width: 100%;
+    }
+    .container-substancias{
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        align-items: center;
+
+    }
+    .analises{
+        width: 100%;
+    }
+}
 
 
