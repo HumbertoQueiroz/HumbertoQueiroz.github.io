@@ -1,0 +1,59 @@
+.container-PagResultado{
+    width: 100%;
+}
+
+.container-PagResultado .container-clientes{
+    min-height: 100px;
+    height: auto;
+}
+
+.container-mapa{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.container-mapa .caixa{
+    width: 90%;
+    height: 70vh;
+}
+
+.container-mapa .caixa img{
+    width: 90%;
+}
+
+.container-substancias{
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--amarelo-titulo);
+    width: 10%;
+    border-bottom: solid rgb(134, 134, 134) 2px;
+}
+
+.substancia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    background: var(--cinza-bg);
+    width: 80px;
+    height: 80px;
+    padding: 2px;
+}
+
+.analises{
+    display: flex;
+    overflow-x: scroll;
+    text-align: center;
+    background: var(--amarelo-titulo);
+    width: 90%;
+}
+
+.analises .substancia{
+    width: 400px;
+    height: 50px;
+}
+
+
+
