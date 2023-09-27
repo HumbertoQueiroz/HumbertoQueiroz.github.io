@@ -20,7 +20,7 @@
     background: var(--verde-bg-Cabecario);
 }
 
-.imgPlantaGerminandoPrimeiraTela{
+.imgIndex{
     max-height:50%;
     max-width: 100%;
     margin: 0px;
@@ -30,4 +30,5 @@
     .container-login{
         padding: 3rem !important;
     }
+
 }

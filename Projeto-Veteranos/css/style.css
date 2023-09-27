@@ -33,10 +33,14 @@ h1{
 /*--------  Quem Somos  --------*/
 
 
-.imgPlantaGerminandoPrimeiraTela, .containerQuemSomos, .container-login, .container-clientes{
+.imgPlantaGerminandoPrimeiraTela, .containerQuemSomos, .container-login, .container-clientes, .imgIndex{
     min-height: 45vh;
     min-width: 50%;
     max-width: 100%;
+}
+
+.imgPlantaGerminandoPrimeiraTela{
+    border-radius: 15px;
 }
 
 
@@ -57,13 +61,25 @@ h2{
 }
 
 @media (min-width: 992px) {
-    .imgPlantaGerminandoPrimeiraTela, .containerQuemSomos, .container-login, .container-clientes{
+    .imgPlantaGerminandoPrimeiraTela, .containerQuemSomos, .container-login, .container-clientes, .imgIndex{
         min-height: 90vh;
         max-width: 50%;
     }
     h1{
         font-size: 2rem;
     }
+    .container-bg-clientes{
+        margin-left: 5rem !important;
+        margin-right: 5rem !important;
+    }
+}
+
+@media (min-width: 769px){
+    .container-clientes{
+        width: 100%;
+        justify-content: space-around
+    };
+
 }
 
 /*--------  Clientes  --------*/
@@ -80,7 +96,7 @@ h2{
 .cliente{
     background: var(--cinza-bg);
     padding: 10px;
-    min-width: 45%;
+    min-width: 48%;
     border-radius: 25px;
     border: none;
 }
@@ -88,6 +104,7 @@ h2{
 .resultado{
     font-size: 1.5rem;
 }
+
 
 
 /*--------  RESULTADO  --------*/
