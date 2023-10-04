@@ -1,0 +1,144 @@
+
+header{
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background: #604829;
+	color: #C4A068;
+	text-shadow: 5px 5px 2px black ;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1rem;
+
+}
+
+header img{
+	width: 8vh;
+}
+header ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+header ul li{
+	text-decoration: none;
+	list-style-type: none;
+	margin: 5px;
+}
+
+main{
+	margin-top: 10vh;
+}
+
+#paralax2, #paralax1, #paralax3, #paralax4{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-attachment: fixed;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+	height: 300px;
+}
+
+#paralax1{
+	background-image: url(assets/parallax-imagem1.png);
+	height: 90vh;
+	font-size: 5rem;
+}
+
+#paralax2{
+	background-image: url(assets/parallax-imagem2.jpg);
+}
+
+#paralax3{
+	background-image: url(assets/parallax-imagem3.jpg);
+}
+
+#paralax4{
+	background-image: url(assets/parallax-imagem4.png);
+	height: 90vh;
+	flex-direction: column;
+}
+
+h1{
+	color: white;
+	font-family: 'Fraunces', serif;
+}
+
+h2{
+	font-size: 1.5rem;
+	color: #C4A47D;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+h3{
+	padding: 5px 20px;
+	background-color: #604829;
+	font-family: 'Fraunces', serif;
+	color: #FFFFFD;
+	font-style: italic;
+}
+p{
+	line-height: 30px;
+	color: #717E89;
+	font-family: 'Lato', sans-serif;
+}
+
+#informacao, .centraliza{
+	margin: 50px 20%;
+	text-align: center;
+}
+
+.bg-marrom{
+	background-color: #604829; 
+	color: #FFFFFE;
+	padding: 10px 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.bg-marrom p {
+	color: #FFFFFE;
+	align-items: center;
+	text-shadow: 5px 5px 2px black;
+}
+
+#paralax5{
+	background-image: url(assets/cafeteria.jpg);
+	height: 80VH;
+}
+
+
+#paralax5 h3{
+	color: #FFFFFE;
+	background: none;
+}
+
+#paralax5 div{
+	width: 500PX;
+	height: 3px;
+	background: #FFFFFD;
+}
+
+span{
+	color: #FFFFFD;
+}
+
+li{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
