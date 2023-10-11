@@ -28,16 +28,14 @@ header ul{
 }
 
 header ul li{
-	text-decoration: none;
-	list-style-type: none;
-	margin: 5px;
+	margin: 15px;
 }
 
 main{
 	margin-top: 10vh;
 }
 
-#paralax2, #paralax1, #paralax3, #paralax4{
+#paralax2, #paralax1, #paralax3, #paralax4, #paralax5{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -106,7 +104,7 @@ p{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 50px;
+	margin:  50px 0px;
 }
 
 .bg-marrom p {
@@ -117,28 +115,76 @@ p{
 
 #paralax5{
 	background-image: url(assets/cafeteria.jpg);
-	height: 80VH;
+	padding: 100px;
+	height: 90vh;
+	flex-direction: column;
 }
 
-
-#paralax5 h3{
-	color: #FFFFFE;
-	background: none;
+.lista{
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-#paralax5 div{
-	width: 500PX;
-	height: 3px;
-	background: #FFFFFD;
+.container1{
+	width: 10%;
+	Display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.container2{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 70%;
+}
+
+.container3{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 15%;
+
 }
 
 span{
-	color: #FFFFFD;
+	color: #C4A068;
 }
 
-li{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+li div{
+	width: 100%;
+    height: 1px;
+    background-color: #acacac
+}
+
+li h3{
+	color: #acacac;
+	background: none;
+}
+
+footer{
+
+	text-align: center;
+	position: relative;
+	background-color: #000000;
+	padding: 15px;
+	
+}
+
+footer p{
+	color: #FFFDFD;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+footer a {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	right: 50px;
+	bottom: 80px;
+	
 }
