@@ -1,11 +1,12 @@
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(imagens/Cheers!AK-47\ \(StatTrak™\)\ \ Tiro\ na\ Cabeça\ \(1\).png); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
     font-family: 'Montserrat', sans-serif;
+
 }
 
 header{
@@ -15,7 +16,9 @@ header{
     justify-content: space-around;
     align-items: center;
     color: white;
-    font-size: 1rem;  
+    font-size: 1rem; 
+    background: rgb(78,24,214);
+background: linear-gradient(180deg, rgba(78,24,214,0.0984768907563025) 0%, rgba(78,24,214,0.10407913165266103) 45%, rgba(99,3,150,0) 81%);
 }
 
 header img {
@@ -62,18 +65,151 @@ section{
     justify-content: space-around;
     align-items: center;
 }
-
-section div{
+.produto{
     width: 60%;
 }
 
-
-section div img:hover{
+.produto img:hover{
     cursor: pointer;
     animation: mexe 0.5s;
+}
+
+.container-comprar{
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-comprar div{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+.container-comprar div:last-child{
+    margin-bottom: 0;
 }
 
 @keyframes mexe{
     50%{ transform: scale(0.8);}
     100%{transform: scale(1);}
+}
+
+.container-ganhadores{
+    background-color: #28A745;
+    
+    
+}
+
+span{
+    font-weight: bold;
+}
+.container-comprar p {
+    padding-top: 10px;
+}
+.container-comprar div p:last-child {
+    padding-bottom: 10px;
+}
+
+.container-valor{
+    background-color: #2EC2A0;
+}
+
+.container-valor:hover, .container-ganhadores:hover{
+    cursor: pointer;
+}
+
+.containar-compartilhe{
+    color: darkgray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.containar-compartilhe div{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.containar-compartilhe div span{
+    width: 30px;
+    height: 30px;
+    margin: 2.5px;
+    border-radius: 5px;
+}
+
+.containar-compartilhe div span:hover{
+    cursor: pointer;
+}
+
+
+.transicao{
+    height:10vh;
+    margin-top: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,255,255) 65%, rgba(255, 255, 255) 100%);
+}
+
+/*--------  FOOTER  --------*/
+
+footer{
+    background-color: rgba(229,229,229,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10% 20px 10%;
+
+}
+
+.container-footer{
+    border-bottom: solid #8f8d8d 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.container-footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
+
+footer span{
+    font-weight: normal;
+    opacity: 0.5;
+}
+
+footer div div div svg{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 2.5px;
+}
+
+footer div div div svg:hover{
+    cursor: pointer;
+}
+
+footer div div div p{
+    margin: 5px;
+}
+
+.copyright{
+    padding-top: 20px;
+}
+
+.position{
+    position: absolute;
 }
