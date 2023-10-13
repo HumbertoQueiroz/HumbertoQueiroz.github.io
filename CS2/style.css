@@ -1,0 +1,79 @@
+body{
+    height: 100vh;
+    background-image: url(imagens/Cheers!AK-47\ \(StatTrak™\)\ \ Tiro\ na\ Cabeça\ \(1\).png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    height:15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 1rem;  
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    margin: 10px;
+}
+
+.links-sorteios{
+    font-weight: 500;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10%;   
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: rgb(5, 5, 5);
+    border-left: solid 5px rgb(112, 174, 195);
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: white;
+    margin-bottom: 10px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section div{
+    width: 60%;
+}
+
+
+section div img:hover{
+    cursor: pointer;
+    animation: mexe 0.5s;
+}
+
+@keyframes mexe{
+    50%{ transform: scale(0.8);}
+    100%{transform: scale(1);}
+}
