@@ -1,0 +1,281 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------- HEADER ---------*/
+
+header{
+    font-weight: 600;
+    height: 15vh;
+}
+.flex-row-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-column-center{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+header div img{
+    width: 50px;
+    margin: 20px 10px;
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header p{
+    font-size: .7rem;
+    color: #2f86d6;
+    
+}
+
+header a{
+    margin: 5px;
+}
+
+/*--------- MAIN ---------*/
+
+main{
+    background-color: #2f86d6;
+    padding: 50px 150px;
+    color: white;
+    height: 70vh;
+}
+
+main div{
+    min-height: 250px;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*--------- SECTION LINK TABELA DE PREÇOS ---------*/
+
+.section-link-tabela{
+    color: white;
+    background-color: #233032;
+    padding: 25px;
+}
+
+.section-link-tabela{
+    padding:25px 10%;
+}
+
+.section-link-tabela h2{
+    margin-bottom: 5px;
+}
+
+.section-link-tabela button{
+    background-color: #2f86d6;
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.section-link-tabela button img{
+    margin: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+/*--------- SECTION INFORMAÇÕES ---------*/
+
+.section-informacoes{
+    margin: 5% 20%;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+span{
+    color: #2f86d6;
+}
+
+h4{
+    font-weight: bold;
+}
+
+.section-informacoes .flex-row-center .flex-column-center{
+    height: 50vh;
+    align-items: center;
+}
+
+.section-informacoes img{
+    width: 100px;
+}
+
+/*--------- SECTION TABELA DE PREÇOS  ---------*/
+
+.section-tabela-precos{
+    text-align: center;
+    align-items: center;
+    background-color: #a8a4a455;
+    padding-bottom: 50px;
+}
+
+.section-tabela-precos h3{
+    margin: 50px;
+}
+
+table{
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px 10px #2f86d6;
+    width: 70%;
+}
+td{
+    border: solid 1.5px rgba(144, 144, 144, 0.053);
+    padding: 10px;
+}   
+
+table img{
+    width: 100px;
+}
+
+table p{
+    color: #68686879;
+    margin: 5px;
+}
+
+.bg-with{
+    background-color: white;
+}
+
+/*--------- SECTION LINK TABELA DE PREÇOS 2 ---------*/
+
+.bg-azul{
+    background-color: #2f86d6;
+}
+
+.bg-cinzoEscuro{
+    background-color: #233032 !important;
+}
+
+/*--------- SECTION CONTATO ---------*/
+
+.contato{
+    text-align: center;
+}
+
+
+.contato .flex-row-center{
+    justify-content: center;
+    margin: 25px;
+}
+
+.contato div img{
+    width: 50px;
+    margin: 20px 10px;
+}
+
+.contato h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.contato .flex-row-center p{
+    font-size: .7rem;
+    color: #2f86d6;
+}
+
+.contato p{
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.desenvolvido{
+    background-color: #a8a4a455;
+    padding: 25px;
+}
+
+
+
+/*--------- PAGINA TABLEA DE PREÇOS ---------*/
+.container-main{
+    background-color: white;
+    text-align: center;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.precos {
+    color: black;
+    width: 90%;
+}
+.precos tr:first-child td{
+    border: solid 2px white;
+}
+.precos td{
+    border: solid 2px #f1f3f7;
+    padding: 20px;
+}
+.precos{
+    box-shadow: none;
+}
+.white{
+    color: white;
+}
+
+.bg-cinzaClaro{
+    background-color: #f1f3f7;
+}
+
+.precos h2{
+    color: black ;
+    font-size: 1.75rem;
+}
+.precos p{
+    color: #a89f9f;
+    font-size: 1rem;
+}
+
+.precos
+
+#bg-none{
+    background-color: white;
+}
+
+.precos tr td:first-child{
+    background-color: #f1f3f7;
+    text-align: start;
+    border: solid 2px white;
+    font-weight: 500;
+    padding: 20px;
+}
+
+
+.circulo{
+    width: 15px;
+    height: 15px;
+    background-color: #2f86d6;
+    border-radius: 100%;
+    margin-left: 49%;
+}
+
+.footer{
+    background-color: #2f86d6;
+}
+
+.footer p, .footer .white{
+    color: white !important;
+}
+
+.footer .desenvolvido{
+    background-color: white;
+    color: black !important;
+}
