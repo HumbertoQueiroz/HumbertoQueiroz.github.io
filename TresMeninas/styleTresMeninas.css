@@ -20,10 +20,6 @@ button{
   text-transform: uppercase;
 }
 
-.containerInicial{
-  height: 100vh;
-}
-
 /* --- Menu topo --- */
 
 header{
@@ -32,6 +28,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
+  height: 10vh;
 }
 
 .containerTopo{
@@ -133,7 +130,9 @@ header{
 }
 
 
-/* -------- Sobre Nos ---------*/
+/* -------- Apresentação ---------*/
+
+
 .containerApresentacao{
   display: flex;
   flex-direction: row;
@@ -141,43 +140,50 @@ header{
   font-weight: 400;
   font-size: 3rem;
   text-align: center;
-  height: 85vh;
+  height: 90vh;
   justify-content: center;
   align-items: center;
+  background-image: url(imagens/arara-para-pendurar-roupa.jpg);
+  background-attachment: fixed;
+ 	background-position: center;
+ 	background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .imagemLogo3{
   text-align: center;
   height: 250px;
   margin: 10px;
+  border-radius:5px;
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+  animation-delay: 1.5s;
 }
 
 
-.containerApresentacao h1{
-  align-items: center;
-  word-wrap: break-word;
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
-	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
-}
-
-@-webkit-keyframes slide-top {
+@-webkit-keyframes rotate-center {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
+  50%{
+    border-radius: 50px;}
   100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+            
   }
 }
-@keyframes slide-top {
+@keyframes rotate-center {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
+  50%{
+    border-radius: 50px;}
   100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -186,835 +192,61 @@ header{
   font-family: 'Montagu Slab', serif;
 }
 
-.containerSobremim{
+
+/* -------- sobre nós ---------*/
+
+
+.containerSobrNos{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 0 200px 100px 200px;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
-  animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+  font-size: 2.5rem;
+  margin: 10%;
+  padding: 2%;
+  box-shadow: 0px 0px 0px 2px rgba(255, 179, 226, 1),0px 0px 0px 10px rgba(255, 255, 255, 1),0px 0px 0px 23px rgba(255, 179, 226, 1);
+
 }
 
-@-webkit-keyframes slide-left {
+.containerSobrNos h1{
+  width: 60%;
+  text-align: center;
+  
+  
+}
+
+
+
+#bailarina{
+  -webkit-animation: rotate-scale-down-ver 5s linear infinite both;
+	        animation: rotate-scale-down-ver 5s linear infinite both;
+}
+
+@-webkit-keyframes rotate-scale-down-ver {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateY(180deg);
+            transform: scale(0.5) rotateY(180deg);
   }
   100% {
-    -webkit-transform: translateX(-250px);
-            transform: translateX(-250px);
+    -webkit-transform: scale(1) rotateY(360deg);
+            transform: scale(1) rotateY(360deg);
   }
 }
-  @keyframes slide-left {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(-250px);
-              transform: translateX(-250px);
-    }
-}
-
-.containerSobremim h2{
-  width: 80%;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  text-align: center;
-  color: #0d519b;
-  margin-right: 50px;
-}
-
-.containerSobremim:hover h2{
-  font-size: 1.6rem;
-  transition: 1s;
-}
-
-.containerSobremim a {
-  color: #48cbff;
-}
-
-.containerSobremim a:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.containerSobremim img{
-  border-radius: 100px;
-}
-
-.containerSobremim img:hover{
-  width: 220px;
-  height: 220px;
-  border-radius: 250px;
-  transition: 1s;
-}
-
-
-/* Definição geral para titulo e 
-contaniner de fundo com shadown box azul claro*/
-
-
-.containerMargin{
-  margin: 10vh 15vh;
-  box-shadow: #d6f2ff 0px 7px 29px 0px;
-  border-radius: 10px;
-  padding: 5vh;
-}
-
-.titulo{
-  font-family: 'Russo One', sans-serif;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 400;
-  width: auto;
-  padding: 15px;
-  color: #085ec5;
-  margin: 10px 30% 0 30%;
-  border-radius: 5px;
-}
-
-
-/* --- Conhecimentos --- */
-
-
-.containerConhecimentos{
-  background-color: #d6f2ff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  padding: 15px;
-  margin: 5vh;
-  justify-content: space-around;
-}
-
-
-.containerConhecimentos__button {
-  width: 62%;
-}
-
-.containerConhecimentos__descricao{
-width: 38%;
-}
-
-.containerConhecimentos__button button{
-  background-color: #83dfff;
-  border-radius: 10px;
-  width: 29%;
-  margin: 10px;
-  height: 18vh;
-  font-weight: 500;
-  font-size: 1.1rem;
-  color: #085ec5;
-  cursor: pointer;
-  animation: infinite 7s linear;
-  animation-delay: 1s;
-}
-
-#button__html{
-  animation-name: vibra1;
-}
-
-#button__css{
-  animation-name: vibra2;
-}
-
-#button__js{
-  animation-name: vibra3;
-}
-
-#button__bootstraps{
-  animation-name: vibra4;
-}
-
-#button__github{
-  animation-name: vibra5;
-}
-
-@keyframes vibra1 {
-  10%{transform: rotate(0deg)}
-  12% {transform: rotate(2deg)}
-  14% {transform: rotate(-2deg)}
-  16% {transform: rotate(2deg)}
-  18% {transform: rotate(-2deg)}
-  20% {transform: rotate(0deg)}
-}
-
-@keyframes vibra2 {
-  20%{transform: rotate(0deg)}
-  22% {transform: rotate(2deg)}
-  24% {transform: rotate(-2deg)}
-  26% {transform: rotate(2deg)}
-  28% {transform: rotate(-2deg)}
-  30% {transform: rotate(0deg)}
-}
-
-@keyframes vibra3 {
-  30%{transform: rotate(0deg)}
-  32% {transform: rotate(2deg)}
-  34% {transform: rotate(-2deg)}
-  36% {transform: rotate(2deg)}
-  38% {transform: rotate(-2deg)}
-  40% {transform: rotate(0deg)}
-}
-
-@keyframes vibra4 {
-  40%{transform: rotate(0deg)}
-  42% {transform: rotate(2deg)}
-  44% {transform: rotate(-2deg)}
-  46% {transform: rotate(2deg)}
-  48% {transform: rotate(-2deg)}
-  50% {transform: rotate(0deg)}
-}
-
-@keyframes vibra5 {
-  50%{transform: rotate(0deg)}
-  52% {transform: rotate(2deg)}
-  54% {transform: rotate(-2deg)}
-  56% {transform: rotate(2deg)}
-  58% {transform: rotate(-2deg)}
-  60% {transform: rotate(0deg)}
-}
-.containerConhecimentos__button button:hover{
-  border: 2px solid #5eaafc;
-}
-
-
-.containerConhecimentos__descricao{
-  background-color: #edfaff;
-  border-radius: 10px;
-  padding: 25px;
-  line-height: 1.5;
-}
-
-/* animação que faz os botões virem
-da esquerda para a direita
-
-
-#button__html, #button__css, #button__js, #button__bootstraps, #button__github{
- animation-name: slides;
- animation-delay: 0.4;
-}
-
-#button__html{
-   animation-duration: 8s;
-}
-
-#button__css{
-   animation-duration: 6s;
-}
-
-#button__js{
-   animation-duration: 4s;
-}
-
-#button__bootstraps{
-   animation-duration: 2s;
-}
-
-#button__github{
-   animation-duration: 1s;
-}
-
-@keyframes slides {
-  0%{
-    transform: translateX(-250px);
+@keyframes rotate-scale-down-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
   }
-
-  100%{
-     transform: translateX(0);
+  50% {
+    -webkit-transform: scale(0.5) rotateY(180deg);
+            transform: scale(0.5) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(360deg);
+            transform: scale(1) rotateY(360deg);
   }
 }
-
-*/
-#descricao__html{
-  display: inline;
-}
-
-#descricao__css{
-  display: none;
-}
-
-#descricao__javascript{
-  display: none;
-}
-
-#descricao__bootstraps{
-display: none;
-}
-
-#descricao__github{
-  display: none;
-}
-
-
-
-/*  --- Projetos --- */
-
-
-
-#container__geral__projetos{
-  display: flex;
-  flex-direction: column;
-}
-
-.container__projeto{
-  display: flex;
-  flex-direction: row;
-  height: 70vh;
-  justify-content: space-around;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #d6f2ff ;
-  margin-bottom: 45px;
-}
-
-.container__projeto__link__img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
-.container__projeto a img{
-  border-radius: 20px;
-  width: 80%;
-  height: 80%;
-}
-
-.container__projeto a img:hover{
-  width: 100%;
-  height: 100%;
-  transition: 1s;
-}
-
-.container__projeto__descricao__titulo{
-  font-weight: 400;
-  font-size: 1.8rem;
-  text-align: center;
-  padding: 15px;
-  height: 15%;
-    color: rgb(72,203,255);
-
-}
-
-.container__projeto__descricao__titulo:hover{
-  font-size: 2rem;
-  text-decoration: underline;
-  transition: 1s;
-}
-
-.container__projeto__descricao__tags{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 13%;
-  align-items: center;
-}
-
-
-.container__projeto__descricao__tags p {
-  padding: 0 10px 0 3px;
-  text-align: center;
-}
-
-.container__circulo-html{
-  display: flex;
-  align-items: center;
-}
-
-.circulo-html, .circulo-css, .circulo-js{
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  background-color: #E34C26;
-}
-
-.circulo-css {
-
-  background-color: #563D7C;
-}
-
-.circulo-js {
-
-  background-color: #F1E05A;
-}
-
-.container__projeto__descricao__texto__linkGithub{
-  display: flex;
-  justify-content: center;
-}
-#codigoGithub{
-  width: auto;
-  font-weight: 300;
-  color: white;
-  background-color: #4c4d4d;
-  border-radius: 10px;
-  padding: 5px 10px;
-  text-align: center;
-}
-
-.container__projeto__descricao__texto__linkGithub button{
-  cursor: pointer;
-}
-
-
-.container__projeto__descricao{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  justify-content: space-between;
-}
-
-.container__projeto__descricao__texto{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 70%;
-  margin-top: 5px;
-  line-height: 1.2;
-}
-
-.container__projeto__descricao__texto p{
-  margin-bottom: 15px;
-}
-
-.container__projeto__descricao__texto span{
-  font-weight: bold;
-}
-
-#imagemMenor{
-  width: 50%;
-}
-
-#imagemMenor:hover{
-  width: 60%;
-}
-
-
-/* Botão Mais projetos*/
-
-.buttonMaisProjetos, .buttonMaisProjetos button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.buttonMaisProjetos button{
-  background-color: #48cbff;
-  color: white;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-#mostrarMais, #mostrarMenos{
-margin-left: 10px;
-}
-#mostrarMais{
-  display: inline;
-}
-
-#mostrarMenos{
-  display: none;
-}
-
-.buttonMaisProjetos__centro:hover img{
-  width: 16px;
-  height: 16px; 
-}
-
-/* Container Com Mais projetos*/
-#demaisProjetos{
-  display: none;
-}
-
-
-/* Contato */
-
-.contato{
-  margin-top: 50px;
-  text-align: center;
-}
-
-.contato p {
-  margin-bottom: 20px;
-}
-
-.contato a{
-  color: #007bff;
-  font-weight: 500;
-  font-size: 1.3rem;
-  word-wrap: break-word;
-}
-
-
-/* Footer */
-
-footer{
-  background: rgb(181,234,255);
-  background: linear-gradient(0deg, rgba(181,234,255,1) 52%, rgba(255,255,255,1) 95%);
-  
-}
-footer nav{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-}
-
-.footer__containerTituloSVG{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.footer__containerTituloSVG p{
-  color: #fff;
-  animation: mudaCor infinite 4s ease-in;
-}
-
-.footer__containerTituloSVG svg{
-  border: 3px solid #ffffff;
-  border-radius: 100%;
-  width: 60px;
-  height: 60px;
-  animation: mudaCor infinite 4s ease-in;
-}  
-
-@keyframes mudaCor{
-    25%{
-      border-color: #48cbff;
-      fill:#48cbff;
-      color: #48cbff;
-    }
-    50%{
-      border-color: #007bff;
-      fill:#007bff;
-      color: #007bff;
-    }
-}
-
-.footer__containerTituloSVG:hover svg{
-  border-color:#48cbff;
-  fill: #48cbff;
-  transform: rotate(1turn);
-  transition: 1.5s;
-}
-
-footer nav li{
-  margin: 15px;
-  font-size: 1.3rem;
-  display: inline-block;
-}
-
-footer nav a{
-  text-decoration: underline;
-}
-
-footer p{
-  font-size: 2rem;
-  padding: 15px;
-  color: #007bff;
-  font-weight: 500;
-}
-
-footer .containerRedesSociais{
-  display: flex;
-}
-
-footer .containerRedesSociais:hover{
-  border: none;
-}
-
-footer .containerRedesSociais img{
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-}
-
-
-/*  -------  Estilo Certificados --------*/
-
- .container__flex{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
- }
-
- .tituloCurso{
-  font-size: 4.5rem;
-  align-content: center;
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
-	animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
- }
-
- .container__flex a {
-  width: 10%;
-  margin-right: 90%;
- }
-
- .container__flex .titulo{
-  text-align: start;
-  margin-left: 0;
-  margin-top: 25px;
-  padding-left: 10px;
-  width: 100%;
-  font-size: 1.3rem;
- }
-
- .container__flex .titulo:first-child{
-  margin-top: 0px;
-  font-size: 2.2rem;
-  color: #48cbff;
-  animation: vibra1 infinite 3s linear;
- }
-
- .container__flex .titulo:first-child:hover{
-  text-decoration: underline;
-  
-  transition: 1s;
-}
- .azul{
-  border: solid 5px #48cbff;
-  margin-right: 5px;
- }
-
- .vermelho{
-  border: solid 5px #F16165;
-  margin-right: 5px;
- }
-
- .verde{
-   border: solid 5px #9CD33B;
-  margin-right: 5px;
- }
-
- .container__flex p{
- color: #9B9CA4;
- text-align: start;
- margin: 10px;
- width: 100%;
- }
-
- .AlinhaTextoCentro{
-  text-align: center;
- }
-
-
-
-
-
-/*Style para celulares e tablets*/
-
-
-@media screen and (max-width: 950px) {
-  html{
-    font-size: 1.3rem;
-  }
-
-  /*Menu topo*/
-  
-  .containerInicial{
-  height: auto;
-  }
-
-  .containerTopo{
-    justify-content: space-between;
-  }
-
-  .containerIcone{
-    visibility: visible;
-  }
-
-  .containerIcone:hover{
-    cursor: pointer;
-  }
-
-  header ul {
-    display:none;
-    flex-direction: column;
-    position: absolute;
-    left: 10px;
-    top: 12vh;
-    padding: 10px;
-    background-color: #0e315d;
-    border: 2px solid white;
-  }
-
-  header ul a{
-    padding: 5px;
-    display: block;
-  }
-
-  .containerRedesSociais img{
-    width: 40px;
-    height: 40px;
-  }
-
-  /*Sobre Mim*/
-
-  .containerApresentacao{
-    padding: 45vh 20px;
-    margin: 0;
-  }
-
-  .containerSobremim{
-    flex-direction: column;
-    margin: 10px;
-  }
-
-  .containerSobremim h2{
-    margin: 0;
-  }
-
-  .containerSobremim img{
-    margin-top: 15px;
-  }
-
-  
-  /*Conhecimentos*/
-
-  .containerMargin{
-    margin: 0;
-    padding: 4vh;
-  }
-
-  .titulo{
-    margin: 30% 0 20% 0;
-    text-align: center;
-  }
-
-  .containerConhecimentos{
-    flex-direction: column;
-    margin: 0;
-  }
-
-  .containerConhecimentos__button, .containerConhecimentos__descricao{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .containerConhecimentos__button button{
-    width: 43%;
-  }
-
-  /*Projetos*/
-
-  .container__projeto{
-    flex-direction: column-reverse;
-    height: auto;
-    align-items: center;
-    padding: 15px 10px;
-    box-shadow: #d6f2ff 0px 5px 20px 0px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-  }
-
-  .container__projeto__inverte{
-    flex-direction: column;
-  }
-  .container__projeto a img{
-    border-radius: 0;
-  }
-    
-
-  .container__projeto__descricao{
-    width: 90%;
-  }
-    
-  .container__projeto__descricao__titulo{
-  margin-bottom: 15px;
-  }
-
-  .container__projeto__descricao__texto p{
-    display: none;
-  }
-
-  .container__projeto__descricao__tags{
-    flex-wrap: wrap;
-    font-size: .9rem;
-  }
-
-  .container__projeto__descricao__texto__linkGithub{
-    margin: 25px;
-  }
-
-  .container__circulo-html{
-    margin: 8px;
-  }
-
-  .container__projeto__descricao__texto__linkGithub{
-    margin: 5px;
-  }
-
-  .container__projeto a{
-    width: 100%;
-    text-decoration: underline;
-  }
-
-  .container__projeto a img{
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .buttonMaisProjetos{
-    margin-bottom: 15px;
-  }
-
-  /*Footer*/
-  
-  footer nav{
-    padding: 13px;
-  }
-
-  .footer__containerTituloSVG{
-    justify-content: space-around;
-  }
-  footer p {
-    font-size: 1.5rem;
-    padding: 0 0 0 15px;
-    width: 80%;
-  }
-  .footer__containerTituloSVG svg{
-    width: 60px;
-    height: 60px;
-  }
-
-  .containerNav li{
-    display: block;
-  }
-
-
-  /*  -------  Estilo Certificados --------*/
-  .tituloCurso{
-    font-size: 2.8rem;
-  }
-
-  .container__flex .titulo{
-    margin-bottom: 5px;
-  }
-
-
-}
-
-
- 
-
-
-
-
-
-
-
-
-
