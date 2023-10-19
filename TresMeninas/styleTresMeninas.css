@@ -5,15 +5,16 @@
   --rosa: #FF65C5;
   --rosaClaro: #FFB3E2;
   --branco: #fff;
-  --cinza:#e0e0e0;
+  --cinza:#f3f3f3;
+  --cinzaMeioEscuro: #8d8d8d;
 }
 
 /* -- Aplicação geral --*/
 
 html{
-  font-family: "Open Sans", arial, sans-serif;
+  font-family: "Open Sans", arial, sans-serif !important;
   font-weight: 400;
-  color: #4c4d4dc5;
+  color: var(--cinzaMeioEscuro);
   
 }
 button{
@@ -144,10 +145,10 @@ header{
   justify-content: center;
   align-items: center;
   background-image: url(imagens/arara-para-pendurar-roupa.jpg);
-  background-attachment: fixed;
  	background-position: center;
  	background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .imagemLogo3{
@@ -155,19 +156,21 @@ header{
   height: 250px;
   margin: 10px;
   border-radius:5px;
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
-  animation: rotate-center 0.6s ease-in-out both;
+  border-radius: 100%;
+  /*
+  -webkit-animation: rotate-center 3s infinite ease-in-out both;
+  animation: rotate-center 3s infinite ease-in-out both;
   animation-delay: 1.5s;
+  */
 }
 
-
+/*
 @-webkit-keyframes rotate-center {
-  0% {
+  70% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
-  50%{
-    border-radius: 50px;}
+
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -175,17 +178,16 @@ header{
   }
 }
 @keyframes rotate-center {
-  0% {
+  70% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
-  50%{
-    border-radius: 50px;}
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
+*/
 
 .containerApresentacao__nome{
   color: var(--rosa);
@@ -202,51 +204,219 @@ header{
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
-  margin: 10%;
+  margin: 15% 10%;
   padding: 2%;
-  box-shadow: 0px 0px 0px 2px rgba(255, 179, 226, 1),0px 0px 0px 10px rgba(255, 255, 255, 1),0px 0px 0px 23px rgba(255, 179, 226, 1);
+  box-shadow: 0px 0px 0px 2px var(--rosaClaro),0px 0px 0px 10px var(--branco),0px 0px 0px 23px var(--rosaClaro);
 
 }
 
 .containerSobrNos h1{
   width: 60%;
   text-align: center;
-  
-  
 }
 
-
-
 #bailarina{
-  -webkit-animation: rotate-scale-down-ver 5s linear infinite both;
-	        animation: rotate-scale-down-ver 5s linear infinite both;
+  display: flex;
+  flex-direction: row;
+  transform: scale(0.8);
+}
+
+.containerSobrNos:hover #bailarina{
+  -webkit-animation: rotate-scale-down-ver 1.5s  ease-in-out 2 both;
+	        animation: rotate-scale-down-ver 1.5s ease-in-out 2 both;
 }
 
 @-webkit-keyframes rotate-scale-down-ver {
   0% {
-    -webkit-transform: scale(1) rotateY(0);
-            transform: scale(1) rotateY(0);
+    -webkit-transform: scale(0.8)  rotateY(0);
+            transform: scale(0.8) rotateY(0);
   }
-  50% {
-    -webkit-transform: scale(0.5) rotateY(180deg);
-            transform: scale(0.5) rotateY(180deg);
+ 33% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   100% {
-    -webkit-transform: scale(1) rotateY(360deg);
-            transform: scale(1) rotateY(360deg);
+    -webkit-transform: scale(0.8) rotateY(360deg);
+            transform: scale(0.8)  rotateY(360deg);
   }
 }
 @keyframes rotate-scale-down-ver {
-  0% {
-    -webkit-transform: scale(1) rotateY(0);
-            transform: scale(1) rotateY(0);
+0% {
+    -webkit-transform: scale(0.8) rotateY(0);
+            transform: scale(0.8) rotateY(0);
   }
-  50% {
-    -webkit-transform: scale(0.5) rotateY(180deg);
-            transform: scale(0.5) rotateY(180deg);
+  33% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
   100% {
-    -webkit-transform: scale(1) rotateY(360deg);
-            transform: scale(1) rotateY(360deg);
+    -webkit-transform: scale(0.8) rotateY(360deg);
+            transform: scale(0.8) rotateY(360deg);
   }
+}
+
+/* -------- Imagem Mulher sacola -------*/
+
+.img{
+  width: 100%;
+  background-image: url(imagens/close-up-de-roupas-penduradas-na-prateleira.jpg);
+  height: 90vh;
+  background-position: center;
+ 	background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ---------- Nossa História -------*/
+
+.sobreNos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 50px;
+  color: var(--rosaMeioEscuro);
+  width: 100%;
+}
+
+.cinza{
+  background-color: var(--cinza);
+  width: 100%;
+}
+
+.meio{
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 2.5%;
+}
+
+
+.sobreNos p{
+  width: 100%;
+  text-align: center;
+  padding:2.5% 10%;
+}
+
+
+
+/* ------------ Galeria --------------*/
+
+h2{
+  text-align: center;
+  margin: 20px;
+  font-size: 2rem;
+  color: var(--rosa);
+  font-family: 'Italianno', cursive;
+  font-weight: 500;
+  text-decoration: underline;
+
+}
+.gallery-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image-slider img {
+  width: 1024px;
+  height: 600px;
+  display: none;
+}
+
+.controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--rosaClaro);
+  transition: 0.8s;
+}
+
+.controls button:hover{
+  text-decoration: underline;
+  color: var(--rosa);
+}
+
+.indicators {
+  margin-top: 10px;
+}
+
+.indicators span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.indicators .active {
+  background-color: black;
+}
+
+/*----------- Produtos ---------*/
+
+.produtos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  font-size: 2rem;
+}
+
+.produtos div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid var(--rosa) 3px;
+  width: 50%;
+  padding: 2%;
+}
+
+.produtos h1{
+  color: var(--rosa);
+  font-weight: bold;
+  margin-bottom: 10%;
+  text-decoration: underline;
+}
+
+.produtos p{
+  margin: 15px;
+}
+
+/*----------- Footer ---------*/
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color:var(--cinza);
+  padding: 25px;
+}
+
+footer a{
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+footer a img{
+  border-radius: 100%;
+}
+
+
+footer span{
+  color: var(--rosa);
 }
