@@ -18,7 +18,11 @@ insert into estados
 	(nome, sigla, regiao, populacao)
 values ('Alagoas', 'AL', 'nordeste', 3.86),
 		('Campo Grande', 'MG', 'centro-oeste', 5),
-        ('Porto Seguro', 'BH', 'sul', 1.56);
+        ('Porto Seguro', 'BH', 'sul', 1.56),
+		('Cuiabá', 'MT', 'centro-oeste', 3.54),
+        ('teste', 'ES', 'centro-oeste');
 
 
 select * from estados;
+
+select nome, sigla from estados;
