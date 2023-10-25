@@ -1,0 +1,1 @@
+mysql -u root -p | para verificar se esta instalado e funcionando o MySQL;
