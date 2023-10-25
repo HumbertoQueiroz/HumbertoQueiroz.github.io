@@ -42,7 +42,11 @@ select Sigla, nome as 'Nome do Estado' from estados;
 select Sigla, nome as 'Nome do Estado' from estados
 where regiao = 'centro-oeste';
 
-select Sigla, nome as 'Nome do Estado', populacao as 'População em milhões' from estados
+select 
+	Sigla, 
+    nome as 'Nome do Estado', 
+    populacao as 'População em milhões' 
+from estados
 where populacao >= 3;
 
 
@@ -57,3 +61,54 @@ order by populacao;
 select Sigla, nome as 'Nome do Estado', populacao as 'População em milhões' from estados
 where populacao >= 3
 order by populacao desc;
+
+
+/* Update altera o dado, primeiro informa o campo e novo valor (pode ser mais de um)0,
+ depois informa o where para setar qual o dado vai ser alterado 
+ 
+        ----  CUIDADO!   ----
+ 
+Não fazer updade sem where pois isso altera todas as linhas */
+
+update estados
+set nome='Maranhão'
+where sigla='MG';
+
+update estados set sigla='MA', regiao = 'Nordeste'
+where sigla='MA';
+
+select * from estados;
+
+/*  ---- Apelido para tabelas ----
+ Para isso primeiro na frente do nome da tabela escreva o apelido, depois use o apelido.nomeDaColuna*/
+
+select 
+	est.nome, 
+	est.sigla, 
+    est.populacao 
+from estados est 
+where sigla='mt';
+
+/* Pode informar manualmente o id mesmo sendo auto_increment,
+mas isso gera salto nos ids, o proximo sera o valor mais alto +1, como abaixo*/
+
+insert into estados (id, sigla, nome, regiao, populacao)
+values (100, 'NV', 'Teste1', 'sul', 15);
+insert into estados ( sigla, nome, regiao, populacao)
+values ('MM', 'Teste3', 'sul', 3);
+select *  from estados;
+
+
+
+/*  ---- Delete ---- 
+
+
+	----  CUIDADO!   ----
+ 
+Não fazer delete sem where pois isso altera todas as linhas 
+*/
+
+delete from estados
+where sigla = 'NV';
+
+delete from estados where populacao <=3;
