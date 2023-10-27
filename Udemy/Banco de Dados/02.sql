@@ -102,7 +102,6 @@ select *  from estados;
 
 /*  ---- Delete ---- 
 
-
 	----  CUIDADO!   ----
  
 Não fazer delete sem where pois isso altera todas as linhas 
@@ -112,3 +111,27 @@ delete from estados
 where sigla = 'NV';
 
 delete from estados where populacao <=3;
+
+
+/* Consulta com agregação */
+
+/* sum() para soma e avg para media*/
+
+/*Todos os dados da tabela*/
+select sum(populacao) as Total from estados;
+
+select avg(populacao) as Total
+from estados;
+
+/*Com uma caracteristica de agrupamento, por região neste caso */
+
+select regiao as 'Região', 
+	sum(populacao) as Total
+from estados
+group by regiao;
+
+select regiao as 'Região', 
+	avg(populacao) as Total
+from estados
+group by regiao;
+
