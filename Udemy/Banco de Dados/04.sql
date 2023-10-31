@@ -45,3 +45,7 @@ select
     est.regiao as Regiao
 from estados est
 inner join cidades cid on est.id = cid.estado_id;
+
+-- consulta com partes do texto, usa like e _ (para qualquer caracter), o caracter que quero e % para definir que o tamanho pode ser maior que os digitados.
+
+select * from cidades where nome like'__t%';
