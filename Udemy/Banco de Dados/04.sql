@@ -37,6 +37,13 @@ where est.id=cid.estado_id;
 select est.sigla, est.nome as 'Nome Capital', cid.nome as 'Nome Cidade', est.regiao from estados est, cidades cid 
 where est.id=cid.estado_id;
 
+-- consulta com partes do texto, usa like e _ (para qualquer caracter), o caracter que quero e % para definir que o tamanho pode ser maior que os digitados.
+select * from cidades where nome like'__t%';
+
+-- consulta com retorno dos valores iguais apenas uma vez;
+select distinct nome from cidades;
+
+
 -- Consultando duas tabelas com inner join
 select 
 	est.sigla,
@@ -46,6 +53,3 @@ select
 from estados est
 inner join cidades cid on est.id = cid.estado_id;
 
--- consulta com partes do texto, usa like e _ (para qualquer caracter), o caracter que quero e % para definir que o tamanho pode ser maior que os digitados.
-
-select * from cidades where nome like'__t%';
