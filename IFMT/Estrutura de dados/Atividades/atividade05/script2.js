@@ -9,10 +9,10 @@ var dadosInflacao = [
 function historicoSalarioMinimo(){
 
     var resposta = "<table>";
-    resposta = resposta + "<tr> <td>Ano</td> <td>Salário</td> </tr>";
+    resposta = resposta + "<tr> <td class='titulo'>Ano</td> <td class='titulo'>Salário</td> </tr>";
 
     for(let i=0; i<10;i++){
-            resposta=resposta+"<tr> <td>"+ dadosSalario[1][i] +"</td> <td>"+dadosSalario[0][i]+"</td> </tr>"
+            resposta=resposta+"<tr> <td>"+ dadosSalario[1][i] +"</td> <td>"+ "R$ "+dadosSalario[0][i]+",00"+"</td> </tr>"
         }
 
     
@@ -23,10 +23,10 @@ function historicoSalarioMinimo(){
 
 function historicoInflacao(){
     var resposta = "<table>";
-    resposta = resposta + "<tr> <td>Ano</td> <td>Inflação (IPCA)</td> </tr>";
+    resposta = resposta + "<tr> <td class='titulo'>Ano</td> <td class='titulo'>Inflação (IPCA)</td> </tr>";
 
     for(let i=0; i<10;i++){
-        resposta=resposta+"<tr> <td>"+ dadosInflacao[1][i] +"</td> <td>"+dadosInflacao[0][i]+"</td> </tr>"
+        resposta=resposta+"<tr> <td>"+dadosInflacao[1][i] +"</td> <td>"+dadosInflacao[0][i]+"%"+"</td> </tr>"
     }
     
     resposta = resposta + "</table>";
@@ -37,10 +37,10 @@ function historicoInflacao(){
 function calculaCrescimento(){
 
     var resposta = "<table>";
-    resposta = resposta + "<tr> <td>Ano</td> <td>Salário</td> <td>Crescimento Salarial</td> <td>Inflação (IPCA)</td> </tr>"+`<tr> <td>${dadosSalario[1][0]}</td> <td>${dadosSalario[0][0]}</td> <td>---</td> <td>${dadosInflacao[0][0]}`;
+    resposta = resposta + "<tr> <td class='titulo'>Ano</td> <td class='titulo'>Salário</td> <td class='titulo'>Crescimento Salarial</td> <td class='titulo'>Inflação (IPCA)</td> </tr>"+`<tr> <td>${dadosSalario[1][0]}</td> <td> R$ ${dadosSalario[0][0]},00</td> <td>---</td> <td>${dadosInflacao[0][0]}%`;
 
     for(let i=1; i<10;i++){
-        resposta=resposta+"<tr> <td>"+ dadosSalario[1][i] +"</td> <td>" + +dadosSalario[0][i]+"</td> <td>" +`${diferenca(i)} </td> <td>`+dadosInflacao[0][i].toFixed(2)+"</td> </tr>"
+        resposta=resposta+"<tr> <td>"+dadosSalario[1][i]+"</td> <td>" +"R$ "+dadosSalario[0][i]+",00"+"</td> <td>" +`${diferenca(i)}% </td> <td>`+dadosInflacao[0][i].toFixed(2)+"%"+"</td> </tr>"
     }
 
     resposta = resposta + "</table>";

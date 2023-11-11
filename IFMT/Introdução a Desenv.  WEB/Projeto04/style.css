@@ -1,0 +1,147 @@
+header{
+    padding: 25px;
+    position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header img{
+    width: 150px;
+}
+
+header ul{
+    display: flex;
+    width: 30%;
+    
+}
+
+header ul li{
+    margin: 10px;
+}
+
+main{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 25PX;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    line-height: 25px;
+    margin: 5px;
+}
+
+.limita-secao{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.secao-capa::before{
+    content: "";
+    width: 100%;
+    height: 50vh;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    top:15vh;
+    left: 0;
+
+}
+.secao-capa{
+    background-image: url(bg-estacao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.secao-capa h1, .secao-capa h2{
+    position: relative
+}
+
+
+
+.secao-destaque p::first-letter{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.secao-destaque img:first-of-type{
+    width: 100%;
+}
+
+.galeria img{
+    width: calc((100%/3)-3px);
+    opacity: 0.6;
+}
+
+.galeria img:hover{
+    opacity: 1;
+}
+
+.bg-cinza{
+    background-color: #dcd9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.contaniner-lista{
+    width: 100%;
+}
+
+
+.contaniner-lista ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.contaniner-lista ul div img{
+    width: 20px;
+    height: 20px;
+}
