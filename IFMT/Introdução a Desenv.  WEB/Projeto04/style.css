@@ -113,8 +113,16 @@ p{
     width: 100%;
 }
 
+.galeria{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
 .galeria img{
-    width: calc((100%/3)-3px);
+    width: 30%;
+    margin: 3px;
     opacity: 0.6;
 }
 
@@ -139,9 +147,33 @@ p{
 .contaniner-lista ul{
     display: flex;
     flex-direction: column;
+    padding-bottom: 15px;
 }
 
-.contaniner-lista ul div img{
+li::before{
+    content: "";
     width: 20px;
     height: 20px;
+    background-image: url("seta.png");
+    margin: 0 6px 0 0;
+}
+
+.secao-galeria{
+    display: flex;
+    padding: 5% 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+width: 100%;
+background-color: orange;
+}
+
+footer, footer p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
