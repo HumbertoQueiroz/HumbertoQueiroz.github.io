@@ -53,3 +53,7 @@ select
 from estados est
 inner join cidades cid on est.id = cid.estado_id;
 
+
+-- Alterar tipo do campo
+alter table plano_saude modify column fone varchar(245);
+
