@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCompany - Formulário de Exame</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
+<body>
+    <header>
+        <span>MedCompany</span>
+    </header>
+    <main>
+        <h1>Formulário de exame</h1>
+
+        <p>Preencha o formulário abaixo com suas informações.</p>
+
+        <form action="https://www.devmedia.com.br/codigos/formularios/aula6/">
+            <label>Nome</label>
+            <input type="text" name="nome" class="inputText" required />
+            <label>Data de Nascimento</label>
+            <input type="date" name="data_nascimento" class="inputText" required />
+            <label>Email</label>
+            <input type="email" name="email" class="inputText" placeholder="email@provedor.com" required />
+
+            <div class="categoria categoria-tatuagem">
+                <h2 class="titulo-categoria">Você possui tatuagem?</h2>
+                <div class="grupo-opcao">
+                    <input type="radio" name="tatuagem" value="sim" id="tatuagem-sim" required />
+                    <label for="tatuagem-sim">Sim</label>
+                </div>
+                <div class="grupo-opcao">
+                    <input type="radio" name="tatuagem" value="não" id="tatuagem-nao" />
+                    <label for="tatuagem-nao">Não</label>
+                </div>
+            </div>
+
+            <div class="categoria categoria-doacao">
+                <h2 class="titulo-categoria">Última vez que doou sangue?</h2>
+                <div class="grupo-opcao">
+                    <input type="radio" name="doacao" value="6 meses" id="doacao-meses" required />
+                    <label for="doacao-meses">Nos últimos 6 meses</label>
+                </div>
+                <div class="grupo-opcao">
+                    <input type="radio" name="doacao" value="1 ano" id="doacao-ano" />
+                    <label for="doacao-ano">Há 1 ano ou mais</label>
+                </div>
+                <div class="grupo-opcao">
+                    <input type="radio" name="doacao" value="nunca" id="doacao-nunca" />
+                    <label for="doacao-nunca">Nunca doei sangue</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar Formulário</button>
+
+        </form>
+    </main>
+
+    
+</body>
+</html>
