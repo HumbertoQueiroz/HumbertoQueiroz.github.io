@@ -1,4 +1,4 @@
-import retornaDiaSemana from "./diaSemana";
+import retornaDiaSemana from "./diaSemana.js";
 
 let ListaSerie = ['Smallville',' WandaVision ' ,' Loki', ' Arrow' , 'Flash', 'DC Legends', 'Gothan'];
 
