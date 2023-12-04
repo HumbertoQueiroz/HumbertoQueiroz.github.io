@@ -41,17 +41,32 @@
                     <a href="#sobreNos">Sobre nós</a>
                     <a href="#NossaHistoria">Nossa missão</a>
                     <a href="#galeria">Galeria</a>
-                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2Fmalrkb&amp;e=AT3-n_rcV_IgaXiGiiL7iY-FHkkeyeuxfwFQ8h2rr7512V1kbYFCQySDU5nMIMrtV_jkWskQHapeKyoMwb-lKleoSgzn6tdCaWCXnygeWKjjUUXe_Mgn6A" target="_blank" title='Whatsapp'>Contato</a>
+                    <a href="https://api.whatsapp.com/send?phone=5566996488911" target="_blank" title='Whatsapp'>Contato</a>
                     <a href="#produtos" id="compreAgora">Comprar Agora!</a>
                 </ul>
             </nav>  
 
-            <!--Links de redes sociais-->
-            <div class='containerRedesSociais'>
+            <div class="containerPaiRedesSociais">
+              <!--Links de redes sociais-->
+              <div class='containerRedesSociais'>
                 <a href="https://www.instagram.com/ttres.meninas/" target="_blank"> <img src="https://static.cdninstagram.com/rsrc.php/v3/yR/r/lam-fZmwmvn.png" alt='Logo Instagram' width='30px' height='30px' title='Instagram'  target="_blank" ></a>
                 <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2Fmalrkb&amp;e=AT3-n_rcV_IgaXiGiiL7iY-FHkkeyeuxfwFQ8h2rr7512V1kbYFCQySDU5nMIMrtV_jkWskQHapeKyoMwb-lKleoSgzn6tdCaWCXnygeWKjjUUXe_Mgn6A" target="_blank"><img src="https://static.whatsapp.net/rsrc.php/v3/yz/r/ujTY9i_Jhs1.png" alt='Logo whatsapp' width='30px' height='30px' title='Whatsapp'></a>
+              </div>  
+              <div class="flex-center">
+                <div>
+                  <button class="btn-entrar" onclick="Logar(true)">
+                    ENTRAR
+                  </button>
+                </div>
+                <div class="CardCliente">
+                  <p>Carla</p>
+                </div>
+                <p class="btn-sair" onclick="Logar(false)">Sair</p>
+              </div>
+              
+            </div>
             
-            </div>  
+            
         </div>
     </header>
     
@@ -64,11 +79,13 @@
         <!-- Sobre nós --->
         <div class='containerSobrNos'>
             <h1>Somos a <span class='containerApresentacao__nome'>Três Meninas</span>, sua loja de moda feminina no atacado e verejo.</h1>
-            <div id="bailarina">
-                <div class="menor">✨</div>
-                <div>💃</div>
-                <div class="menor">✨</div>
+            <div id="bailarina" onmouseover="playAudio()">
+              <div class="menor">✨</div>
+              <div>💃</div>
+              <div class="menor">✨</div>
             </div>
+            <audio id="audioBrilho" src="audio/BRILHO _ EFEITO SONORO.mp3" type="audio/mp3"></audio>
+          
         </div>
         <div class="img"></div>
         <div id="NossaHistoria"></div>

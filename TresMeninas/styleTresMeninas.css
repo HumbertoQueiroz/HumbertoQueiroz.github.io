@@ -79,28 +79,6 @@ header{
   
 }
 
-/*  -- Outra opção de logo
-
-.logo1, .logo2{
-  text-align: center;
-  color: var(--branco);
-}
-
-.logo1{
-  font-family: 'Montagu Slab', serif;
-}
-
-.logo2{
-  font-family: 'Italianno', cursive;
-}
-.containerIcone{
-  background-color: var(--rosa);
-  border: 5px solid var(--rosa);
-  box-shadow: inset 0px 0px 0px 2px #fff;
-  cursor: pointer;
-  padding: 15px;
-
-}*/
 .containerTopo nav a {
   margin: 15px;
 }
@@ -111,12 +89,18 @@ header{
   text-decoration: underline;
 }
 
+.containerPaiRedesSociais{
+  display: flex;
+  align-items: center;
+}
+
 .containerRedesSociais{
   padding: 10px 30px;
   border: 2px solid rgb(72,203,255,.0);
   border-radius: 100px;
   display: flex;
   flex-direction: row;
+  margin: 5px;
 }
 
 .containerRedesSociais:hover{
@@ -132,7 +116,61 @@ header{
   border-bottom: 2px double var(--rosa);
 }
 
+.btn-entrar{
+  font-size: 1.25rem;
+  padding: 5px;
+  margin: 5px;
+  color: var(--rosa);
+  background-color: var(--branco);
+  border-radius: 4px;
+  border: solid 2px var(--rosa);
+  cursor: pointer;
+  font-weight: bold;
+}
 
+.btn-entrar:hover{
+  color: var(--branco);
+  background-color: var(--rosa);
+
+}
+
+.invisivel{
+  display: none;
+}
+
+.CardCliente{
+  border-radius: 100%;
+  border: solid 2px var(--rosa); 
+  background-image: url(imagens/AdobeStock_620088163_Preview.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 9vh;
+  height: 9vh;
+  display: none;
+}
+
+.CardCliente p{
+  font-size: .8rem;
+  padding-top: 6vh;
+  text-align: center;
+  font-weight: 700;
+  color: var(--rosa);
+  text-shadow: var(--cinza) 1px 1px;
+}
+
+.flex-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.btn-sair{
+  font-size: .8rem;
+  margin-top: 5px;
+  cursor: pointer;
+  display: none;
+}
 /* -------- Apresentação ---------*/
 
 
