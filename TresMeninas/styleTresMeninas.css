@@ -197,37 +197,7 @@ header{
   margin: 10px;
   border-radius:5px;
   border-radius: 100%;
-  /*
-  -webkit-animation: rotate-center 3s infinite ease-in-out both;
-  animation: rotate-center 3s infinite ease-in-out both;
-  animation-delay: 1.5s;
-  */
 }
-
-/*
-@-webkit-keyframes rotate-center {
-  70% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-            
-  }
-}
-@keyframes rotate-center {
-  70% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-*/
 
 .containerApresentacao__nome{
   color: var(--rosa);
@@ -371,6 +341,12 @@ h2{
   display: none;
 }
 
+.image-slider img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 1s;
+}
+
 .controls button {
   margin: 10px;
   padding: 10px 20px;
@@ -379,7 +355,7 @@ h2{
   transition: 0.8s;
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 900;
   cursor: pointer;
 }
@@ -387,7 +363,7 @@ h2{
 .controls button:hover{
   color: var(--rosa);
   transition: 0.5s;
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 .indicators {
