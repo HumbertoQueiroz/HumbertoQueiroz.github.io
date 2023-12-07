@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-btn{
+    width: 525px;
+}
+button{
+    width: 250px;
+    margin: 5px;
+}
+button:hover{
+    background-color: #A6F4FF;
+    cursor: pointer;
+}
+
+table {
+    background-color: #000;
+    margin-top: 1rem;
+}
+td{
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    background-color: #fff;
+    width: 250px;
+}
+
+.corVerde{
+    background-color: #DCEBE6 ;
+}

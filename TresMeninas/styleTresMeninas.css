@@ -159,37 +159,7 @@ header{
   margin: 10px;
   border-radius:5px;
   border-radius: 100%;
-  /*
-  -webkit-animation: rotate-center 3s infinite ease-in-out both;
-  animation: rotate-center 3s infinite ease-in-out both;
-  animation-delay: 1.5s;
-  */
 }
-
-/*
-@-webkit-keyframes rotate-center {
-  70% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-            
-  }
-}
-@keyframes rotate-center {
-  70% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-*/
 
 .containerApresentacao__nome{
   color: var(--rosa);
@@ -392,7 +362,6 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Arial";
   gap:50px;
   padding: 2rem;
 }
