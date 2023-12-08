@@ -92,13 +92,14 @@ header{
 .containerPaiRedesSociais{
   display: flex;
   align-items: center;
+  
 }
 
 .containerRedesSociais{
   padding: 10px 30px;
   border: 2px solid rgb(72,203,255,.0);
   border-radius: 100px;
-  display: flex;
+  display: none;
   flex-direction: row;
   margin: 5px;
 }
@@ -406,8 +407,10 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:50px;
+  gap:25px;
   padding: 2rem;
+  flex-wrap: wrap;
+  
 }
 
 
@@ -442,6 +445,7 @@ h2{
   font-size: 1.4rem;
   color: var(--rosaMeioEscuro);
   font-weight: 600;
+  text-align: center;
 }
 .card h2 {
   font-size: 1.3rem;
@@ -562,16 +566,27 @@ footer{
     position: static;
   }
 
+  .containerRedesSociais{
+    display: flex;
+  }
+
+  .produtos{
+    width: 1000px;
+  }
+
 }
 @media screen and (max-width: 1000px){
   .produtos{
     flex-direction: column;
   }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
 
   #compreAgora{
     position: relative;
+  }
+  .produtos{
+    width: 1000px;
   }
 }
 
