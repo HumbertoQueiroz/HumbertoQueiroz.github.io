@@ -6,4 +6,4 @@ const repet = function (numbRepet){
     return result
 }
 
-console.log(repet(3))
+console.log(repet(5))
