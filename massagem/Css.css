@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300;700&family=Open+Sans&family=Rubik&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEAD1;
+    font-size: 18px;
+}
+
+header {
+    background-color: #E89376;
+    color: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+main{
+    background-image: url(fundo-do-jardim-botanico-em-aquarela_23-2150230727.avif ) no-repeat ;
+    background: center;
+    
+    
+}
+
+.hero {
+    background: url(mulher-africana-macia-que-sorri-apreciando-a-massagem-com-os-olhos-fechados-no-spa-resort.jpg) no-repeat center center/cover;
+    color: #d37f00;
+    text-align: center;
+    padding: 4em 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: #6d4100 1px 1px;
+    
+}
+
+.services, .about, .contact {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
+}
+
+.services .service {
+    margin-bottom: 1em;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-top: 1em;
+}
+
+.contact form input, .contact form textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.contact form button {
+    margin-top: 1em;
+    padding: 0.7em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #6d4100;
+    color: #fff;
+    margin-top: 2em;
+}
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E89376;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px 10px;
+    align-items: center;
+    flex: auto;
+}
+
+button:hover {
+    background-color: #ac664f;
+}
