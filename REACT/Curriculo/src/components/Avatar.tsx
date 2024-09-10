@@ -14,8 +14,8 @@ interface AvatarProps extends ImgHTMLAttributes<HTMLImageElement>{
 
 export function Avatar({urlImg, ...props}:AvatarProps){
 return(
-<div className="w-full bg-blue-900 flex flex-col items-center">
-  <img src={urlImg} {...props} className="rounded-full w-3/4 my-4 ring-2 ring-sky-300" title={props.alt}/>
+<div className="w-full  flex flex-col items-center">
+  <img src={urlImg} {...props} className="rounded-full w-3/4 my-4 ring-2 ring-[#05d3f8]" title={props.alt}/>
 </div>
 )
 }
