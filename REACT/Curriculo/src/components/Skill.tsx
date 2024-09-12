@@ -22,7 +22,7 @@ interface SkillInterface extends ImgHTMLAttributes <HTMLImageElement> {
 export function Skill ({hasComponent,icon, urlImg, size, text, color,...props}:SkillInterface){
   if(hasComponent){
     return(
-      <div className="flex items-center gap-1 border rounded px-1 bg-slate-200 hover:scale-110 text-sm shadow hover:shadow-md hover:shadow-sky-200">
+      <div className="flex items-center gap-1 border rounded px-1 bg-slate-200 hover:scale-110 text-sm shadow hover:shadow-md hover:shadow-sky-200 duration-100">
         <div className={color} {...props}>
         {icon}
         </div>
@@ -31,7 +31,7 @@ export function Skill ({hasComponent,icon, urlImg, size, text, color,...props}:S
     )
   } else{
     return(
-      <div className="flex items-center gap-1 border rounded px-1 bg-slate-200 hover:scale-110 text-sm shadow hover:shadow-md hover:shadow-sky-200">
+      <div className="flex items-center gap-1 border rounded px-1 bg-slate-200 hover:scale-110 text-sm shadow hover:shadow-md hover:shadow-sky-200 duration-100">
         <img src={urlImg} alt="" className={` rounded-sm ${size}`} />
         <h3>{text}</h3>
       </div>

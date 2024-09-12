@@ -1,14 +1,15 @@
-import { Atom, FileTs } from "@phosphor-icons/react";
+import { Atom, FileTs, UserCircleCheck } from "@phosphor-icons/react";
 import { Avatar } from "./components/Avatar";
 import { Skill } from "./components/Skill";
 
 //Paleta de cores base https://paletadecores.com/paleta/3a3132/0f4571/386dbd/009ddd/05d3f8/
 
+//  *** Colors ***
+// blueDark="#0f4571"
+// blueMedium="#009ddd"
+// blueLight="#05d3f8"
+
 export function App() {
-  //Colors
-  const blueDark="#0f4571"
-
-
   //Calcula idade
   const date = new Date().getFullYear();
   let age=date-1995
@@ -26,11 +27,11 @@ export function App() {
       <div className="m-2">{`Bem-vindo, hoje é ${dateToday}.`}</div>
         <div className="flex justify-center">
           <div className="w-[1044px]  border flex justify-between">
-            <div className={`w-1/4 bg-[${blueDark}] text-slate-100`}>
+            <div className="w-1/4 bg-[#0f4571] text-slate-100">
               <Avatar  urlImg='fotoDevHumbertoQueiroz.JPG' alt="Foto do desenvolvedor Humberto Queiroz" />
               <div className="text-sm p-4 pl-8">
                 <h2 className="mb-4">
-                  {age} anos, nerd, lógico e as vezes descontraído.</h2>
+                  {age} anos, solteiro, nerd, lógico e as vezes descontraído.</h2>
                 <h2>
                   Transformo café em código desde 2023. 
                 </h2>
@@ -38,14 +39,32 @@ export function App() {
             </div>
             <div className="w-3/4">
               <header className="flex flex-col items-center">
-                <h1 className="mt-24 text-[#0f4571] text-6xl font-bold border-b-4  border-[#009ddd] ">HUMBERTO QUEIROZ</h1>
-                <h2 className="text-3xl mt-10 border-b-2 border-[#05d3f8]">Desenvolvedor Web</h2>
+                <h1 className="mt-24 text-[#0f4571] text-6xl font-bold border-b-4 relative border-[#009ddd] ">
+                  HUMBERTO QUEIROZ
+                </h1>
+                <div className="flex" >
+                  <div className="">
+                    <h2 className="text-3xl mt-10 border-b-2 border-[#05d3f8]">Desenvolvedor Web</h2>
+                    <a 
+                      title="Página do portifólio do Desenvolvedor Humberto Queiroz" 
+                      rel="author" 
+                      href="https://humbertoqueiroz.github.io/"
+                      className="underline"
+                    >
+                      Conheça meu portifólio clicandno neste link &#128640;<span className=""> </span>
+
+                    </a>
+                    <div className="">teste</div>
+                  </div>
+                    <img src="/qrcode_portifolio.png" alt="QR Code para portifólio" title="QR Code para portifólio"  className="rounded-lg w-32 opacity-70 absolute left-0"/>
+                </div>
               </header>
               <div className="flex flex-col items-center mt-2">
                 <div className="flex gap-6 m-2">
                   <Skill hasComponent={true} icon={ <FileTs size={24}/>} text="Typescript" color="text-blue-400"/>
                   <Skill hasComponent={true} icon={ <Atom size={24}/>} text="React" color="text-sky-300"/>
                   <Skill hasComponent={false} urlImg='sql.svg' text="MySQL" size="w-4"/>
+                  <Skill hasComponent={true} icon={ <UserCircleCheck size={16}/>} text="UX/UI" color="text-purple-600"/>
                 </div>
                 <div className="flex gap-7 m-2">
                   <Skill hasComponent={false} urlImg='javascript.svg' text="JavaScript" size="w-6"/>
