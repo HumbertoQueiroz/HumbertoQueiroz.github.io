@@ -25,41 +25,55 @@ export function App() {
   return (
     <div className="w-full flex-col justify-center">
       <div className="m-2">{`Bem-vindo, hoje é ${dateToday}.`}</div>
-        <div className="flex justify-center">
+        <div className="flex justify-center m-4">
           <div className="w-[1044px]  border flex justify-between">
             <div className="w-1/4 bg-[#0f4571] text-slate-100">
               <Avatar  urlImg='fotoDevHumbertoQueiroz.JPG' alt="Foto do desenvolvedor Humberto Queiroz" />
-              <div className="text-sm p-4 pl-8">
-                <h2 className="mb-4">
-                  {age} anos, solteiro, nerd, lógico e as vezes descontraído.</h2>
-                <h2>
-                  Transformo café em código desde 2023. 
+              <div className="px-4 pl-8">
+                <h2 className="mb-4 text-[#05d3f8]">
+                  {age} anos, solteiro, Campo Verde-MT.
                 </h2>
+                
               </div>
+
+
             </div>
-            <div className="w-3/4">
+            <div className="w-3/4 bg-white">
               <header className="flex flex-col items-center">
-                <h1 className="mt-24 text-[#0f4571] text-6xl font-bold border-b-4 relative border-[#009ddd] ">
+                <h1 className="mt-16 text-[#0f4571] text-6xl font-bold border-b-4 border-[#009ddd]  mb-4">
                   HUMBERTO QUEIROZ
                 </h1>
-                <div className="flex" >
-                  <div className="">
-                    <h2 className="text-3xl mt-10 border-b-2 border-[#05d3f8]">Desenvolvedor Web</h2>
-                    <a 
-                      title="Página do portifólio do Desenvolvedor Humberto Queiroz" 
-                      rel="author" 
-                      href="https://humbertoqueiroz.github.io/"
-                      className="underline"
-                    >
-                      Conheça meu portifólio clicandno neste link &#128640;<span className=""> </span>
-
-                    </a>
-                    <div className="">teste</div>
-                  </div>
-                    <img src="/qrcode_portifolio.png" alt="QR Code para portifólio" title="QR Code para portifólio"  className="rounded-lg w-32 opacity-70 absolute left-0"/>
+                <div className="flex my-4" >
+                    <div className="flex-col">
+                      <h2 className="text-4xl mt-10 translate-x-16 pl-14 pt-2 ">Desenvolvedor Web</h2>
+                      <p className="text-2xl translate-y-2 translate-x-16">Transformo café em código desde 2022</p>
+                    </div>
+                    <div className="w-32 translate-x-28 ">
+                      <img src="/qrcode_portifolio.png" alt="QR Code para portifólio" title="QR Code para portifólio"  className="rounded-lg w-32 opacity-70  "/>
+                      <a 
+                        title="Link para página do portifólio do Desenvolvedor Humberto Queiroz" 
+                        rel="author" 
+                        href="https://humbertoqueiroz.github.io/"
+                        className="text-sm text-cyan-400 text-center items-center"
+                      >
+                        <div className=" text-center items-center">
+                          <span className="underline" >
+                            Conheça meu portifólio! 
+                          </span>
+                          &#128640;
+                      </div>
+                      </a>
+                    </div>
                 </div>
               </header>
-              <div className="flex flex-col items-center mt-2">
+              <div className="mx-20 my-4 p-4 border rounded-md">
+                <h4 className="uppercase text-xl font-bold">Perfil pessoal</h4>
+                <p className="text-lg">
+                  Com experiência em TI, sou um profissional aplicado e dedicado à otimização de processos e sistemas. Minha afinidade com tecnologia e minha boa comunicação me permite entender as necessidades dos usuários e propor soluções eficazes. Atualmente, estou expandindo meus conhecimentos em programação para contribuir ainda mais com projetos inovadores
+                  
+                </p>
+              </div>
+              <div className="flex flex-col items-center mt-48">
                 <div className="flex gap-6 m-2">
                   <Skill hasComponent={true} icon={ <FileTs size={24}/>} text="Typescript" color="text-blue-400"/>
                   <Skill hasComponent={true} icon={ <Atom size={24}/>} text="React" color="text-sky-300"/>
@@ -77,6 +91,9 @@ export function App() {
                   <Skill hasComponent={false} urlImg='sql.svg' text="SQLServer" size="w-4"/>
                 </div>
               </div>
+              <h2>
+                  Transformo café em código desde 2023. 
+              </h2>
             </div>
           </div>
         </div>  
