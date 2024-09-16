@@ -94,6 +94,10 @@ header{
   border-bottom: 2px double rgb(72,203,255);
 }
 
+.containerRedesSociais svg:hover{
+  border-bottom: 2px double rgb(72,203,255);
+}
+
 
 /* -------- Sobre mim ---------*/
 
