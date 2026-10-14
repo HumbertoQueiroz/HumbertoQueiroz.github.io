@@ -40,17 +40,17 @@ export function Contact() {
           <p className="mx-auto mt-4 max-w-[36rem] text-base text-brand-cream/90 md:text-lg lg:mx-0 lg:text-[1.25rem] lg:leading-[1.6]">
             Para projetos e parcerias, entre em contato por algumas das minhas redes sociais.
           </p>
-          <ul className="mt-8 flex flex-col items-center gap-4 lg:mt-10 lg:items-start lg:gap-[2.4rem]">
+          <ul className="mx-auto mt-8 flex w-fit max-w-full flex-col items-start gap-4 lg:mx-0 lg:mt-10 lg:gap-[2.4rem]">
             {contactLinks.map(({ id, label, href, icon: Icon }) => (
               <li key={id}>
                 <SmartLink
                   href={href}
-                  className="group inline-flex items-center gap-4 font-mono text-base text-brand-cream transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-purple md:text-lg lg:gap-[1.4rem] lg:text-[1.15rem]"
+                  className="group inline-flex max-w-full items-center gap-3 font-mono text-[0.75rem] text-brand-cream min-[360px]:gap-4 min-[360px]:text-sm sm:text-base transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-purple md:text-lg lg:gap-[1.4rem] lg:text-[1.15rem]"
                 >
-                  <span className="flex size-11 items-center justify-center rounded-[0.4rem] bg-brand-purple text-white shadow-[0_0.2rem_0.6rem_rgb(0_0_0/0.45)] ring-1 ring-[#a98bff]/60 transition-transform group-hover:scale-110 lg:size-[3.3rem]">
+                  <span className="flex size-11 shrink-0 items-center justify-center rounded-[0.4rem] bg-brand-purple text-white shadow-[0_0.2rem_0.6rem_rgb(0_0_0/0.45)] ring-1 ring-[#a98bff]/60 transition-transform group-hover:scale-110 lg:size-[3.3rem]">
                     <Icon className="size-5 lg:size-[1.9rem]" />
                   </span>
-                  {label}
+                  <span className="min-w-0 [overflow-wrap:anywhere]">{label}</span>
                 </SmartLink>
               </li>
             ))}
