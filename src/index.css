@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/red-rose/600.css";
+@import "@fontsource/red-rose/700.css";
+@import "@fontsource-variable/kode-mono";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Paleta e tipografia do Figma: #010030, #7226FF, #EAE6E0 · Red Rose, Poppins, Kode Mono */
+@theme inline {
+  --font-sans: "Poppins", sans-serif;
+  --font-heading: "Red Rose", serif;
+  --font-mono: "Kode Mono Variable", monospace;
+
+  --color-brand-navy: #010030;
+  --color-brand-purple: #7226ff;
+  --color-brand-cream: #eae6e0;
+  --color-surface: #1c1c1c;
+  --color-surface-raised: #242424;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  --animate-float: float 8s ease-in-out infinite;
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-14px) rotate(6deg); }
+  }
+}
+
+/* Site único com tema escuro: tokens do shadcn apontam direto para a paleta da marca. */
+:root {
+  --background: #1c1c1c;
+  --foreground: #eae6e0;
+  --card: #242424;
+  --card-foreground: #eae6e0;
+  --popover: #242424;
+  --popover-foreground: #eae6e0;
+  --primary: #7226ff;
+  --primary-foreground: #ffffff;
+  --secondary: #2c2c2c;
+  --secondary-foreground: #eae6e0;
+  --muted: #2c2c2c;
+  --muted-foreground: #a9b3a8;
+  --accent: #7226ff;
+  --accent-foreground: #ffffff;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: rgb(255 255 255 / 10%);
+  --input: rgb(255 255 255 / 15%);
+  --ring: #7226ff;
+  --radius: 0.75rem;
+}
+
+/* Degradês navy → roxo. Cada seção do Figma usa uma direção diferente. */
+@utility surface-purple {
+  background-image: linear-gradient(160deg, var(--color-brand-navy) 0%, #2a0f8f 55%, var(--color-brand-purple) 100%);
+}
+@utility surface-purple-rise {
+  background-image: linear-gradient(35deg, var(--color-brand-navy) 0%, #2a0f8f 45%, #6422e8 100%);
+}
+@utility surface-purple-side {
+  background-image: linear-gradient(115deg, #0a0050 0%, #2a0f8f 45%, #5a20dc 100%);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply scroll-smooth font-sans;
+  }
+  /*
+   * Celular (<768) e tablet (768–1023) usam rem de 16px. A partir do desktop (1024+), toda a interface
+   * escala com a largura da tela até 1440px (desenho de referência = 16px); acima disso o tamanho se mantém em 16px.
+   */
+  @media (min-width: 1024px) {
+    html {
+      font-size: clamp(12px, 1.111vw, 16px);
+    }
+  }
+  /* Tailwind v4 deixa os botões com cursor padrão: tudo que é clicável mostra a mãozinha. */
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  a[href] {
+    cursor: pointer;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-heading;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- o "h" é vazado no bloco -->
+    <mask id="h" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/>
+      <path fill="#000" transform="translate(0 4.5)" d="M13 12h8v8c1.7-1.6 3.8-2.6 6.4-2.6 5.2 0 8 3.6 8 9.2V43h-8V29.2c0-2.3-1.1-3.7-3.2-3.7-2.4 0-3.2 1.5-3.2 3.7V43h-8z"/>
+    </mask>
+  </defs>
+  <!-- silhueta sólida -->
+  <rect x="2" y="4" width="44" height="52" rx="8" fill="#7226ff" mask="url(#h)"/>
+  <!-- sublinhado -->
+  <rect x="50" y="50" width="13" height="6" fill="#7226ff"/>
+</svg>

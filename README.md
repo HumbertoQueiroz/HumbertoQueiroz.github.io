@@ -1,31 +1,50 @@
-# HumbertoQueiroz.github.io
-Oi! Sou Humberto Queiroz, Dev Front-End em formação, este site é meu portfólio, aqui estão os meus conhecimentos e projetos. Esta página também serve como meu laboratório para exprementos, de uma olhada nas versões anteriores! <br>
+# Portfólio — Humberto Queiroz
 
-Projetos e conhecimentos aplicados:
-<br>
-1. Calculadora JS <br>
-    a. JS para receber os valores digitados, armazenar, alterar o display para receber novos valores, realizar as operações e ao final retornar o resultado da operação.<br>
-    b. CSS para estilização com inspiração na calculadora do Iphone, responsivo para todos os tipos de aparelhos, smartphone, tablet e desktop através de @media query.<br>
-2.  Bateria Digital:<br>
-    a. Projeto voltado a prática de manipulação com JavaScript, manipulação de HTML e seus atributos.<br>
-    b. Manupulação de mídia (audio) em browser.<br>
-3.  Carteira de Cripto moeda:<br>
-    a. Mobile First:Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compatível com smartphone, tablet ou desktop.<br>
-    b. Acessibilidade: Todas as imagens contem o atributo alt com descrição do conteúdo da imagem.<br>
-    c. HTML5 e SEO: Utilizado tags semânticas e metha tags para rankeamento de SEO.<br>
-    d. CSS e Flexbox: Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade..<br>
-4. Apeperia<br>
-   a. Mobile First: Todo o projeto foi desenvolvido com foco na responsividade em qualquer dispositivo, sendo totalmente compatível com smartphone, tablet ou desktop.<br>
-    b. CSS e Flexbox: Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.<br>
-    c. Acessibilidade: Todas as imagens contem o atributo alt com descrição do conteúdo da imagem.<br>
-6. Site Barbearia.<br>
-    a. HTML5 e SEO: Utilizado tags semânticas e metha tags para rankeamento de SEO. Integração com API do Google Maps e video do Youtube. <br>
-    b. CSS e Flexbox: Neste projeto utilizei CSS para estilização geral da página, Flexbox e @mediaquery para responsividade.<br>
-7. Este portfólio!<br>
-Caso você tenha um pouco mais de experiência no mundo dev, você vai encontrar alguns easter egg e dicas para acessar as versões mais antigas do portfólio.<br>
-    a. Versão 1.1 foi desenvolvida usando apenas html e css puro.<br>
-    b. Versão 1.2 foi desenvolvida com HTML semântico, com metha tags como Keywords, description, robots e canonica! para um bom ranqueamento no SEO. CSS desenvolvido com Mobile force, site responsivo para todos os tipos de aparelhos, smartphone, tablet e desktop através de @media query.<br>
-    c. Versão 1.3 foi desenvolvida com bootstraps 4.1v e mobile force.<br>
-    d. Versão 1.4 foi desenvolvida com html, css e JS, essa versão é mais voltado a conceitos de designer e ux, como ter um menu fixo no topo para facilitar navegação, link para partes da página inicial, proporcionalidade de itens, designer constante como tamanho de título, texto, botõs.<br>
+Portfólio de **Humberto Queiroz**, desenvolvedor Full-Stack (React, TypeScript, Node.js e PostgreSQL), de Campo Verde, MT.
 
+Site: https://humbertoqueiroz.github.io/ · Currículo online: https://dev-humberto-queiroz.vercel.app/
 
+O layout foi desenhado no Figma e implementado com foco em fidelidade visual e em responsividade (celular, tablet e desktop).
+
+## Stack
+
+- React 19 e TypeScript, com Vite
+- Tailwind CSS v4 e shadcn/ui (Embla para o carrossel)
+- Fontes self-hosted: Red Rose, Poppins e Kode Mono
+- Publicação no GitHub Pages por GitHub Actions
+
+## Seções
+
+Início, Perfil pessoal, Destaque (Meu Vestir), Meus Projetos (carrossel em leque com App193 e Meu Vestir) e Contato.
+
+## Como rodar
+
+Requer Node 22 ou superior.
+
+```bash
+npm install
+npm run dev        # http://localhost:5173
+npm run build      # gera a pasta dist
+```
+
+## Organização
+
+```
+src/
+  data/            conteúdo do site (perfil, contatos e projetos): é o único lugar a editar para atualizar textos e links
+  components/
+    layout/        menu lateral e barra superior
+    sections/      Hero, Perfil, Destaque, Projetos e Contato
+    shared/        peças reutilizadas (Section, botões, logo, indicadores)
+    ui/            componentes do shadcn/ui
+  hooks/           seção ativa no menu e animação de entrada
+  assets/          fotos e telas dos projetos
+```
+
+Para adicionar um projeto, inclua um item em `src/data/projects.ts` (telas, links e destaque): o carrossel e os botões se ajustam sozinhos.
+
+## Publicação
+
+A cada push na `main`, o workflow em `.github/workflows/deploy.yml` instala as dependências, gera o build e publica no GitHub Pages.
+
+> O site anterior (páginas de estudo em HTML) está guardado na tag `site-antigo-2026-10-14` deste repositório.

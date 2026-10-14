@@ -1,0 +1,14 @@
+# dependências e build
+node_modules
+dist
+*.local
+*.tsbuildinfo
+
+# ferramentas locais
+.claude
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+
+# logs
+npm-debug.log*
