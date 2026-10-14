@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { Trophy } from "lucide-react"
 import { ButtonLink } from "@/components/shared/button-link"
+import { HighlightBadge } from "@/components/shared/highlight-badge"
 import { PagerDots } from "@/components/shared/pager-dots"
 import { Reveal } from "@/components/shared/reveal"
 import { Section } from "@/components/shared/section"
@@ -63,10 +63,7 @@ export function Featured() {
             Tailwind, e testes automatizados com Jest.
           </p>
           {featuredProject.highlight && (
-            <p className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm text-brand-cream ring-1 ring-white/20">
-              <Trophy className="size-4" />
-              {featuredProject.highlight}
-            </p>
+            <HighlightBadge className="mt-5">{featuredProject.highlight}</HighlightBadge>
           )}
           <div>
             <ButtonLink href={featuredProject.links[0]?.href ?? "#projetos"} tone="purple" size="sm" className="mt-6 lg:mt-7">

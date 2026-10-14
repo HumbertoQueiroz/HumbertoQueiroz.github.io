@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
-import { ChevronsLeft, ChevronsRight, Trophy } from "lucide-react"
+import { ChevronsLeft, ChevronsRight } from "lucide-react"
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel"
+import { HighlightBadge } from "@/components/shared/highlight-badge"
 import { PagerDots } from "@/components/shared/pager-dots"
 import { ProjectLinks } from "@/components/shared/project-links"
 import { gallery } from "@/data/projects"
@@ -127,12 +128,7 @@ export function ScreensCarousel() {
           <span className="font-semibold">{current.title}</span>
         </p>
         <p className="max-w-lg px-6 text-sm text-brand-cream/80 lg:text-[0.85rem]">{current.description}</p>
-        {current.highlight && (
-          <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs text-brand-cream ring-1 ring-white/20">
-            <Trophy className="size-3.5" />
-            {current.highlight}
-          </p>
-        )}
+        {current.highlight && <HighlightBadge className="text-xs">{current.highlight}</HighlightBadge>}
         <ProjectLinks links={current.links} />
       </div>
 
