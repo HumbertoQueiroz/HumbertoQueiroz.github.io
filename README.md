@@ -2,7 +2,7 @@
 
 Portfólio de **Humberto Queiroz**, desenvolvedor Full-Stack (React, TypeScript, Node.js e PostgreSQL), de Campo Verde, MT.
 
-Site: https://humbertoqueiroz.github.io/ · Currículo online: https://dev-humberto-queiroz.vercel.app/
+Site: https://devhumbertoqueiroz.com.br/ · Currículo online: https://dev-humberto-queiroz.vercel.app/
 
 O layout foi desenhado no Figma e implementado com foco em fidelidade visual e em responsividade (celular, tablet e desktop).
 
