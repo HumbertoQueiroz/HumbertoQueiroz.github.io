@@ -10,6 +10,8 @@
 @import "@fontsource-variable/kode-mono";
 
 @custom-variant dark (&:is(.dark *));
+/* Telas baixas, como o celular deitado (altura até 520px). */
+@custom-variant short (@media (max-height: 520px));
 
 /* Paleta e tipografia do Figma: #010030, #7226FF, #EAE6E0 · Red Rose, Poppins, Kode Mono */
 @theme inline {
@@ -100,11 +102,11 @@
   }
   /*
    * Celular (<768) e tablet (768–1023) usam rem de 16px. A partir do desktop (1024+), toda a interface
-   * escala com a largura da tela até 1440px (desenho de referência = 16px); acima disso o tamanho se mantém em 16px.
+   * escala com a largura da tela até 1440px (desenho de referência = 16px), fica em 16px até 1920px (Full HD) e volta a crescer acima disso (QHD, 4K), para o texto não ficar pequeno perto da foto.
    */
   @media (min-width: 1024px) {
     html {
-      font-size: clamp(12px, 1.111vw, 16px);
+      font-size: max(12px, min(1.111vw, 16px), 0.8333vw);
     }
   }
   /* Tailwind v4 deixa os botões com cursor padrão: tudo que é clicável mostra a mãozinha. */

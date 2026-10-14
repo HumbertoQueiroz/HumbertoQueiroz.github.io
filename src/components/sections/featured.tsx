@@ -36,6 +36,7 @@ function Showcase() {
         count={screens.length}
         selected={index}
         onSelect={setIndex}
+        label="Escolher tela do Meu Vestir"
         labelFor={(i) => `Mostrar ${screens[i].title}`}
         className="mt-8 lg:mt-10"
       />

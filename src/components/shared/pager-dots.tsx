@@ -8,12 +8,14 @@ interface PagerDotsProps {
   /** Texto acessível de cada indicador. */
   labelFor: (index: number) => string
   className?: string
+  /** Nome acessível do grupo (deve ser único na página). */
+  label?: string
 }
 
 /** Indicadores de página: bolinhas, com uma estrela no item ativo (como no Figma). */
-export function PagerDots({ count, selected, onSelect, labelFor, className }: PagerDotsProps) {
+export function PagerDots({ count, selected, onSelect, labelFor, className, label = "Escolher tela" }: PagerDotsProps) {
   return (
-    <div className={cn("flex items-center justify-center gap-4", className)} role="group" aria-label="Escolher tela">
+    <div className={cn("flex items-center justify-center gap-4", className)} role="group" aria-label={label}>
       {Array.from({ length: count }, (_, index) => (
         <button
           key={index}

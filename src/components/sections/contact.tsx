@@ -26,7 +26,7 @@ function PortraitBadge() {
 
 export function Contact() {
   return (
-    <Section id="contato" tone="dark" className="flex-col pb-44 md:pb-24">
+    <Section id="contato" tone="dark" className="flex-col pb-44 md:pb-24 lg:pb-[3.5rem]">
       <SectionBackdrop variant="arcs" className="inset-0 size-full" />
 
       <Reveal className="relative grid w-full max-w-[72rem] items-center justify-items-center gap-10 lg:grid-cols-[auto_1fr] lg:justify-items-start lg:gap-[7.5rem] lg:pr-[4rem]">
@@ -40,7 +40,7 @@ export function Contact() {
           <p className="mx-auto mt-4 max-w-[36rem] text-base text-brand-cream/90 md:text-lg lg:mx-0 lg:text-[1.25rem] lg:leading-[1.6]">
             Para projetos e parcerias, entre em contato por algumas das minhas redes sociais.
           </p>
-          <ul className="mx-auto mt-8 flex w-fit max-w-full flex-col items-start gap-4 lg:mx-0 lg:mt-10 lg:gap-[2.4rem]">
+          <ul className="mx-auto mt-8 flex w-fit max-w-full flex-col items-start gap-4 lg:mx-0 lg:mt-8 lg:gap-[1.5rem]">
             {contactLinks.map(({ id, label, href, icon: Icon }) => (
               <li key={id}>
                 <SmartLink

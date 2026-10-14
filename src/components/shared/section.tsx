@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils"
 import type { SectionId } from "@/types"
 
 const sectionVariants = cva(
-  "relative flex min-h-svh items-center justify-center overflow-hidden px-6 py-24 md:px-[4.75rem]",
+  "relative flex min-h-svh items-center justify-center overflow-hidden px-6 py-24 md:px-[4.75rem] lg:py-[3.5rem]",
   {
     variants: {
       tone: {

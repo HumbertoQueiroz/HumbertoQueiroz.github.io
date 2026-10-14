@@ -8,7 +8,7 @@ import { githubUrl } from "@/data/profile"
 
 export function Projects() {
   return (
-    <Section id="projetos" tone="purpleSide" className="py-14 lg:py-[3rem]">
+    <Section id="projetos" tone="purpleSide" className="py-14 lg:py-[2.5rem]">
       <SmartLink
         href={githubUrl}
         aria-label="Ver meu GitHub" title="Abrir meu GitHub"
