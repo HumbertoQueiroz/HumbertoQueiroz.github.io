@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devhumbertoqueiroz.com.br/sitemap.xml
