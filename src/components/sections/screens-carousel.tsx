@@ -3,10 +3,11 @@ import { ChevronsLeft, ChevronsRight } from "lucide-react"
 import { HighlightBadge } from "@/components/shared/highlight-badge"
 import { PagerDots } from "@/components/shared/pager-dots"
 import { ProjectLinks } from "@/components/shared/project-links"
-import { gallery } from "@/data/projects"
+import { GALLERY_SIZE, useGallery } from "@/data/use-projects"
+import { useT } from "@/i18n/locale"
 import { cn } from "@/lib/utils"
 
-const TOTAL = gallery.length
+const TOTAL = GALLERY_SIZE
 const HALF = Math.floor(TOTAL / 2)
 
 /** Começa no segundo slide para os vizinhos aparecerem dos dois lados. */
@@ -40,6 +41,8 @@ function offsetFrom(index: number, selected: number) {
  * Só 2 vizinhos de cada lado ficam visíveis (1 no celular); os demais esperam invisíveis do outro lado.
  */
 export function ScreensCarousel() {
+  const t = useT()
+  const gallery = useGallery()
   const [selected, setSelected] = useState(START_INDEX)
   const dragStart = useRef<number | null>(null)
 
@@ -66,17 +69,17 @@ export function ScreensCarousel() {
   return (
     <div className="w-full">
       <div className="relative mt-4 w-full lg:mt-[1.5rem]">
-        <button type="button" aria-label="Anterior" onClick={prev} className={cn(arrowClass, "left-[3%] lg:left-[10%]")}>
+        <button type="button" aria-label={t.carousel.previous} onClick={prev} className={cn(arrowClass, "left-[3%] lg:left-[10%]")}>
           <ChevronsLeft className="size-8 lg:size-[2.1rem]" strokeWidth={1.5} />
         </button>
-        <button type="button" aria-label="Próximo" onClick={next} className={cn(arrowClass, "right-[3%] lg:right-[10%]")}>
+        <button type="button" aria-label={t.carousel.next} onClick={next} className={cn(arrowClass, "right-[3%] lg:right-[10%]")}>
           <ChevronsRight className="size-8 lg:size-[2.1rem]" strokeWidth={1.5} />
         </button>
 
         <div
           role="region"
-          aria-roledescription="carrossel"
-          aria-label="Telas dos projetos"
+          aria-roledescription={t.carousel.roleDescription}
+          aria-label={t.carousel.region}
           tabIndex={0}
           onKeyDown={onKeyDown}
           onPointerDown={onPointerDown}
@@ -93,7 +96,7 @@ export function ScreensCarousel() {
                 key={screen.src}
                 type="button"
                 onClick={() => goTo(index)}
-                aria-label={`Ver ${screen.title}`}
+                aria-label={t.carousel.view(screen.title)}
                 aria-current={distance === 0}
                 aria-hidden={isHidden}
                 tabIndex={isHidden ? -1 : 0}
@@ -137,8 +140,8 @@ export function ScreensCarousel() {
         count={TOTAL}
         selected={selected}
         onSelect={goTo}
-        label="Escolher tela dos projetos"
-        labelFor={(i) => `Ir para ${gallery[i].title}`}
+        label={t.carousel.choose}
+        labelFor={(i) => t.carousel.goTo(gallery[i].title)}
         className="mt-3"
       />
     </div>

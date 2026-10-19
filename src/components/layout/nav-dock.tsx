@@ -1,5 +1,6 @@
 import { useActiveSection } from "@/hooks/use-active-section"
 import { navItems } from "@/data/profile"
+import { useT } from "@/i18n/locale"
 import { cn } from "@/lib/utils"
 import type { SectionId } from "@/types"
 
@@ -14,14 +15,16 @@ const sectionIds: SectionId[] = navItems.map((item) => item.id)
  * (um degradê não anima sozinho), o item corta o que passa da borda e o nome entra depois de abrir.
  */
 export function NavDock() {
+  const t = useT()
   const active = useActiveSection(sectionIds)
 
   return (
     <nav
-      aria-label="Seções do site"
+      aria-label={t.nav.label}
       className="fixed inset-x-0 bottom-4 z-40 mx-auto flex w-fit flex-row gap-1.5 rounded-full bg-brand-cream p-1.5 shadow-xl shadow-black/40 ring-2 ring-white/70 md:inset-x-auto md:top-1/2 md:right-4 md:bottom-auto md:flex-col md:-translate-y-1/2 lg:right-[2.5rem] lg:gap-[0.4rem]"
     >
-      {navItems.map(({ id, label, icon: Icon }) => {
+      {navItems.map(({ id, icon: Icon }) => {
+        const label = t.nav[id]
         const isActive = id === active
         return (
           <a
@@ -30,7 +33,7 @@ export function NavDock() {
             aria-label={label}
             aria-current={isActive ? "location" : undefined}
             className={cn(
-              "relative flex size-10 shrink-0 flex-col items-center justify-center overflow-hidden rounded-full border border-brand-purple/20 bg-white/40 text-brand-purple transition-[height,color,border-color,box-shadow] duration-300 ease-out hover:bg-brand-purple/10 focus-visible:ring-2 focus-visible:ring-brand-purple focus-visible:outline-none md:size-11 lg:size-[2.9rem]",
+              "relative flex size-10 max-[359px]:size-9 shrink-0 flex-col items-center justify-center overflow-hidden rounded-full border border-brand-purple/20 bg-white/40 text-brand-purple transition-[height,color,border-color,box-shadow] duration-300 ease-out hover:bg-brand-purple/10 focus-visible:ring-2 focus-visible:ring-brand-purple focus-visible:outline-none md:size-11 lg:size-[2.9rem]",
               isActive &&
                 "border-transparent text-white shadow-md shadow-brand-purple/40 md:h-32 md:justify-start md:pt-3 lg:h-[9.2rem] lg:pt-[0.75rem]",
             )}

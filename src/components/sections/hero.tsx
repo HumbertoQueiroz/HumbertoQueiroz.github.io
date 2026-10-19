@@ -1,9 +1,10 @@
 import { ButtonLink } from "@/components/shared/button-link"
 import { Section } from "@/components/shared/section"
 import { Reveal } from "@/components/shared/reveal"
-import { profile } from "@/data/profile"
+import { contactEmail, profile, resumePdfUrl } from "@/data/profile"
+import { useT } from "@/i18n/locale"
 
-/** Logo do React em lilás, atrás da foto, como no Figma. */
+/** Logo do React em lilás, ao lado do nome, como no Figma. */
 function AtomBackdrop() {
   return (
     <svg
@@ -22,12 +23,14 @@ function AtomBackdrop() {
 }
 
 export function Hero() {
+  const t = useT()
+
   return (
     <Section id="inicio" tone="purple" className="items-start pt-28 md:pt-36 lg:items-center lg:py-0 short:pt-20 short:md:pt-20">
       <AtomBackdrop />
 
       <Reveal className="relative z-10 w-full self-start lg:self-center">
-        <div className="flex w-fit flex-col items-start lg:items-end">
+        <div className="flex w-fit max-w-full flex-col items-start lg:items-end">
           <h1
             id="inicio-title"
             className="text-[2.6rem] leading-[1.05] font-bold text-brand-cream sm:text-6xl md:text-[4.2rem] lg:whitespace-nowrap lg:text-[min(4.8rem,5.2vw)] short:text-[2.6rem] short:md:text-[2.6rem]"
@@ -37,9 +40,18 @@ export function Hero() {
           <p className="mt-1 text-2xl font-light text-brand-cream md:text-4xl lg:text-[min(3.7rem,4vw)] lg:leading-tight short:text-xl short:md:text-xl">
             {profile.role}
           </p>
-          <ButtonLink href="#projetos" className="mt-5 lg:mt-6">
-            See My Projects
-          </ButtonLink>
+          <p className="mt-4 max-w-[26rem] text-base leading-relaxed text-brand-cream/85 md:text-lg lg:max-w-[30rem] lg:text-right short:hidden">
+            {t.hero.tagline}
+          </p>
+          <div className="mt-6 flex flex-wrap items-center gap-3 lg:mt-7 lg:justify-end short:mt-4">
+            <ButtonLink href="#projetos">{t.hero.projects}</ButtonLink>
+            <ButtonLink href={`mailto:${contactEmail}`} tone="purple" size="sm">
+              {t.hero.contact}
+            </ButtonLink>
+            <ButtonLink href={resumePdfUrl} tone="glass" size="sm" download>
+              {t.hero.resume}
+            </ButtonLink>
+          </div>
         </div>
       </Reveal>
     </Section>

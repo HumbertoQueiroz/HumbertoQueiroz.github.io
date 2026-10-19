@@ -15,7 +15,7 @@ interface PagerDotsProps {
 /** Indicadores de página: bolinhas, com uma estrela no item ativo (como no Figma). */
 export function PagerDots({ count, selected, onSelect, labelFor, className, label = "Escolher tela" }: PagerDotsProps) {
   return (
-    <div className={cn("flex items-center justify-center gap-4", className)} role="group" aria-label={label}>
+    <div className={cn("flex items-center justify-center gap-2", className)} role="group" aria-label={label}>
       {Array.from({ length: count }, (_, index) => (
         <button
           key={index}
@@ -23,7 +23,7 @@ export function PagerDots({ count, selected, onSelect, labelFor, className, labe
           onClick={() => onSelect(index)}
           aria-label={labelFor(index)}
           aria-current={index === selected}
-          className="group flex size-5 items-center justify-center text-white transition-transform hover:scale-125 focus-visible:outline-2 focus-visible:outline-white"
+          className="group flex size-7 min-h-[24px] min-w-[24px] cursor-pointer items-center justify-center text-white transition-transform hover:scale-125 focus-visible:outline-2 focus-visible:outline-white"
         >
           {index === selected ? (
             <Sparkle className="size-5 fill-white" />

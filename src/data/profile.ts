@@ -1,4 +1,4 @@
-import { Briefcase, CircleUser, Code, FileUser, House, Mail, Rocket, Send } from "lucide-react"
+import { Briefcase, CircleUser, Code, FileUser, GraduationCap, House, Mail, Rocket, Send } from "lucide-react"
 import {
   GithubIcon,
   InstagramIcon,
@@ -10,8 +10,6 @@ export const profile = {
   name: "Humberto Queiroz",
   role: "Full-Stack Developer",
   location: "Campo Verde, MT",
-  summary:
-    "Sou desenvolvedor full-stack com 4 anos em TI, mais de 2 deles dedicados ao desenvolvimento de software. Atuo do modelo de dados à interface com React, TypeScript, Node.js e PostgreSQL, com testes automatizados e atenção à acessibilidade. Minha experiência em suporte, infraestrutura e ERP TOTVS Protheus me dá visão de sistemas em produção, e a graduação em Direito me ajuda a ler requisitos com precisão e a explicar soluções com clareza.",
   skills: [
     "React",
     "TypeScript",
@@ -30,13 +28,19 @@ export const profile = {
 
 export const githubUrl = "https://github.com/HumbertoQueiroz"
 export const resumeUrl = "https://dev-humberto-queiroz.vercel.app/"
+/** PDF gerado a partir do currículo online (sem telefone), servido pelo próprio site. */
+export const resumePdfUrl = "/Humberto-Queiroz-Curriculo.pdf"
+export const contactEmail = "devhumbertoqueiroz@gmail.com"
 
+/** Os nomes aparecem no idioma atual, em `t.nav`. */
 export const navItems: NavItem[] = [
-  { id: "inicio", label: "Início", icon: House },
-  { id: "perfil", label: "Perfil pessoal", icon: CircleUser },
-  { id: "destaque", label: "Destaque", icon: Rocket },
-  { id: "projetos", label: "Projetos", icon: Code },
-  { id: "contato", label: "Contato", icon: Send },
+  { id: "inicio", icon: House },
+  { id: "perfil", icon: CircleUser },
+  { id: "experiencia", icon: Briefcase },
+  { id: "formacao", icon: GraduationCap },
+  { id: "destaque", icon: Rocket },
+  { id: "projetos", icon: Code },
+  { id: "contato", icon: Send },
 ]
 
 export const contactLinks: ContactLink[] = [

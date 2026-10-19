@@ -1,6 +1,7 @@
 import { Globe, Play } from "lucide-react"
 import { GithubIcon } from "@/components/icons/brand-icons"
 import { ButtonLink } from "@/components/shared/button-link"
+import { useT } from "@/i18n/locale"
 import { cn } from "@/lib/utils"
 import type { ProjectLink } from "@/types"
 
@@ -22,10 +23,11 @@ function Icon({ kind }: { kind: ProjectLink["kind"] }) {
 
 /** Botões para os repositórios no GitHub, o site e a demonstração de um projeto. */
 export function ProjectLinks({ links, className }: ProjectLinksProps) {
+  const t = useT()
   if (links.length === 0) return null
 
   return (
-    <ul className={cn("flex flex-wrap items-center justify-center gap-2", className)} aria-label="Links do projeto">
+    <ul className={cn("flex flex-wrap items-center justify-center gap-2", className)} aria-label={t.projects.links}>
       {links.map(({ label, href, kind }) => (
         <li key={href}>
           <ButtonLink href={href} tone="glass" size="xs">

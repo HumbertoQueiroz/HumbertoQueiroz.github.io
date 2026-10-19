@@ -2,11 +2,11 @@ import type { ComponentType, SVGProps } from "react"
 
 export type IconComponent = ComponentType<SVGProps<SVGSVGElement>>
 
-export type SectionId = "inicio" | "perfil" | "destaque" | "projetos" | "contato"
+export type SectionId = "inicio" | "perfil" | "experiencia" | "formacao" | "destaque" | "projetos" | "contato"
 
+/** O nome de cada item vem do idioma atual: `t.nav[id]`. */
 export interface NavItem {
   id: SectionId
-  label: string
   icon: IconComponent
 }
 
