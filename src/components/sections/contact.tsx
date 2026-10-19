@@ -1,4 +1,4 @@
-import portrait from "@/assets/humberto-cutout.png"
+import portrait from "@/assets/humberto-blazer.jpg"
 import { Wordmark } from "@/components/shared/logo"
 import { Reveal } from "@/components/shared/reveal"
 import { Section } from "@/components/shared/section"
@@ -9,16 +9,17 @@ import { contactLinks, profile } from "@/data/profile"
 
 const currentYear = new Date().getFullYear()
 
-/** Foto recortada num círculo roxo: a cabeça sai pelo topo, o resto é cortado pela curva. */
+/** Foto num círculo, com contorno roxo, enquadrada no rosto. */
 function PortraitBadge() {
   return (
-    <div className="relative size-52 [clip-path:inset(-60%_0_0_0_round_0_0_50%_50%)] md:size-64 lg:size-[21rem]">
-      <div className="absolute inset-0 rounded-full bg-[linear-gradient(135deg,var(--color-brand-purple)_10%,#1d0a78_100%)]" />
+    <div className="relative size-52 overflow-hidden rounded-full ring-4 ring-brand-purple md:size-64 lg:size-[21rem]">
       <img
         src={portrait}
         alt={`Foto de ${profile.name}`}
+        width={900}
+        height={1117}
         loading="lazy"
-        className="absolute bottom-0 left-1/2 w-[108%] max-w-none -translate-x-1/2"
+        className="size-full origin-[50%_22%] scale-[1.35] object-cover object-top"
       />
     </div>
   )

@@ -1,4 +1,3 @@
-import portrait from "@/assets/humberto-cutout.png"
 import { ButtonLink } from "@/components/shared/button-link"
 import { Section } from "@/components/shared/section"
 import { Reveal } from "@/components/shared/reveal"
@@ -43,15 +42,6 @@ export function Hero() {
           </ButtonLink>
         </div>
       </Reveal>
-
-      <img
-        src={portrait}
-        alt={`${profile.name}, de blazer azul`}
-        width={769}
-        height={800}
-        fetchPriority="high"
-        className="pointer-events-none absolute right-0 bottom-0 h-[46%] w-auto max-w-none [mask-image:linear-gradient(to_right,black_84%,transparent_96%)] md:h-[58%] lg:right-[9%] lg:bottom-[-4%] lg:h-[min(76%,42vw)] short:h-[80%] short:md:h-[80%]"
-      />
     </Section>
   )
 }
